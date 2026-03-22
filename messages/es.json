@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "ReviewAware — Consigue más reseñas en Google automáticamente",
+    "description": "ReviewAware envía solicitudes de reseña después de cada trabajo completado para que obtengas más reseñas de 5 estrellas sin esfuerzo extra."
+  },
+  "header": {
+    "brand": "ReviewAware",
+    "demo": "Demo",
+    "howItWorks": "Cómo Funciona",
+    "pricing": "Precios",
+    "faq": "Preguntas",
+    "startTrial": "Prueba Gratis",
+    "localeEn": "EN",
+    "localeEs": "ES"
+  },
+  "hero": {
+    "titleLine1": "Consigue más reseñas en Google",
+    "titleLine2": "automáticamente",
+    "titleLine3": "después de cada trabajo completado",
+    "subtitle": "ReviewAware envía automáticamente solicitudes de reseña a tus clientes después de cada trabajo completado para que tu negocio obtenga más reseñas de 5 estrellas sin trabajo extra.",
+    "ctaPrimary": "Iniciar prueba gratis de 14 días",
+    "ctaSecondary": "Ver cómo funciona",
+    "trustLine": "No se requiere tarjeta de crédito • Cancela cuando quieras"
+  },
+  "demo": {
+    "title": "Demo interactiva del producto",
+    "subtitle": "Trabajo completado → se envía la solicitud de reseña → el cliente hace clic.",
+    "panel1Title": "Trabajo completado",
+    "customerLabel": "Cliente",
+    "serviceLabel": "Servicio",
+    "customerName": "Sarah Johnson",
+    "serviceName": "Reparación de AC",
+    "panel2Title": "ReviewAware envía el correo:",
+    "emailGreeting": "Hola Sarah,",
+    "emailLine1": "Gracias por elegir ABC Plumbing.",
+    "emailLine2": "¿Te importaría contarnos tu experiencia?",
+    "emailCta": "Dejar una reseña",
+    "panel3Title": "El cliente hace clic en el enlace de reseña",
+    "completed": "Solicitud de reseña completada",
+    "stepAria": "Mostrar paso {n}"
+  },
+  "problem": {
+    "title": "La mayoría de los clientes satisfechos no dejan reseñas a menos que se lo pidas.",
+    "item1": "Los clientes olvidan dejar reseñas",
+    "item2": "Los técnicos olvidan pedirlas",
+    "item3": "Los negocios no tienen un seguimiento constante"
+  },
+  "solution": {
+    "title": "Solicitudes de reseña automáticas después de cada trabajo",
+    "step1": "Trabajo completado",
+    "step2": "ReviewAware envía el correo",
+    "step3": "El cliente hace clic en el enlace de reseña",
+    "step4": "Obtienes más reseñas"
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "stepLabel1": "Paso 1",
+    "stepLabel2": "Paso 2",
+    "stepLabel3": "Paso 3",
+    "step1": "Agrega tu cliente o importa trabajos.",
+    "step2": "Marca el trabajo como completado.",
+    "step3": "ReviewAware envía automáticamente la solicitud de reseña."
+  },
+  "features": {
+    "title": "Todo Lo Que Necesitas Para Crecer en Reseñas",
+    "f1": "Correos automáticos de solicitud de reseña",
+    "f2": "Códigos QR para reseñas en persona",
+    "f3": "Seguimiento de clics",
+    "f4": "Correos de recordatorio automáticos",
+    "f5": "Funciona en cualquier teléfono, tablet u ordenador — sin app."
+  },
+  "screenshots": {
+    "title": "Tu Flujo de Reseñas en un Solo Lugar",
+    "subtitle": "Métricas del panel, trabajos, recursos QR y correos de reseña en un mismo flujo.",
+    "browserUrl": "app.reviewaware.com",
+    "primaryCaption": "Vista general del panel",
+    "callout1": "Seguimiento de solicitudes de reseña",
+    "callout2": "Monitoreo de clics en enlaces",
+    "callout3": "Identificar clientes que necesitan recordatorios",
+    "secondaryHeading": "Más Vistas",
+    "secondarySub": "Trabajos, diseños QR imprimibles y el correo que reciben tus clientes.",
+    "s2Label": "Trabajos",
+    "s2Hint": "Trabajos completados y estado",
+    "s3Label": "Códigos QR",
+    "s3Hint": "Enlaces de reseña en persona",
+    "s4Label": "Vista previa del correo",
+    "s4Hint": "Mensajes con tu marca"
+  },
+  "pricing": {
+    "title": "Precios Simples",
+    "introLine1": "Empieza hoy de forma simple. Mejora cuando estés listo.",
+    "introLine2": "Elige el plan que encaje con tu negocio ahora.",
+    "mostPopular": "Más popular",
+    "liteName": "ReviewAware Lite",
+    "liteBadge": "Disponible ahora",
+    "liteValueLine": "Todo lo que necesitas para empezar a generar más reseñas en Google.",
+    "plusName": "ReviewAware Plus",
+    "plusBadge": "Próximamente",
+    "perMonth": "/ mes",
+    "liteF1": "Solicitudes de reseña por correo",
+    "liteF2": "Google + 1 plataforma adicional",
+    "liteF3": "Enlaces QR de reseña con seguimiento de clics",
+    "liteF4": "Panel simple de seguimiento",
+    "liteSupport1": "Prueba gratis de 14 días",
+    "liteSupport2": "No se requiere tarjeta de crédito",
+    "liteSupport3": "Cancela cuando quieras",
+    "plusF1": "Solicitudes de correo ilimitadas",
+    "plusF2": "Solicitudes de reseña por SMS",
+    "plusF3": "Gestión de reputación en Google",
+    "plusF4": "Recursos QR para todas las plataformas",
+    "ctaTrial": "Prueba Lite gratis 14 días",
+    "ctaWaitlist": "Unirse a la lista de espera",
+    "plusNote": "Las funciones de Plus llegan pronto. Únete a la lista de espera para acceso anticipado.",
+    "waitlistModalTitle": "Únete a la lista de espera de ReviewAware Plus",
+    "waitlistModalDescription": "Te avisaremos por correo cuando Plus esté disponible con SMS, solicitudes ilimitadas y más.",
+    "waitlistEmailLabel": "Correo de trabajo",
+    "waitlistEmailPlaceholder": "tu@empresa.com",
+    "waitlistSubmit": "Unirse a la lista",
+    "waitlistCancel": "Cancelar",
+    "waitlistSubmitting": "Uniendo…",
+    "waitlistSuccess": "Estás en la lista. Te avisaremos cuando Plus esté listo.",
+    "waitlistError": "Algo salió mal. Inténtalo de nuevo en un momento.",
+    "waitlistConfigError": "El registro en la lista no está disponible por ahora. Inténtalo más tarde.",
+    "waitlistEmailInvalid": "Introduce una dirección de correo válida.",
+    "waitlistDone": "Listo",
+    "waitlistCloseAria": "Cerrar ventana"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Necesito conocimientos técnicos para usar ReviewAware?",
+    "a1": "No. Si puedes enviar un correo o marcar un trabajo como completado, puedes usar ReviewAware.",
+    "q2": "¿Funciona con reseñas de Google?",
+    "a2": "Sí. Lite incluye Google más una plataforma adicional que elijas.",
+    "q3": "¿Puedo cancelar en cualquier momento?",
+    "a3": "Sí. No hay contrato a largo plazo — cancela cuando quieras.",
+    "q4": "¿Cómo funcionan los recordatorios?",
+    "a4": "ReviewAware puede enviar recordatorios amables por correo si un cliente aún no ha hecho clic en tu enlace de reseña.",
+    "q5": "¿Cuándo estará disponible Plus?",
+    "a5": "Plus llega pronto. Únete a la lista de espera para enterarte cuando se lancen SMS y herramientas avanzadas."
+  },
+  "finalCta": {
+    "titleLine1": "Empieza a conseguir más",
+    "titleLine2": "Reseñas de 5 estrellas hoy",
+    "cta": "Inicia tu prueba gratis de 14 días",
+    "ctaSubInButton": "No se requiere tarjeta de crédito",
+    "sub": "La configuración toma menos de 5 minutos."
+  },
+  "footer": {
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "copyright": "© {year} ReviewAware. Todos los derechos reservados."
+  }
+}

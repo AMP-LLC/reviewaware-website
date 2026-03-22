@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "ReviewAware — Get more Google reviews automatically",
+    "description": "ReviewAware sends review requests after every completed job so you earn more 5-star reviews without extra work."
+  },
+  "header": {
+    "brand": "ReviewAware",
+    "demo": "Demo",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "startTrial": "Start Free Trial",
+    "localeEn": "EN",
+    "localeEs": "ES"
+  },
+  "hero": {
+    "titleLine1": "Get More Google Reviews",
+    "titleLine2": "Automatically",
+    "titleLine3": "After Every Completed Job",
+    "subtitle": "ReviewAware automatically sends review requests to your customers after each completed job so your business earns more 5-star reviews without extra work.",
+    "ctaPrimary": "Start Free 14-Day Trial",
+    "ctaSecondary": "See How It Works",
+    "trustLine": "No credit card required • Cancel anytime"
+  },
+  "demo": {
+    "title": "Interactive Product Demo",
+    "subtitle": "Job completed → review request sent → customer clicks.",
+    "panel1Title": "Job Completed",
+    "customerLabel": "Customer",
+    "serviceLabel": "Service",
+    "customerName": "Sarah Johnson",
+    "serviceName": "AC Repair",
+    "panel2Title": "ReviewAware Sends Email:",
+    "emailGreeting": "Hi Sarah,",
+    "emailLine1": "Thanks for choosing ABC Plumbing.",
+    "emailLine2": "Would you mind sharing your experience?",
+    "emailCta": "Leave a Review",
+    "panel3Title": "Customer Clicks Review Link",
+    "completed": "Review request completed",
+    "stepAria": "Show step {n}"
+  },
+  "problem": {
+    "title": "Most Happy Customers Never Leave Reviews Unless You Ask.",
+    "item1": "Customers forget to leave reviews",
+    "item2": "Technicians forget to ask",
+    "item3": "Businesses have no consistent follow-up system"
+  },
+  "solution": {
+    "title": "Automated Review Requests That Run After Every Job",
+    "step1": "Job Completed",
+    "step2": "ReviewAware Sends Email",
+    "step3": "Customer Clicks Review Link",
+    "step4": "You Get More Reviews"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "stepLabel1": "Step 1",
+    "stepLabel2": "Step 2",
+    "stepLabel3": "Step 3",
+    "step1": "Add your customer or import jobs.",
+    "step2": "Mark the job completed.",
+    "step3": "ReviewAware automatically sends the review request."
+  },
+  "features": {
+    "title": "Everything You Need to Grow Reviews",
+    "f1": "Automated Email Review Requests",
+    "f2": "QR Codes for In-Person Reviews",
+    "f3": "Click Tracking",
+    "f4": "Automated Reminder Emails",
+    "f5": "Works on any phone, tablet, or computer — no app required."
+  },
+  "screenshots": {
+    "title": "Your Review Pipeline in One Place",
+    "subtitle": "See how dashboard metrics, jobs, QR assets, and review emails work together in one workflow.",
+    "browserUrl": "app.reviewaware.com",
+    "primaryCaption": "Dashboard Overview",
+    "callout1": "Track review requests",
+    "callout2": "Monitor link clicks",
+    "callout3": "Identify customers needing reminders",
+    "secondaryHeading": "Additional Views",
+    "secondarySub": "Jobs, printable QR designs, and the email your customers receive.",
+    "s2Label": "Jobs",
+    "s2Hint": "Completed work and status",
+    "s3Label": "QR Codes",
+    "s3Hint": "In-person review links",
+    "s4Label": "Email Preview",
+    "s4Hint": "On-brand messages"
+  },
+  "pricing": {
+    "title": "Simple Pricing",
+    "introLine1": "Start simple today. Upgrade when you're ready.",
+    "introLine2": "Choose the plan that fits your business now.",
+    "mostPopular": "Most Popular",
+    "liteName": "ReviewAware Lite",
+    "liteBadge": "Available Now",
+    "liteValueLine": "Everything you need to start generating more Google reviews.",
+    "plusName": "ReviewAware Plus",
+    "plusBadge": "Coming Soon",
+    "perMonth": "/ month",
+    "liteF1": "Email review requests",
+    "liteF2": "Google + 1 additional platform",
+    "liteF3": "QR review links with click tracking",
+    "liteF4": "Simple dashboard tracking",
+    "liteSupport1": "14-day free trial",
+    "liteSupport2": "No credit card required",
+    "liteSupport3": "Cancel anytime",
+    "plusF1": "Unlimited email requests",
+    "plusF2": "SMS review requests",
+    "plusF3": "Google reputation management",
+    "plusF4": "QR assets for all platforms",
+    "ctaTrial": "Start Lite Free for 14 Days",
+    "ctaWaitlist": "Join Waitlist",
+    "plusNote": "Plus features launching soon. Join the waitlist for early access.",
+    "waitlistModalTitle": "Join the ReviewAware Plus waitlist",
+    "waitlistModalDescription": "We’ll email you when Plus launches with SMS, unlimited requests, and more.",
+    "waitlistEmailLabel": "Work email",
+    "waitlistEmailPlaceholder": "you@company.com",
+    "waitlistSubmit": "Join waitlist",
+    "waitlistCancel": "Cancel",
+    "waitlistSubmitting": "Joining…",
+    "waitlistSuccess": "You’re on the list. We’ll notify you when Plus is ready.",
+    "waitlistError": "Something went wrong. Please try again in a moment.",
+    "waitlistConfigError": "Waitlist sign-up is temporarily unavailable. Please try again later.",
+    "waitlistEmailInvalid": "Please enter a valid email address.",
+    "waitlistDone": "Done",
+    "waitlistCloseAria": "Close dialog"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Do I need technical skills to use ReviewAware?",
+    "a1": "No. If you can send email or mark a job complete, you can use ReviewAware.",
+    "q2": "Does this work with Google reviews?",
+    "a2": "Yes. Lite includes Google plus one additional platform you choose.",
+    "q3": "Can I cancel anytime?",
+    "a3": "Yes. There is no long-term contract — cancel whenever you like.",
+    "q4": "How do reminders work?",
+    "a4": "ReviewAware can send gentle reminder emails if a customer has not clicked your review link yet.",
+    "q5": "When will Plus be available?",
+    "a5": "Plus is coming soon. Join the waitlist to get notified when SMS and advanced tools launch."
+  },
+  "finalCta": {
+    "titleLine1": "Start Getting More",
+    "titleLine2": "5-Star Reviews Today",
+    "cta": "Start Your Free 14-Day Trial",
+    "ctaSubInButton": "No credit card required",
+    "sub": "Setup takes less than 5 minutes."
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {year} ReviewAware. All rights reserved."
+  }
+}

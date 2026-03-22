@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 antialiased;
+}
+
+::selection {
+  @apply bg-blue-600/15 text-zinc-900;
+}
