@@ -14,12 +14,11 @@
     "localeEs": "ES"
   },
   "hero": {
-    "titleLine1": "Consigue más reseñas en Google",
-    "titleLine2": "automáticamente",
-    "titleLine3": "después de cada trabajo completado",
+    "headline": "Consigue más reseñas en Google automáticamente",
     "subtitle": "ReviewAware envía automáticamente solicitudes de reseña a tus clientes después de cada trabajo completado para que tu negocio obtenga más reseñas de 5 estrellas sin trabajo extra.",
     "ctaPrimary": "Iniciar prueba gratis de 14 días",
     "ctaSecondary": "Ver cómo funciona",
+    "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online",
     "trustLine": "No se requiere tarjeta de crédito • Cancela cuando quieras"
   },
   "demo": {
@@ -101,6 +100,7 @@
     "liteF2": "Google + 1 plataforma adicional",
     "liteF3": "Enlaces QR de reseña con seguimiento de clics",
     "liteF4": "Panel simple de seguimiento",
+    "liteSetupHint": "La configuración toma menos de 5 minutos.",
     "liteSupport1": "Prueba gratis de 14 días",
     "liteSupport2": "No se requiere tarjeta de crédito",
     "liteSupport3": "Cancela cuando quieras",
@@ -140,7 +140,7 @@
   },
   "finalCta": {
     "titleLine1": "Empieza a conseguir más",
-    "titleLine2": "Reseñas de 5 estrellas hoy",
+    "titleLine2": "Reseñas de 5 estrellas — automáticamente",
     "cta": "Inicia tu prueba gratis de 14 días",
     "ctaSubInButton": "No se requiere tarjeta de crédito",
     "sub": "La configuración toma menos de 5 minutos."

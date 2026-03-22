@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
@@ -12,9 +12,8 @@ const nav = [
   { href: "#faq", labelKey: "faq" as const },
 ];
 
-export async function SiteHeader() {
+export async function SiteHeader({ locale }: { locale: string }) {
   const t = await getTranslations("header");
-  const locale = await getLocale();
   const trialHref = getLiteTrialHref(locale);
 
   return (

@@ -14,12 +14,11 @@
     "localeEs": "ES"
   },
   "hero": {
-    "titleLine1": "Get More Google Reviews",
-    "titleLine2": "Automatically",
-    "titleLine3": "After Every Completed Job",
+    "headline": "Get More Google Reviews Automatically",
     "subtitle": "ReviewAware automatically sends review requests to your customers after each completed job so your business earns more 5-star reviews without extra work.",
     "ctaPrimary": "Start Free 14-Day Trial",
     "ctaSecondary": "See How It Works",
+    "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation",
     "trustLine": "No credit card required • Cancel anytime"
   },
   "demo": {
@@ -101,6 +100,7 @@
     "liteF2": "Google + 1 additional platform",
     "liteF3": "QR review links with click tracking",
     "liteF4": "Simple dashboard tracking",
+    "liteSetupHint": "Setup takes less than 5 minutes.",
     "liteSupport1": "14-day free trial",
     "liteSupport2": "No credit card required",
     "liteSupport3": "Cancel anytime",
@@ -140,7 +140,7 @@
   },
   "finalCta": {
     "titleLine1": "Start Getting More",
-    "titleLine2": "5-Star Reviews Today",
+    "titleLine2": "5-Star Reviews — Automatically",
     "cta": "Start Your Free 14-Day Trial",
     "ctaSubInButton": "No credit card required",
     "sub": "Setup takes less than 5 minutes."

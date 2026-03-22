@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 function BrowserFrame({
   url,
@@ -10,7 +10,7 @@ function BrowserFrame({
   children: ReactNode;
 }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-zinc-200/80 bg-white shadow-[0_20px_50px_-12px_rgba(15,23,42,0.15)] ring-1 ring-zinc-950/[0.04]">
+    <div className="overflow-hidden rounded-xl border border-muted bg-card shadow-xl ring-1 ring-zinc-950/[0.04]">
       <div className="flex items-center gap-2 border-b border-zinc-200/80 bg-zinc-100/95 px-3 py-2.5">
         <div className="flex gap-1.5" aria-hidden>
           <span className="size-2.5 rounded-full bg-zinc-300/90" />
@@ -97,9 +97,8 @@ function SecondaryScreenshot({
   );
 }
 
-export async function ScreenshotsSection() {
+export async function ScreenshotsSection({ locale }: { locale: string }) {
   const t = await getTranslations("screenshots");
-  const locale = await getLocale();
 
   const dashSrc = marketingImagePath(locale, "dashboard");
 

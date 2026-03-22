@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-card: oklch(1 0 0);
+  --color-muted: oklch(0.97 0.004 286.32);
+  --color-muted-foreground: oklch(0.45 0.016 285.938);
+}
+
 html {
   scroll-behavior: smooth;
 }

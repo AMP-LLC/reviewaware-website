@@ -1,11 +1,10 @@
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
 import { getLiteTrialHref } from "@/lib/marketing-links";
 
-export async function FinalCtaSection() {
+export async function FinalCtaSection({ locale }: { locale: string }) {
   const t = await getTranslations("finalCta");
-  const locale = await getLocale();
   const trialHref = getLiteTrialHref(locale);
 
   return (

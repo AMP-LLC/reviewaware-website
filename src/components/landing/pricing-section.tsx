@@ -1,4 +1,4 @@
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -17,9 +17,8 @@ const liteKeys = ["liteF1", "liteF2", "liteF3", "liteF4"] as const;
 const plusKeys = ["plusF1", "plusF2", "plusF3", "plusF4"] as const;
 const liteSupportKeys = ["liteSupport1", "liteSupport2", "liteSupport3"] as const;
 
-export async function PricingSection() {
+export async function PricingSection({ locale }: { locale: string }) {
   const t = await getTranslations("pricing");
-  const locale = await getLocale();
 
   const trialHref = getLiteTrialHref(locale);
 
@@ -104,6 +103,9 @@ export async function PricingSection() {
                     </li>
                   ))}
                 </ul>
+                <p className="mt-3 text-center text-sm text-muted-foreground">
+                  {t("liteSetupHint")}
+                </p>
                 <Button
                   asChild
                   size="lg"

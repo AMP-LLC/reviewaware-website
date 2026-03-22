@@ -31,18 +31,18 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <main>
-        <HeroSection />
+        <HeroSection locale={locale} />
         <DemoSection />
         <ProblemSection />
         <SolutionSection />
         <HowItWorksSection />
         <FeaturesSection />
-        <ScreenshotsSection />
-        <PricingSection />
+        <ScreenshotsSection locale={locale} />
+        <PricingSection locale={locale} />
         <FaqSection />
-        <FinalCtaSection />
+        <FinalCtaSection locale={locale} />
       </main>
       <SiteFooter />
     </>
