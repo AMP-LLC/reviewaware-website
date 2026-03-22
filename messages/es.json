@@ -149,5 +149,43 @@
     "privacy": "Política de privacidad",
     "terms": "Términos del servicio",
     "copyright": "© {year} ReviewAware. Todos los derechos reservados."
+  },
+  "privacyPage": {
+    "metaTitle": "Política de privacidad — ReviewAware",
+    "metaDescription": "Cómo ReviewAware recopila, usa y protege tu información.",
+    "backToHome": "← Volver al inicio",
+    "title": "Política de privacidad",
+    "effectiveDate": "Vigente desde el 22 de marzo de 2026",
+    "intro": "ReviewAware («nosotros») respeta tu privacidad. Esta política describe cómo recopilamos, usamos y compartimos información cuando utilizas nuestro sitio y servicios.",
+    "s1Title": "Información que recopilamos",
+    "s1Body": "Recopilamos la información que nos proporcionas directamente (como nombre, correo, datos del negocio e información de facturación cuando aplique), la información generada al usar el servicio (como trabajos, solicitudes de reseña y registros de uso) y datos técnicos (como tipo de dispositivo, navegador y ubicación aproximada a partir de la dirección IP).",
+    "s2Title": "Cómo usamos la información",
+    "s2Body": "Usamos la información para prestar y mejorar el servicio, comunicarnos contigo, procesar pagos, proteger nuestros sistemas, cumplir la ley y enviar actualizaciones del producto que puedes rechazar cuando corresponda.",
+    "s3Title": "Compartición",
+    "s3Body": "No vendemos tu información personal. Podemos compartir datos con proveedores que ayudan nuestras operaciones (alojamiento, envío de correo, analíticas) bajo acuerdos estrictos, cuando la ley lo exija o en el marco de una operación corporativa como una fusión.",
+    "s4Title": "Conservación y seguridad",
+    "s4Body": "Conservamos la información el tiempo necesario para prestar el servicio y cumplir obligaciones legales. Aplicamos medidas de seguridad habituales en el sector, aunque ningún método de transmisión o almacenamiento es totalmente seguro.",
+    "s5Title": "Tus derechos y contacto",
+    "s5Body": "Según tu ubicación, puedes tener derechos de acceso, rectificación, supresión u oposición al tratamiento. Para ejercerlos o plantear dudas, escribe a support@reviewaware.com."
+  },
+  "termsPage": {
+    "metaTitle": "Términos del servicio — ReviewAware",
+    "metaDescription": "Términos que rigen el uso del sitio y los servicios de ReviewAware.",
+    "backToHome": "← Volver al inicio",
+    "title": "Términos del servicio",
+    "effectiveDate": "Vigente desde el 22 de marzo de 2026",
+    "intro": "Al acceder o usar el sitio y los servicios de ReviewAware, aceptas estos Términos. Si no estás de acuerdo, no uses el servicio.",
+    "s1Title": "El servicio",
+    "s1Body": "ReviewAware ofrece herramientas para solicitar y gestionar reseñas de clientes y flujos relacionados. Las funciones pueden cambiar con el tiempo; daremos aviso razonable de cambios importantes cuando corresponda.",
+    "s2Title": "Cuentas y elegibilidad",
+    "s2Body": "Debes proporcionar datos de registro veraces y mantener seguras tus credenciales. Eres responsable de la actividad bajo tu cuenta. Debes tener autoridad para actuar en nombre de tu negocio cuando aplique.",
+    "s3Title": "Uso aceptable",
+    "s3Body": "Te comprometes a no hacer un uso indebido del servicio, incluido el envío de spam, el incumplimiento de leyes aplicables, la vulneración de derechos de terceros o el acceso no autorizado a sistemas. Podemos suspender o cancelar cuentas que infrinjan estos Términos.",
+    "s4Title": "Tarifas y pruebas",
+    "s4Body": "Los planes de pago se facturan según lo indicado en el registro. Las pruebas y cancelaciones siguen las condiciones mostradas en el producto en el momento de la compra. Pueden aplicarse impuestos cuando la ley lo exija.",
+    "s5Title": "Descargo de responsabilidad y limitación",
+    "s5Body": "El servicio se ofrece «tal cual» sin garantías en la medida máxima permitida por la ley. En la medida máxima permitida, ReviewAware no será responsable de daños indirectos, incidentales o consecuentes. Nuestra responsabilidad total por cualquier reclamación relacionada con el servicio se limita a las tarifas que nos pagaste en los doce meses anteriores a la reclamación.",
+    "s6Title": "Contacto",
+    "s6Body": "Preguntas sobre estos Términos: support@reviewaware.com."
   }
 }

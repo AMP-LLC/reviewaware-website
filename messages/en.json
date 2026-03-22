@@ -149,5 +149,43 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "copyright": "© {year} ReviewAware. All rights reserved."
+  },
+  "privacyPage": {
+    "metaTitle": "Privacy Policy — ReviewAware",
+    "metaDescription": "How ReviewAware collects, uses, and protects your information.",
+    "backToHome": "← Back to home",
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective March 22, 2026",
+    "intro": "ReviewAware (“we,” “our,” or “us”) respects your privacy. This policy describes how we collect, use, and share information when you use our website and services.",
+    "s1Title": "Information we collect",
+    "s1Body": "We collect information you provide directly (such as name, email, business details, and billing information when applicable), information generated when you use the service (such as jobs, review requests, and usage logs), and technical data (such as device type, browser, and approximate location from IP address).",
+    "s2Title": "How we use information",
+    "s2Body": "We use information to provide and improve the service, communicate with you, process payments, secure our systems, comply with law, and send product updates you can opt out of where allowed.",
+    "s3Title": "Sharing",
+    "s3Body": "We do not sell your personal information. We may share data with service providers who assist our operations (hosting, email delivery, analytics) under strict agreements, when required by law, or in connection with a business transfer such as a merger.",
+    "s4Title": "Retention and security",
+    "s4Body": "We retain information as long as needed to provide the service and meet legal obligations. We use industry-standard safeguards, though no method of transmission or storage is completely secure.",
+    "s5Title": "Your rights and contact",
+    "s5Body": "Depending on your location, you may have rights to access, correct, delete, or export your data, or to object to certain processing. To exercise these rights or ask questions, contact support@reviewaware.com."
+  },
+  "termsPage": {
+    "metaTitle": "Terms of Service — ReviewAware",
+    "metaDescription": "Terms governing your use of ReviewAware’s website and services.",
+    "backToHome": "← Back to home",
+    "title": "Terms of Service",
+    "effectiveDate": "Effective March 22, 2026",
+    "intro": "By accessing or using ReviewAware’s website and services, you agree to these Terms. If you do not agree, do not use the service.",
+    "s1Title": "The service",
+    "s1Body": "ReviewAware provides tools to request and manage customer reviews and related workflows. Features may change over time; we will provide reasonable notice of material changes where appropriate.",
+    "s2Title": "Accounts and eligibility",
+    "s2Body": "You must provide accurate registration information and keep your credentials secure. You are responsible for activity under your account. You must have authority to act on behalf of your business where applicable.",
+    "s3Title": "Acceptable use",
+    "s3Body": "You agree not to misuse the service, including sending spam, violating applicable laws, infringing others’ rights, or attempting to access systems without authorization. We may suspend or terminate accounts that violate these Terms.",
+    "s4Title": "Fees and trials",
+    "s4Body": "Paid plans are billed as described at signup. Trials and cancellations follow the terms presented in the product at purchase. Taxes may apply where required.",
+    "s5Title": "Disclaimer and limitation of liability",
+    "s5Body": "The service is provided “as is” without warranties to the fullest extent permitted by law. To the maximum extent permitted, ReviewAware is not liable for indirect, incidental, or consequential damages. Our total liability for any claim related to the service is limited to the fees you paid us in the twelve months before the claim.",
+    "s6Title": "Contact",
+    "s6Body": "Questions about these Terms: support@reviewaware.com."
   }
 }
