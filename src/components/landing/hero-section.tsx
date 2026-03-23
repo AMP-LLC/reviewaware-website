@@ -16,7 +16,8 @@ export async function HeroSection({ locale }: { locale: string }) {
             <span className="mt-1 block sm:mt-1.5">{t("headlineLine2")}</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-zinc-700 sm:text-xl sm:leading-relaxed">
-            {t("subtitle")}
+            <span className="block">{t("subtitleLine1")}</span>
+            <span className="block">{t("subtitleLine2")}</span>
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <Button
@@ -46,3 +47,4 @@ export async function HeroSection({ locale }: { locale: string }) {
     </section>
   );
 }
+

@@ -18,15 +18,16 @@
     "localeEs": "ES"
   },
   "hero": {
-    "headlineLine1": "Consigue más reseñas en Google automáticamente",
-    "headlineLine2": "Después de cada trabajo completado",
-    "subtitle": "Envía automáticamente solicitudes de reseña después de cada trabajo completado para que tu negocio gane de forma constante más reseñas de 5 estrellas en Google.",
+    "headlineLine1": "Más reseñas en Google…",
+    "headlineLine2": "Automáticamente.",
     "ctaPrimary": "Iniciar prueba gratis de 14 días",
     "ctaSecondary": "Ver cómo funciona",
     "reassuranceChip1": "Prueba gratis de 14 días",
     "reassuranceChip2": "Sin tarjeta de crédito",
     "reassuranceChip3": "Configuración en 5 minutos",
-    "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online"
+    "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online",
+    "subtitleLine1": "Envía solicitudes de reseña automáticamente después de cada trabajo.",
+    "subtitleLine2": "Sin seguimientos manuales."
   },
   "industryStrip": {
     "eyebrow": "Sectores",

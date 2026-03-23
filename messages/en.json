@@ -18,15 +18,16 @@
     "localeEs": "ES"
   },
   "hero": {
-    "headlineLine1": "Get More Google Reviews Automatically",
-    "headlineLine2": "After Every Completed Job",
-    "subtitle": "Automatically send review requests after every completed job so your business consistently earns more 5-star Google reviews.",
+    "headlineLine1": "More Google Reviews…",
+    "headlineLine2": "Automatically.",
     "ctaPrimary": "Start Free 14-Day Trial",
     "ctaSecondary": "See How It Works",
     "reassuranceChip1": "14-Day Free Trial",
     "reassuranceChip2": "No Credit Card Required",
     "reassuranceChip3": "Setup in 5 Minutes",
-    "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation"
+    "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation",
+    "subtitleLine1": "Send review requests automatically after every job.",
+    "subtitleLine2": "No manual follow-ups required."
   },
   "industryStrip": {
     "eyebrow": "Industries",
