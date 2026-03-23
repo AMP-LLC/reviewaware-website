@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import { BuiltForServiceSection } from "@/components/landing/built-for-service-section";
+import { BrandAwarenessSection } from "@/components/landing/brand-awareness-section";
 import { DemoSection } from "@/components/landing/demo-section";
 import { FaqSection } from "@/components/landing/faq-section";
 import { FeaturesSection } from "@/components/landing/features-section";
@@ -44,6 +45,7 @@ export default async function HomePage({ params }: Props) {
         <HeroSection locale={locale} />
         <IndustryStripSection />
         <DemoSection trialHref={getLiteTrialHref(locale)} />
+        <BrandAwarenessSection />
         <ProblemSection />
         <BuiltForServiceSection />
         <SolutionSection />

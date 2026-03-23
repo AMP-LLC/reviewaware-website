@@ -12,16 +12,16 @@ export async function ReviewResultsSection() {
   const t = await getTranslations("reviewResults");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-gradient-to-b from-white to-zinc-50/90 py-16 md:py-24 lg:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section className="border-b border-zinc-200/60 bg-gradient-to-b from-white to-zinc-50/90 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
         </h2>
-        <div className="mt-14 grid auto-rows-fr gap-6 md:grid-cols-3 md:gap-6 lg:gap-8">
+        <div className="mt-14 grid auto-rows-fr gap-8 md:grid-cols-3 md:gap-10">
           {stats.map(({ statKey, textKey }) => (
             <Card
               key={statKey}
-              className="flex h-full min-h-0 flex-col border-zinc-200/80 bg-white text-center shadow-sm transition-all duration-300 ease-out hover:border-zinc-300/80 hover:shadow-md hover:shadow-zinc-950/[0.06]"
+              className="flex h-full min-h-0 flex-col rounded-xl border border-gray-200 bg-white text-center shadow-sm"
             >
               <CardContent className="flex min-h-0 flex-1 flex-col justify-center gap-4 px-6 py-8 sm:px-8 sm:py-10">
                 <p className="text-2xl font-semibold leading-tight tracking-tight text-blue-600 sm:text-3xl lg:text-[1.75rem] lg:leading-snug">

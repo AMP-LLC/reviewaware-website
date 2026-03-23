@@ -21,16 +21,16 @@ export async function FeaturesSection() {
   const t = await getTranslations("features");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-zinc-50/90 py-16 md:py-24 lg:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section className="border-b border-zinc-200/60 bg-zinc-50/90 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
         </h2>
-        <div className="mt-10 grid auto-rows-fr gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6">
+        <div className="mt-10 grid auto-rows-fr gap-8 md:gap-10 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3">
           {features.map(({ titleKey, icon: Icon }) => (
             <Card
               key={titleKey}
-              className="flex h-full min-h-0 flex-col bg-white transition-all duration-300 ease-out hover:border-zinc-300/80 hover:shadow-lg hover:shadow-zinc-950/[0.06]"
+              className="flex h-full min-h-0 flex-col rounded-xl border border-gray-200 bg-white shadow-sm"
             >
               <CardContent className="flex min-h-0 flex-1 flex-col justify-start p-0">
                 <div className="flex w-full items-start gap-5 px-6 py-5 sm:px-8 sm:py-6">

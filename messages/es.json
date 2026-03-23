@@ -30,8 +30,8 @@
   },
   "industryStrip": {
     "eyebrow": "Sectores",
-    "title": "Pensado para negocios de servicios locales",
-    "subtitle": "Cubiertas, contratistas y empresas de servicios para el hogar usan ReviewAware para hacer crecer su reputación online.",
+    "title": "Lo usan negocios de servicios como:",
+    "subtitle": "Pensado para negocios de servicios locales.",
     "roofing": "Techos",
     "hvac": "HVAC",
     "plumbing": "Fontanería",
@@ -68,9 +68,9 @@
     "item3": "Los negocios no tienen un seguimiento constante"
   },
   "builtForService": {
-    "title": "Pensado para negocios de servicios",
-    "subtitle": "ReviewAware está diseñado para negocios que completan trabajos cada día.",
-    "intro": "Cuando un trabajo termina, ReviewAware envía automáticamente una solicitud de reseña al cliente.",
+    "title": "Diseñado en torno a cómo trabajan los negocios de servicios",
+    "subtitle": "ReviewAware se adapta de forma natural a tu flujo de trabajo.",
+    "intro": "Cuando se completa un trabajo, se envía automáticamente una solicitud de reseña al cliente.",
     "bullet1": "Sin hojas de cálculo.",
     "bullet2": "Sin seguimientos manuales.",
     "bullet3": "Sin solicitudes de reseña olvidadas.",

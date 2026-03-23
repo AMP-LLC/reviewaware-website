@@ -8,7 +8,7 @@ export async function ReviewsImproveServiceSection() {
 
   return (
     <section
-      className="border-b border-zinc-200/60 bg-gradient-to-b from-zinc-50/50 to-white py-14 md:py-20 lg:py-24"
+      className="border-b border-zinc-200/60 bg-gradient-to-b from-zinc-50/50 to-white py-24 md:py-32"
       aria-labelledby="reviews-improve-service-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">

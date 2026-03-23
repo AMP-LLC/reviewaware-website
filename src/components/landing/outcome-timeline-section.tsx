@@ -13,8 +13,8 @@ export async function OutcomeTimelineSection() {
   const t = await getTranslations("outcomeTimeline");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-gradient-to-b from-zinc-50/90 to-white py-16 md:py-24 lg:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section className="border-b border-zinc-200/60 bg-gradient-to-b from-zinc-50/90 to-white py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
         <h2 className="mx-auto max-w-3xl text-balance text-center text-[2.1rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-[2.5rem] lg:text-[2.95rem]">
           {t("title")}
         </h2>
@@ -24,7 +24,7 @@ export async function OutcomeTimelineSection() {
             className="pointer-events-none absolute left-[6%] right-[6%] top-[0.75rem] z-0 h-px bg-zinc-200/80"
             aria-hidden
           />
-          <ol className="relative z-[1] grid list-none grid-cols-4 gap-4">
+          <ol className="relative z-[1] grid list-none grid-cols-4 gap-8 md:gap-10">
             {steps.map(({ labelKey, bodyKey }, i) => (
               <li key={labelKey} className="relative flex h-full min-h-[12rem] flex-col">
                 <span
@@ -33,7 +33,7 @@ export async function OutcomeTimelineSection() {
                 >
                   {i + 1}
                 </span>
-                <Card className="mt-4 flex h-full flex-col border-zinc-200/80 bg-white pt-6 shadow-sm">
+                <Card className="mt-4 flex h-full flex-col rounded-xl border border-gray-200 bg-white pt-6 shadow-sm">
                   <CardContent className="flex flex-1 flex-col gap-3 px-5 pb-6 text-center sm:px-6">
                     <p className="text-[0.82rem] font-semibold uppercase tracking-wide text-blue-600">{t(labelKey)}</p>
                     <p className="text-[0.98rem] leading-relaxed text-zinc-700">{t(bodyKey)}</p>
@@ -44,10 +44,10 @@ export async function OutcomeTimelineSection() {
           </ol>
         </div>
 
-        <ol className="mt-14 flex list-none flex-col gap-4 lg:hidden">
+        <ol className="mt-14 flex list-none flex-col gap-8 md:gap-10 lg:hidden">
           {steps.map(({ labelKey, bodyKey }, i) => (
             <li key={labelKey}>
-              <Card className="border-zinc-200/80 bg-white shadow-sm">
+              <Card className="rounded-xl border border-gray-200 bg-white shadow-sm">
                 <CardContent className="flex gap-4 px-5 py-5 sm:px-6">
                   <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white shadow-sm shadow-blue-600/25">
                     {i + 1}

@@ -15,7 +15,7 @@ export async function HowItWorksSection() {
   return (
     <section
       id="how-it-works"
-      className="border-b border-zinc-200/60 bg-white py-16 md:py-24 lg:py-28"
+      className="border-b border-zinc-200/60 bg-white py-24 md:py-32"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">

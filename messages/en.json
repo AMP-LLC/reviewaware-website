@@ -30,8 +30,8 @@
   },
   "industryStrip": {
     "eyebrow": "Industries",
-    "title": "Built for Local Service Businesses",
-    "subtitle": "Roofers, contractors, and home service companies use ReviewAware to grow their online reputation.",
+    "title": "Used by Service Businesses Like:",
+    "subtitle": "Built for local service businesses.",
     "roofing": "Roofing",
     "hvac": "HVAC",
     "plumbing": "Plumbing",
@@ -68,9 +68,9 @@
     "item3": "Businesses have no consistent follow-up system"
   },
   "builtForService": {
-    "title": "Built for Service Businesses",
-    "subtitle": "ReviewAware is designed for businesses that complete jobs every day.",
-    "intro": "Once a job is finished, ReviewAware automatically sends a review request to the customer.",
+    "title": "Built Around the Way Service Businesses Work",
+    "subtitle": "ReviewAware fits naturally into your workflow.",
+    "intro": "When a job is completed, a review request is automatically sent to the customer.",
     "bullet1": "No spreadsheets.",
     "bullet2": "No manual follow-ups.",
     "bullet3": "No forgotten review requests.",

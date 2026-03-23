@@ -10,7 +10,7 @@ export async function FinalCtaSection({ locale }: { locale: string }) {
   return (
     <section
       id="trial"
-      className="border-b border-blue-700/30 bg-gradient-to-b from-blue-600 via-blue-600 to-blue-800 py-16 text-white md:py-24 lg:py-28"
+      className="border-b border-blue-700/30 bg-gradient-to-b from-blue-600 via-blue-600 to-blue-800 py-24 text-white md:py-32"
     >
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="text-[1.75rem] font-semibold leading-tight tracking-tight sm:text-4xl lg:text-[2.5rem] lg:leading-snug">

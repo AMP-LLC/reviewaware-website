@@ -92,10 +92,10 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
   return (
     <section
       id="demo"
-      className="border-b border-zinc-200/60 bg-zinc-50/80 bg-[radial-gradient(ellipse_90%_60%_at_50%_-30%,rgba(59,130,246,0.07),transparent)] py-16 md:py-24 lg:py-28"
+      className="border-b border-zinc-200/60 bg-zinc-50/80 bg-[radial-gradient(ellipse_90%_60%_at_50%_-30%,rgba(59,130,246,0.07),transparent)] py-24 md:py-32"
       aria-labelledby="demo-heading"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600/90">
             {t("introLine")}
@@ -106,17 +106,17 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
           >
             {t("title")}
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-zinc-700 sm:text-base">
+          <p className="mt-4 mb-6 text-sm leading-relaxed text-zinc-700 sm:text-base">
             {t("subtitle")}
           </p>
         </div>
 
-        <p className="mx-auto mt-6 max-w-2xl text-center text-sm font-medium leading-relaxed text-zinc-800 sm:mt-10 sm:text-base">
+        <p className="mx-auto mt-0 max-w-2xl text-center text-sm font-medium leading-relaxed text-zinc-800 sm:text-base">
           {t("caption")}
         </p>
 
         <div
-          className="relative mx-auto mt-8 w-full max-w-lg sm:mt-10 sm:max-w-xl"
+          className="relative mx-auto mt-10 w-full max-w-lg"
           role="region"
           aria-roledescription="carousel"
           aria-label={t("title")}
@@ -124,8 +124,7 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
           <div
             key={active.key}
             className={cn(
-              "flex min-h-[17.75rem] flex-col items-center overflow-hidden rounded-[1.125rem] border bg-white p-5 shadow-md shadow-zinc-950/[0.06] ring-1 ring-zinc-950/[0.03] sm:min-h-[19.25rem] sm:p-7 md:p-8",
-              "border-blue-200/90 ring-2 ring-blue-500/20 shadow-blue-950/10"
+              "flex min-h-[17.75rem] flex-col items-center overflow-hidden rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:min-h-[19.25rem] sm:p-7 md:p-8"
             )}
           >
             <h3 className="w-full text-center text-lg font-semibold tracking-tight text-zinc-950">

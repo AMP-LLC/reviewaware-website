@@ -11,8 +11,8 @@ export async function BuiltForServiceSection() {
   const t = await getTranslations("builtForService");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-zinc-50/90 py-16 md:py-24 lg:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section className="border-b border-zinc-200/60 bg-zinc-50/90 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
         </h2>
