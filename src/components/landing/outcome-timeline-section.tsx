@@ -15,7 +15,7 @@ export async function OutcomeTimelineSection() {
   return (
     <section className="border-b border-zinc-200/60 bg-gradient-to-b from-zinc-50/90 to-white py-16 md:py-24 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mx-auto max-w-3xl text-balance text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
+        <h2 className="mx-auto max-w-3xl text-balance text-center text-[2.1rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-[2.5rem] lg:text-[2.95rem]">
           {t("title")}
         </h2>
 
@@ -35,8 +35,8 @@ export async function OutcomeTimelineSection() {
                 </span>
                 <Card className="mt-4 flex h-full flex-col border-zinc-200/80 bg-white pt-6 shadow-sm">
                   <CardContent className="flex flex-1 flex-col gap-3 px-5 pb-6 text-center sm:px-6">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">{t(labelKey)}</p>
-                    <p className="text-sm leading-relaxed text-zinc-700">{t(bodyKey)}</p>
+                    <p className="text-[0.82rem] font-semibold uppercase tracking-wide text-blue-600">{t(labelKey)}</p>
+                    <p className="text-[0.98rem] leading-relaxed text-zinc-700">{t(bodyKey)}</p>
                   </CardContent>
                 </Card>
               </li>
@@ -53,8 +53,8 @@ export async function OutcomeTimelineSection() {
                     {i + 1}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">{t(labelKey)}</p>
-                    <p className="mt-2 text-sm leading-relaxed text-zinc-700">{t(bodyKey)}</p>
+                    <p className="text-[0.82rem] font-semibold uppercase tracking-wide text-blue-600">{t(labelKey)}</p>
+                    <p className="mt-2 text-[0.98rem] leading-relaxed text-zinc-700">{t(bodyKey)}</p>
                   </div>
                 </CardContent>
               </Card>

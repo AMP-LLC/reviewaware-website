@@ -30,7 +30,16 @@ export async function HeroSection({ locale }: { locale: string }) {
               <a href="#demo">{t("ctaSecondary")}</a>
             </Button>
           </div>
-          <p className="mt-4 text-center text-sm font-medium text-zinc-600">{t("reassuranceLine")}</p>
+          <div className="mx-auto mt-4 flex max-w-md flex-wrap justify-center gap-2 sm:max-w-none sm:gap-2.5">
+            {(["reassuranceChip1", "reassuranceChip2", "reassuranceChip3"] as const).map((key) => (
+              <span
+                key={key}
+                className="inline-flex items-center rounded-full border border-zinc-200/80 bg-white/80 px-3 py-1.5 text-xs font-medium text-zinc-600 shadow-sm shadow-zinc-950/[0.03] sm:text-[13px]"
+              >
+                {t(key)}
+              </span>
+            ))}
+          </div>
           <p className="mt-3 text-center text-sm text-muted-foreground">{t("socialProofLine")}</p>
         </div>
       </div>

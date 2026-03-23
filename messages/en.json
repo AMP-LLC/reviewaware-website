@@ -23,7 +23,9 @@
     "subtitle": "Automatically send review requests after every completed job so your business consistently earns more 5-star Google reviews.",
     "ctaPrimary": "Start Free 14-Day Trial",
     "ctaSecondary": "See How It Works",
-    "reassuranceLine": "Setup takes 5 minutes • No credit card required • Cancel anytime",
+    "reassuranceChip1": "14-Day Free Trial",
+    "reassuranceChip2": "No Credit Card Required",
+    "reassuranceChip3": "Setup in 5 Minutes",
     "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation"
   },
   "industryStrip": {
@@ -105,7 +107,7 @@
     "card3Sub": "Resolve issues privately while maintaining a strong public reputation."
   },
   "reviewsImproveService": {
-    "title": "Reviews Improve Service — Not Just Ratings",
+    "title": "Reviews Improve Service — Not Just Reputation",
     "body1": "Not every customer leaves a 5-star review.",
     "body2": "But every review request gives you valuable feedback about your business.",
     "body3": "Identify problems with technicians, scheduling, or communication before they damage your reputation."
@@ -125,11 +127,11 @@
     "legitimacyTags": "Google • Feedback • Reputation",
     "browserUrl": "app.reviewaware.com",
     "primaryCaption": "Dashboard Overview",
-    "callout1": "Track review requests",
+    "callout1": "Track Review Requests",
     "callout1Hint": "See status and volume at a glance",
-    "callout2": "Monitor link clicks",
+    "callout2": "Monitor Link Clicks",
     "callout2Hint": "Know which customers engaged",
-    "callout3": "Identify customers needing reminders",
+    "callout3": "Identify Customers Needing Reminders",
     "callout3Hint": "Follow up before issues compound",
     "secondaryHeading": "Additional Views",
     "secondarySub": "Jobs, printable QR designs, and the email your customers receive.",

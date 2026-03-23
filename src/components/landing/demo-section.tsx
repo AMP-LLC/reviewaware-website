@@ -22,14 +22,16 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
         key: "job",
         title: t("panel1Title"),
         body: (
-          <div className="space-y-3 text-left text-sm leading-relaxed">
-            <div className="flex justify-between gap-4 border-b border-zinc-100 pb-3">
-              <span className="text-zinc-600">{t("customerLabel")}</span>
-              <span className="font-medium text-zinc-950">{t("customerName")}</span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span className="text-zinc-600">{t("serviceLabel")}</span>
-              <span className="font-medium text-zinc-950">{t("serviceName")}</span>
+          <div className="flex w-full justify-center">
+            <div className="w-full max-w-sm space-y-3 text-left text-sm leading-relaxed">
+              <div className="grid grid-cols-[auto_auto] justify-center gap-x-2 border-b border-zinc-100 pb-3">
+                <span className="text-zinc-600">{t("customerLabel")}</span>
+                <span className="font-medium text-zinc-950">{t("customerName")}</span>
+              </div>
+              <div className="grid grid-cols-[auto_auto] justify-center gap-x-2">
+                <span className="text-zinc-600">{t("serviceLabel")}</span>
+                <span className="font-medium text-zinc-950">{t("serviceName")}</span>
+              </div>
             </div>
           </div>
         ),
@@ -38,7 +40,7 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
         key: "email",
         title: t("panel2Title"),
         body: (
-          <div className="rounded-xl border border-zinc-200/80 bg-white p-5 text-left text-sm leading-relaxed text-zinc-700 shadow-inner shadow-zinc-950/[0.03]">
+          <div className="mx-auto w-full max-w-md rounded-xl border border-zinc-200/80 bg-white p-5 text-center text-sm leading-relaxed text-zinc-700 shadow-inner shadow-zinc-950/[0.03]">
             <p className="font-medium text-zinc-950">{t("emailGreeting")}</p>
             <p className="mt-2">{t("emailLine1")}</p>
             <p className="mt-2">{t("emailLine2")}</p>
@@ -52,7 +54,8 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
         key: "click",
         title: t("panel3Title"),
         body: (
-          <div className="flex flex-col items-center justify-center gap-2 py-6 text-center">
+          <div className="flex w-full flex-col items-center justify-center gap-4 py-4 text-center">
+            <p className="text-sm font-medium text-zinc-950">{t("completed")}</p>
             <div className="flex size-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
               <svg
                 className="size-6"
@@ -69,7 +72,6 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
                 />
               </svg>
             </div>
-            <p className="text-sm font-medium text-zinc-950">{t("completed")}</p>
           </div>
         ),
       },
@@ -84,6 +86,8 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
     }, 3800);
     return () => window.clearInterval(id);
   }, [reducedMotion, panels.length]);
+
+  const active = panels[index];
 
   return (
     <section
@@ -111,41 +115,26 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
           {t("caption")}
         </p>
 
-        <div className="mx-auto mt-6 grid w-full max-w-lg justify-items-stretch gap-5 sm:mt-8 sm:max-w-4xl sm:gap-7 lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:items-stretch lg:gap-5">
-          {panels.map((p, i) => (
-            <div key={p.key} className="contents lg:block">
-              <div
-                className={cn(
-                  "relative mx-auto w-full max-w-md overflow-hidden rounded-[1.125rem] border bg-white p-5 shadow-md shadow-zinc-950/[0.06] ring-1 ring-zinc-950/[0.03] transition-all duration-500 ease-out sm:p-7 md:p-8 lg:mx-0 lg:max-w-none",
-                  i === index
-                    ? "border-blue-200/90 ring-2 ring-blue-500/25 shadow-blue-950/10"
-                    : "border-zinc-200/70 opacity-[0.72] lg:opacity-100"
-                )}
-              >
-                <h3 className="text-lg font-semibold tracking-tight text-zinc-950">
-                  {p.title}
-                </h3>
-                <div
-                  className={cn(
-                    "mt-5 transition-opacity duration-500",
-                    i === index ? "opacity-100" : "opacity-90"
-                  )}
-                >
-                  {p.body}
-                </div>
-              </div>
-              {i < panels.length - 1 && (
-                <div
-                  className="hidden items-center justify-center lg:flex"
-                  aria-hidden
-                >
-                  <span className="text-lg font-light tracking-wide text-zinc-400">
-                    →
-                  </span>
-                </div>
-              )}
+        <div
+          className="relative mx-auto mt-8 w-full max-w-lg sm:mt-10 sm:max-w-xl"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label={t("title")}
+        >
+          <div
+            key={active.key}
+            className={cn(
+              "flex min-h-[17.75rem] flex-col items-center overflow-hidden rounded-[1.125rem] border bg-white p-5 shadow-md shadow-zinc-950/[0.06] ring-1 ring-zinc-950/[0.03] sm:min-h-[19.25rem] sm:p-7 md:p-8",
+              "border-blue-200/90 ring-2 ring-blue-500/20 shadow-blue-950/10"
+            )}
+          >
+            <h3 className="w-full text-center text-lg font-semibold tracking-tight text-zinc-950">
+              {active.title}
+            </h3>
+            <div className="mt-5 flex min-h-[11.25rem] w-full flex-1 flex-col items-center justify-center text-center sm:min-h-[12.5rem]">
+              {active.body}
             </div>
-          ))}
+          </div>
         </div>
 
         <div

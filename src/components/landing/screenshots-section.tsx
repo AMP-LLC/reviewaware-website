@@ -26,33 +26,6 @@ function BrowserFrame({
   );
 }
 
-function CalloutPill({
-  text,
-  hint,
-  align,
-}: {
-  text: string;
-  hint: string;
-  align: "left" | "right";
-}) {
-  return (
-    <div
-      className={`relative flex items-center ${align === "right" ? "lg:justify-end" : "lg:justify-start"}`}
-    >
-      <span
-        className={`pointer-events-none absolute top-1/2 hidden h-px w-6 -translate-y-1/2 bg-zinc-200 lg:block ${align === "left" ? "-right-6" : "-left-6"}`}
-        aria-hidden
-      />
-      <span className="relative z-[1] max-w-[12.5rem] rounded-lg border border-zinc-200/80 bg-white px-3 py-2 text-center shadow-sm shadow-zinc-950/[0.04] sm:max-w-[13rem]">
-        <span className="block text-xs font-medium leading-snug text-zinc-800 sm:text-sm">{text}</span>
-        <span className="mt-1 block text-[0.65rem] leading-snug text-zinc-500 sm:text-[11px]">
-          {hint}
-        </span>
-      </span>
-    </div>
-  );
-}
-
 const secondaryPanels = [
   { labelKey: "s2Label" as const, hintKey: "s2Hint" as const, image: "jobs" as const },
   { labelKey: "s3Label" as const, hintKey: "s3Hint" as const, image: "qr" as const },
@@ -129,10 +102,24 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
           {t("legitimacyTags")}
         </p>
 
-        <div className="relative mx-auto mt-10 max-w-5xl sm:mt-16">
-          <div className="hidden gap-6 lg:grid lg:grid-cols-[minmax(0,10rem)_1fr_minmax(0,10rem)] lg:items-center lg:gap-8">
-            <div className="flex flex-col justify-center gap-10 pt-4">
-              <CalloutPill text={t("callout1")} hint={t("callout1Hint")} align="right" />
+        <div className="relative mx-auto mt-10 max-w-[69rem] sm:mt-16">
+          <div className="hidden lg:block">
+            <div className="mx-auto mb-8 grid max-w-5xl gap-3 sm:grid-cols-3">
+              {(
+                [
+                  ["callout1", "callout1Hint"],
+                  ["callout2", "callout2Hint"],
+                  ["callout3", "callout3Hint"],
+                ] as const
+              ).map(([lineKey, hintKey]) => (
+                <div
+                  key={lineKey}
+                  className="rounded-lg border border-zinc-200/70 bg-white/90 px-3.5 py-3 text-center shadow-sm shadow-zinc-950/[0.04]"
+                >
+                  <p className="text-[1.03rem] font-medium leading-snug text-zinc-800">{t(lineKey)}</p>
+                  <p className="mt-1.5 text-sm leading-snug text-zinc-500">{t(hintKey)}</p>
+                </div>
+              ))}
             </div>
 
             <div className="relative z-[1] min-w-0">
@@ -142,11 +129,6 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
               <p className="mt-2 text-center text-xs font-medium text-zinc-500">
                 {t("primaryCaption")}
               </p>
-            </div>
-
-            <div className="flex flex-col justify-center gap-10 pt-4">
-              <CalloutPill text={t("callout2")} hint={t("callout2Hint")} align="left" />
-              <CalloutPill text={t("callout3")} hint={t("callout3Hint")} align="left" />
             </div>
           </div>
 
