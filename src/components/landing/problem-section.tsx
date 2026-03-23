@@ -10,12 +10,12 @@ export async function ProblemSection() {
   const t = await getTranslations("problem");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-white py-24 sm:py-28 lg:py-32">
+    <section className="border-b border-zinc-200/60 bg-white py-16 md:py-24 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="mx-auto max-w-3xl text-balance text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem] lg:leading-[1.15]">
           {t("title")}
         </h2>
-        <div className="mt-14 grid auto-rows-fr gap-5 sm:grid-cols-3 sm:gap-6">
+        <div className="mt-10 grid auto-rows-fr gap-4 sm:mt-14 sm:grid-cols-3 sm:gap-6">
           {itemKeys.map((key, i) => {
             const Icon = icons[i];
             return (

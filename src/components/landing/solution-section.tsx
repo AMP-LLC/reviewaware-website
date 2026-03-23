@@ -6,7 +6,7 @@ export async function SolutionSection() {
   const t = await getTranslations("solution");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-zinc-50/90 py-24 sm:py-28 lg:py-32">
+    <section className="border-b border-zinc-200/60 bg-zinc-50/90 py-16 md:py-24 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="mx-auto max-w-3xl text-balance text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem] lg:leading-[1.15]">
           {t("title")}

@@ -9,15 +9,15 @@ export async function HeroSection({ locale }: { locale: string }) {
 
   return (
     <section className="border-b border-zinc-200/60 bg-gradient-to-b from-white via-white to-zinc-50/60">
-      <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-36">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:px-8 lg:py-36">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-[2.25rem] font-semibold leading-[1.1] tracking-tight text-zinc-950 sm:text-5xl sm:leading-[1.08] lg:text-6xl lg:leading-[1.05] xl:text-[3.5rem]">
+          <h1 className="text-balance text-[1.7rem] font-semibold leading-[1.12] tracking-tight text-zinc-950 sm:text-5xl sm:leading-[1.08] lg:text-6xl lg:leading-[1.05] xl:text-[3.5rem]">
             {t("headline")}
           </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-700 sm:text-xl sm:leading-relaxed">
+          <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-relaxed text-zinc-700 sm:mt-8 sm:text-xl sm:leading-relaxed">
             {t("subtitle")}
           </p>
-          <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-12 sm:flex-row sm:gap-4">
             <Button
               asChild
               size="lg"
@@ -29,8 +29,8 @@ export async function HeroSection({ locale }: { locale: string }) {
               <a href="#demo">{t("ctaSecondary")}</a>
             </Button>
           </div>
-          <p className="mt-4 text-center text-sm text-muted-foreground">{t("socialProofLine")}</p>
-          <p className="mt-6 text-sm font-medium text-zinc-600">{t("trustLine")}</p>
+          <p className="mt-4 text-center text-sm font-medium text-zinc-600">{t("reassuranceLine")}</p>
+          <p className="mt-3 text-center text-sm text-muted-foreground">{t("socialProofLine")}</p>
         </div>
       </div>
     </section>

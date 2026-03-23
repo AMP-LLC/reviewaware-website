@@ -3,6 +3,10 @@
     "title": "ReviewAware — Get more Google reviews automatically",
     "description": "ReviewAware sends review requests after every completed job so you earn more 5-star reviews without extra work."
   },
+  "mobileStickyCta": {
+    "cta": "Start Free 14-Day Trial",
+    "sub": "No credit card required"
+  },
   "header": {
     "brand": "ReviewAware",
     "demo": "Demo",
@@ -14,16 +18,31 @@
     "localeEs": "ES"
   },
   "hero": {
-    "headline": "Get More Google Reviews Automatically",
-    "subtitle": "ReviewAware automatically sends review requests to your customers after each completed job so your business earns more 5-star reviews without extra work.",
+    "headline": "Automatically Get More Google Reviews After Every Completed Job",
+    "subtitle": "Automatically send review requests after every completed job so your business consistently earns more 5-star Google reviews.",
     "ctaPrimary": "Start Free 14-Day Trial",
     "ctaSecondary": "See How It Works",
-    "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation",
-    "trustLine": "No credit card required • Cancel anytime"
+    "reassuranceLine": "Setup takes 5 minutes • No credit card required • Cancel anytime",
+    "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation"
+  },
+  "industryStrip": {
+    "eyebrow": "Industries",
+    "title": "Used by Service Businesses Like:",
+    "subtitle": "Roofers, contractors, and home service companies use ReviewAware to grow their online reputation.",
+    "roofing": "Roofing",
+    "hvac": "HVAC",
+    "plumbing": "Plumbing",
+    "landscaping": "Landscaping",
+    "cleaning": "Cleaning Services",
+    "remodeling": "Home Remodeling"
   },
   "demo": {
     "title": "Interactive Product Demo",
     "subtitle": "Job completed → review request sent → customer clicks.",
+    "caption": "Every completed job automatically sends a review request like this.",
+    "ctaHeadline": "Start Getting More Google Reviews Today",
+    "ctaButton": "Start Free 14-Day Trial",
+    "ctaMicro": "Setup takes less than 5 minutes • No credit card required",
     "panel1Title": "Job Completed",
     "customerLabel": "Customer",
     "serviceLabel": "Service",
@@ -44,6 +63,17 @@
     "item2": "Technicians forget to ask",
     "item3": "Businesses have no consistent follow-up system"
   },
+  "builtForService": {
+    "title": "Built for Service Businesses",
+    "subtitle": "ReviewAware is designed for businesses that complete jobs every day.",
+    "intro": "Once a job is finished, ReviewAware automatically sends a review request to the customer.",
+    "bullet1": "No spreadsheets.",
+    "bullet2": "No manual follow-ups.",
+    "bullet3": "No forgotten review requests.",
+    "step1": "Job Completed",
+    "step2": "Review Request Sent",
+    "step3": "Customer Leaves Review"
+  },
   "solution": {
     "title": "Automated Review Requests That Run After Every Job",
     "step1": "Job Completed",
@@ -59,6 +89,18 @@
     "step1": "Add your customer or import jobs.",
     "step2": "Mark the job completed.",
     "step3": "ReviewAware automatically sends the review request."
+  },
+  "whyReviewAware": {
+    "title": "Why Service Businesses Use ReviewAware",
+    "card1Title": "Grow Your Reviews",
+    "card1Text": "Automatically request reviews after every completed job so more happy customers share their experience online.",
+    "card1Sub": "Businesses that actively request reviews typically generate 3–5× more customer responses.",
+    "card2Title": "Capture Customer Feedback",
+    "card2Text": "Even when customers don’t leave a public review, they can still share feedback about their experience.",
+    "card2Sub": "Identify service issues early and improve technician performance and customer satisfaction.",
+    "card3Title": "Protect Your Reputation",
+    "card3Text": "Address customer concerns before they become negative public reviews.",
+    "card3Sub": "Resolve issues privately while maintaining a strong public reputation."
   },
   "features": {
     "title": "Everything You Need to Grow Reviews",
@@ -85,6 +127,15 @@
     "s4Label": "Email Preview",
     "s4Hint": "On-brand messages"
   },
+  "reviewResults": {
+    "title": "Real Results from Automated Review Requests",
+    "stat1": "3–5× More Reviews",
+    "stat1Text": "Businesses that consistently ask customers for reviews receive dramatically more responses than those that do not.",
+    "stat2": "90% of Customers Read Reviews",
+    "stat2Text": "Online reviews strongly influence which local businesses customers choose.",
+    "stat3": "Higher Ratings Build Trust",
+    "stat3Text": "Businesses with more recent positive reviews appear more credible to potential customers."
+  },
   "pricing": {
     "title": "Simple Pricing",
     "introLine1": "Start simple today. Upgrade when you're ready.",
@@ -100,10 +151,10 @@
     "liteF2": "Google + 1 additional platform",
     "liteF3": "QR review links with click tracking",
     "liteF4": "Simple dashboard tracking",
-    "liteSetupHint": "Setup takes less than 5 minutes.",
     "liteSupport1": "14-day free trial",
     "liteSupport2": "No credit card required",
     "liteSupport3": "Cancel anytime",
+    "liteSupport4": "Setup takes less than 5 minutes.",
     "plusF1": "Unlimited email requests",
     "plusF2": "SMS review requests",
     "plusF3": "Google reputation management",
@@ -125,6 +176,17 @@
     "waitlistDone": "Done",
     "waitlistCloseAria": "Close dialog"
   },
+  "outcomeTimeline": {
+    "title": "What Happens After You Start Using ReviewAware",
+    "step1Label": "Day 1",
+    "step1Body": "Connect your Google review link and add your first completed job.",
+    "step2Label": "Week 1",
+    "step2Body": "ReviewAware begins automatically sending review requests to customers.",
+    "step3Label": "Month 1",
+    "step3Body": "Your business starts receiving more consistent customer reviews and feedback.",
+    "step4Label": "Month 3",
+    "step4Body": "Your growing review profile strengthens your online reputation and helps attract new customers."
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "q1": "Do I need technical skills to use ReviewAware?",
@@ -139,8 +201,7 @@
     "a5": "Plus is coming soon. Join the waitlist to get notified when SMS and advanced tools launch."
   },
   "finalCta": {
-    "titleLine1": "Start Getting More",
-    "titleLine2": "5-Star Reviews — Automatically",
+    "headline": "Start Getting More 5-Star Reviews — Automatically",
     "cta": "Start Your Free 14-Day Trial",
     "ctaSubInButton": "No credit card required",
     "sub": "Setup takes less than 5 minutes."

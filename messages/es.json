@@ -3,6 +3,10 @@
     "title": "ReviewAware — Consigue más reseñas en Google automáticamente",
     "description": "ReviewAware envía solicitudes de reseña después de cada trabajo completado para que obtengas más reseñas de 5 estrellas sin esfuerzo extra."
   },
+  "mobileStickyCta": {
+    "cta": "Iniciar prueba gratis de 14 días",
+    "sub": "No se requiere tarjeta de crédito"
+  },
   "header": {
     "brand": "ReviewAware",
     "demo": "Demo",
@@ -14,16 +18,31 @@
     "localeEs": "ES"
   },
   "hero": {
-    "headline": "Consigue más reseñas en Google automáticamente",
-    "subtitle": "ReviewAware envía automáticamente solicitudes de reseña a tus clientes después de cada trabajo completado para que tu negocio obtenga más reseñas de 5 estrellas sin trabajo extra.",
+    "headline": "Consigue automáticamente más reseñas en Google después de cada trabajo completado",
+    "subtitle": "Envía automáticamente solicitudes de reseña después de cada trabajo completado para que tu negocio gane de forma constante más reseñas de 5 estrellas en Google.",
     "ctaPrimary": "Iniciar prueba gratis de 14 días",
     "ctaSecondary": "Ver cómo funciona",
-    "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online",
-    "trustLine": "No se requiere tarjeta de crédito • Cancela cuando quieras"
+    "reassuranceLine": "Configuración en 5 minutos • Sin tarjeta de crédito • Cancela cuando quieras",
+    "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online"
+  },
+  "industryStrip": {
+    "eyebrow": "Sectores",
+    "title": "Lo usan negocios de servicios como:",
+    "subtitle": "Cubiertas, contratistas y empresas de servicios para el hogar usan ReviewAware para hacer crecer su reputación online.",
+    "roofing": "Techos",
+    "hvac": "HVAC",
+    "plumbing": "Fontanería",
+    "landscaping": "Jardinería",
+    "cleaning": "Limpieza",
+    "remodeling": "Reformas del hogar"
   },
   "demo": {
     "title": "Demo interactiva del producto",
     "subtitle": "Trabajo completado → se envía la solicitud de reseña → el cliente hace clic.",
+    "caption": "Cada trabajo completado envía automáticamente una solicitud de reseña como esta.",
+    "ctaHeadline": "Empieza a conseguir más reseñas en Google hoy",
+    "ctaButton": "Iniciar prueba gratis de 14 días",
+    "ctaMicro": "La configuración toma menos de 5 minutos • Sin tarjeta de crédito",
     "panel1Title": "Trabajo completado",
     "customerLabel": "Cliente",
     "serviceLabel": "Servicio",
@@ -44,6 +63,17 @@
     "item2": "Los técnicos olvidan pedirlas",
     "item3": "Los negocios no tienen un seguimiento constante"
   },
+  "builtForService": {
+    "title": "Pensado para negocios de servicios",
+    "subtitle": "ReviewAware está diseñado para negocios que completan trabajos cada día.",
+    "intro": "Cuando un trabajo termina, ReviewAware envía automáticamente una solicitud de reseña al cliente.",
+    "bullet1": "Sin hojas de cálculo.",
+    "bullet2": "Sin seguimientos manuales.",
+    "bullet3": "Sin solicitudes de reseña olvidadas.",
+    "step1": "Trabajo completado",
+    "step2": "Solicitud de reseña enviada",
+    "step3": "El cliente deja la reseña"
+  },
   "solution": {
     "title": "Solicitudes de reseña automáticas después de cada trabajo",
     "step1": "Trabajo completado",
@@ -59,6 +89,18 @@
     "step1": "Agrega tu cliente o importa trabajos.",
     "step2": "Marca el trabajo como completado.",
     "step3": "ReviewAware envía automáticamente la solicitud de reseña."
+  },
+  "whyReviewAware": {
+    "title": "Por qué los negocios de servicios usan ReviewAware",
+    "card1Title": "Haz crecer tus reseñas",
+    "card1Text": "Solicita reseñas automáticamente después de cada trabajo completado para que más clientes satisfechos compartan su experiencia online.",
+    "card1Sub": "Los negocios que piden reseñas de forma activa suelen obtener 3–5× más respuestas de clientes.",
+    "card2Title": "Captura la opinión del cliente",
+    "card2Text": "Aunque no dejen una reseña pública, pueden compartir comentarios sobre su experiencia.",
+    "card2Sub": "Detecta problemas de servicio a tiempo y mejora el desempeño y la satisfacción del cliente.",
+    "card3Title": "Protege tu reputación",
+    "card3Text": "Aborda las inquietudes del cliente antes de que se conviertan en reseñas negativas públicas.",
+    "card3Sub": "Resuelve en privado manteniendo una reputación pública sólida."
   },
   "features": {
     "title": "Todo Lo Que Necesitas Para Crecer en Reseñas",
@@ -85,6 +127,15 @@
     "s4Label": "Vista previa del correo",
     "s4Hint": "Mensajes con tu marca"
   },
+  "reviewResults": {
+    "title": "Resultados reales con solicitudes de reseña automáticas",
+    "stat1": "3–5× más reseñas",
+    "stat1Text": "Los negocios que piden reseñas de forma constante reciben muchas más respuestas que los que no lo hacen.",
+    "stat2": "El 90% de los clientes lee reseñas",
+    "stat2Text": "Las reseñas online influyen fuertemente en qué negocio local elige el cliente.",
+    "stat3": "Mejores valoraciones generan confianza",
+    "stat3Text": "Los negocios con reseñas positivas recientes parecen más fiables para nuevos clientes."
+  },
   "pricing": {
     "title": "Precios Simples",
     "introLine1": "Empieza hoy de forma simple. Mejora cuando estés listo.",
@@ -100,10 +151,10 @@
     "liteF2": "Google + 1 plataforma adicional",
     "liteF3": "Enlaces QR de reseña con seguimiento de clics",
     "liteF4": "Panel simple de seguimiento",
-    "liteSetupHint": "La configuración toma menos de 5 minutos.",
     "liteSupport1": "Prueba gratis de 14 días",
     "liteSupport2": "No se requiere tarjeta de crédito",
     "liteSupport3": "Cancela cuando quieras",
+    "liteSupport4": "La configuración toma menos de 5 minutos.",
     "plusF1": "Solicitudes de correo ilimitadas",
     "plusF2": "Solicitudes de reseña por SMS",
     "plusF3": "Gestión de reputación en Google",
@@ -125,6 +176,17 @@
     "waitlistDone": "Listo",
     "waitlistCloseAria": "Cerrar ventana"
   },
+  "outcomeTimeline": {
+    "title": "Qué ocurre cuando empiezas a usar ReviewAware",
+    "step1Label": "Día 1",
+    "step1Body": "Conecta tu enlace de reseñas de Google y añade tu primer trabajo completado.",
+    "step2Label": "Semana 1",
+    "step2Body": "ReviewAware empieza a enviar automáticamente solicitudes de reseña a los clientes.",
+    "step3Label": "Mes 1",
+    "step3Body": "Tu negocio empieza a recibir reseñas y comentarios más constantes.",
+    "step4Label": "Mes 3",
+    "step4Body": "Tu perfil de reseñas en crecimiento refuerza tu reputación online y ayuda a atraer nuevos clientes."
+  },
   "faq": {
     "title": "Preguntas frecuentes",
     "q1": "¿Necesito conocimientos técnicos para usar ReviewAware?",
@@ -139,8 +201,7 @@
     "a5": "Plus llega pronto. Únete a la lista de espera para enterarte cuando se lancen SMS y herramientas avanzadas."
   },
   "finalCta": {
-    "titleLine1": "Empieza a conseguir más",
-    "titleLine2": "Reseñas de 5 estrellas — automáticamente",
+    "headline": "Empieza a conseguir más reseñas de 5 estrellas — automáticamente",
     "cta": "Inicia tu prueba gratis de 14 días",
     "ctaSubInButton": "No se requiere tarjeta de crédito",
     "sub": "La configuración toma menos de 5 minutos."

@@ -10,14 +10,14 @@ function BrowserFrame({
   children: ReactNode;
 }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-muted bg-card shadow-xl ring-1 ring-zinc-950/[0.04]">
-      <div className="flex items-center gap-2 border-b border-zinc-200/80 bg-zinc-100/95 px-3 py-2.5">
+    <div className="overflow-hidden rounded-2xl border border-zinc-200/90 bg-card shadow-2xl shadow-zinc-950/[0.12] ring-1 ring-zinc-950/[0.06]">
+      <div className="flex items-center gap-2 border-b border-zinc-200/80 bg-gradient-to-b from-zinc-100/98 to-zinc-100/90 px-3 py-2.5">
         <div className="flex gap-1.5" aria-hidden>
           <span className="size-2.5 rounded-full bg-zinc-300/90" />
           <span className="size-2.5 rounded-full bg-zinc-300/90" />
           <span className="size-2.5 rounded-full bg-zinc-300/90" />
         </div>
-        <div className="mx-auto flex min-h-8 max-w-lg flex-1 items-center justify-center rounded-md border border-zinc-200/90 bg-white px-3 py-1 text-center text-[0.7rem] font-medium text-zinc-500 sm:text-xs">
+        <div className="mx-auto flex min-h-8 max-w-lg flex-1 items-center justify-center rounded-md border border-zinc-200/90 bg-white px-3 py-1 text-center text-[0.65rem] font-medium text-zinc-500 shadow-inner shadow-zinc-950/[0.03] sm:text-xs">
           {url}
         </div>
       </div>
@@ -64,7 +64,7 @@ function PrimaryScreenshot({
   alt: string;
 }) {
   return (
-    <div className="relative aspect-[16/10] w-full bg-zinc-100">
+    <div className="relative h-[200px] w-full overflow-hidden bg-zinc-100 sm:h-auto sm:aspect-[16/10] sm:max-h-none">
       <Image
         src={src}
         alt={alt}
@@ -103,7 +103,7 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
   const dashSrc = marketingImagePath(locale, "dashboard");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-gradient-to-b from-white to-zinc-50/90 py-24 sm:py-28 lg:py-32">
+    <section className="border-b border-zinc-200/60 bg-gradient-to-b from-white to-zinc-50/90 py-16 md:py-24 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
@@ -112,7 +112,7 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
           {t("subtitle")}
         </p>
 
-        <div className="relative mx-auto mt-16 max-w-5xl">
+        <div className="relative mx-auto mt-10 max-w-5xl sm:mt-16">
           <div className="hidden gap-6 lg:grid lg:grid-cols-[minmax(0,10rem)_1fr_minmax(0,10rem)] lg:items-center lg:gap-8">
             <div className="flex flex-col justify-center gap-10 pt-4">
               <CalloutPill text={t("callout1")} align="right" />
@@ -133,14 +133,14 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
             </div>
           </div>
 
-          <div className="lg:hidden">
+          <div className="mx-auto w-full max-w-lg lg:hidden lg:max-w-none">
             <BrowserFrame url={t("browserUrl")}>
               <PrimaryScreenshot src={dashSrc} alt={t("primaryCaption")} />
             </BrowserFrame>
             <p className="mt-2 text-center text-xs font-medium text-zinc-500">
               {t("primaryCaption")}
             </p>
-            <ul className="mt-6 space-y-3">
+            <ul className="mt-5 space-y-2.5 sm:mt-6 sm:space-y-3">
               {[t("callout1"), t("callout2"), t("callout3")].map((line) => (
                 <li
                   key={line}
@@ -157,7 +157,7 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
           </div>
         </div>
 
-        <div className="mx-auto mt-20 max-w-5xl border-t border-zinc-200/60 pt-16">
+        <div className="mx-auto mt-14 max-w-5xl border-t border-zinc-200/60 pt-12 sm:mt-20 sm:pt-16">
           <h3 className="text-center text-base font-semibold tracking-tight text-zinc-600">
             {t("secondaryHeading")}
           </h3>

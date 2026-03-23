@@ -15,13 +15,13 @@ export async function HowItWorksSection() {
   return (
     <section
       id="how-it-works"
-      className="border-b border-zinc-200/60 bg-white py-24 sm:py-28 lg:py-32"
+      className="border-b border-zinc-200/60 bg-white py-16 md:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
         </h2>
-        <div className="mt-14 grid auto-rows-fr gap-6 md:grid-cols-3 md:gap-6 lg:gap-8">
+        <div className="mt-10 grid auto-rows-fr gap-5 md:mt-14 md:grid-cols-3 md:gap-6 lg:gap-8">
           {steps.map(({ labelKey, titleKey, icon: Icon }) => (
             <Card
               key={labelKey}

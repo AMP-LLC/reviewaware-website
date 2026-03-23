@@ -3,10 +3,15 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+import { cn } from "@/lib/utils";
 
-export function DemoSection() {
+type DemoSectionProps = {
+  trialHref: string;
+};
+
+export function DemoSection({ trialHref }: DemoSectionProps) {
   const t = useTranslations("demo");
   const [index, setIndex] = useState(0);
   const reducedMotion = usePrefersReducedMotion();
@@ -83,7 +88,7 @@ export function DemoSection() {
   return (
     <section
       id="demo"
-      className="border-b border-zinc-200/60 bg-zinc-50/80 bg-[radial-gradient(ellipse_90%_60%_at_50%_-30%,rgba(59,130,246,0.07),transparent)] py-24 sm:py-28 lg:py-32"
+      className="border-b border-zinc-200/60 bg-zinc-50/80 bg-[radial-gradient(ellipse_90%_60%_at_50%_-30%,rgba(59,130,246,0.07),transparent)] py-16 md:py-24 lg:py-28"
       aria-labelledby="demo-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -99,12 +104,16 @@ export function DemoSection() {
           </p>
         </div>
 
-        <div className="mx-auto mt-14 grid max-w-4xl gap-7 lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:items-stretch lg:gap-5">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-sm font-medium leading-relaxed text-zinc-800 sm:mt-10 sm:text-base">
+          {t("caption")}
+        </p>
+
+        <div className="mx-auto mt-6 grid w-full max-w-lg justify-items-stretch gap-5 sm:mt-8 sm:max-w-4xl sm:gap-7 lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:items-stretch lg:gap-5">
           {panels.map((p, i) => (
             <div key={p.key} className="contents lg:block">
               <div
                 className={cn(
-                  "relative overflow-hidden rounded-[1.125rem] border bg-white p-7 shadow-md shadow-zinc-950/[0.06] ring-1 ring-zinc-950/[0.03] transition-all duration-500 ease-out sm:p-8",
+                  "relative mx-auto w-full max-w-md overflow-hidden rounded-[1.125rem] border bg-white p-5 shadow-md shadow-zinc-950/[0.06] ring-1 ring-zinc-950/[0.03] transition-all duration-500 ease-out sm:p-7 md:p-8 lg:mx-0 lg:max-w-none",
                   i === index
                     ? "border-blue-200/90 ring-2 ring-blue-500/25 shadow-blue-950/10"
                     : "border-zinc-200/70 opacity-[0.72] lg:opacity-100"
@@ -137,7 +146,7 @@ export function DemoSection() {
         </div>
 
         <div
-          className="mt-10 flex justify-center gap-2.5"
+          className="mt-8 flex justify-center gap-2.5 sm:mt-10"
           role="tablist"
           aria-label="Demo step"
         >
@@ -157,6 +166,20 @@ export function DemoSection() {
               aria-label={t("stepAria", { n: i + 1 })}
             />
           ))}
+        </div>
+
+        <div className="mx-auto mt-12 max-w-xl text-center sm:mt-16">
+          <h3 className="text-xl font-semibold tracking-tight text-zinc-950 sm:text-2xl">
+            {t("ctaHeadline")}
+          </h3>
+          <Button
+            asChild
+            size="lg"
+            className="mt-6 h-[3.35rem] w-full min-w-[220px] px-10 text-base shadow-lg shadow-blue-600/20 sm:w-auto"
+          >
+            <a href={trialHref}>{t("ctaButton")}</a>
+          </Button>
+          <p className="mt-4 text-sm text-muted-foreground">{t("ctaMicro")}</p>
         </div>
       </div>
     </section>
