@@ -93,9 +93,12 @@ export function DemoSection({ trialHref }: DemoSectionProps) {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600/90">
+            {t("introLine")}
+          </p>
           <h2
             id="demo-heading"
-            className="text-[1.75rem] font-semibold tracking-tight text-zinc-950 sm:text-3xl lg:text-[2.125rem] lg:leading-tight"
+            className="mt-3 text-[1.75rem] font-semibold tracking-tight text-zinc-950 sm:mt-3.5 sm:text-3xl lg:text-[2.125rem] lg:leading-tight"
           >
             {t("title")}
           </h2>

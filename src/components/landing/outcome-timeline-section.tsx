@@ -19,24 +19,30 @@ export async function OutcomeTimelineSection() {
           {t("title")}
         </h2>
 
-        <ol className="mt-14 hidden list-none gap-4 lg:grid lg:grid-cols-4 lg:gap-4">
-          {steps.map(({ labelKey, bodyKey }, i) => (
-            <li key={labelKey} className="relative flex h-full min-h-[12rem] flex-col">
-              <span
-                className="absolute -top-1 left-1/2 flex size-8 -translate-x-1/2 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white shadow-md shadow-blue-600/25"
-                aria-hidden
-              >
-                {i + 1}
-              </span>
-              <Card className="mt-4 flex h-full flex-col border-zinc-200/80 bg-white pt-6 shadow-sm">
-                <CardContent className="flex flex-1 flex-col gap-3 px-5 pb-6 text-center sm:px-6">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">{t(labelKey)}</p>
-                  <p className="text-sm leading-relaxed text-zinc-700">{t(bodyKey)}</p>
-                </CardContent>
-              </Card>
-            </li>
-          ))}
-        </ol>
+        <div className="relative mt-14 hidden lg:block">
+          <div
+            className="pointer-events-none absolute left-[6%] right-[6%] top-[0.75rem] z-0 h-px bg-zinc-200/80"
+            aria-hidden
+          />
+          <ol className="relative z-[1] grid list-none grid-cols-4 gap-4">
+            {steps.map(({ labelKey, bodyKey }, i) => (
+              <li key={labelKey} className="relative flex h-full min-h-[12rem] flex-col">
+                <span
+                  className="absolute -top-1 left-1/2 z-[2] flex size-8 -translate-x-1/2 items-center justify-center rounded-full border border-white bg-blue-600 text-xs font-bold text-white shadow-md shadow-blue-600/25"
+                  aria-hidden
+                >
+                  {i + 1}
+                </span>
+                <Card className="mt-4 flex h-full flex-col border-zinc-200/80 bg-white pt-6 shadow-sm">
+                  <CardContent className="flex flex-1 flex-col gap-3 px-5 pb-6 text-center sm:px-6">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">{t(labelKey)}</p>
+                    <p className="text-sm leading-relaxed text-zinc-700">{t(bodyKey)}</p>
+                  </CardContent>
+                </Card>
+              </li>
+            ))}
+          </ol>
+        </div>
 
         <ol className="mt-14 flex list-none flex-col gap-4 lg:hidden">
           {steps.map(({ labelKey, bodyKey }, i) => (

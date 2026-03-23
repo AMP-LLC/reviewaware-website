@@ -32,6 +32,9 @@ export async function ReviewResultsSection() {
             </Card>
           ))}
         </div>
+        <p className="mx-auto mt-10 max-w-2xl text-center text-xs leading-relaxed text-zinc-500 sm:mt-12">
+          {t("footnote")}
+        </p>
       </div>
     </section>
   );

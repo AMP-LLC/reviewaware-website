@@ -12,7 +12,8 @@ export async function HeroSection({ locale }: { locale: string }) {
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:px-8 lg:py-36">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-balance text-[1.7rem] font-semibold leading-[1.12] tracking-tight text-zinc-950 sm:text-5xl sm:leading-[1.08] lg:text-6xl lg:leading-[1.05] xl:text-[3.5rem]">
-            {t("headline")}
+            <span className="block">{t("headlineLine1")}</span>
+            <span className="mt-1 block sm:mt-1.5">{t("headlineLine2")}</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-relaxed text-zinc-700 sm:mt-8 sm:text-xl sm:leading-relaxed">
             {t("subtitle")}

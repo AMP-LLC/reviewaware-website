@@ -26,7 +26,15 @@ function BrowserFrame({
   );
 }
 
-function CalloutPill({ text, align }: { text: string; align: "left" | "right" }) {
+function CalloutPill({
+  text,
+  hint,
+  align,
+}: {
+  text: string;
+  hint: string;
+  align: "left" | "right";
+}) {
   return (
     <div
       className={`relative flex items-center ${align === "right" ? "lg:justify-end" : "lg:justify-start"}`}
@@ -35,8 +43,11 @@ function CalloutPill({ text, align }: { text: string; align: "left" | "right" })
         className={`pointer-events-none absolute top-1/2 hidden h-px w-6 -translate-y-1/2 bg-zinc-200 lg:block ${align === "left" ? "-right-6" : "-left-6"}`}
         aria-hidden
       />
-      <span className="relative z-[1] max-w-[11rem] rounded-lg border border-zinc-200/80 bg-white px-3 py-2 text-center text-xs font-medium leading-snug text-zinc-800 shadow-sm shadow-zinc-950/[0.04] sm:text-sm">
-        {text}
+      <span className="relative z-[1] max-w-[12.5rem] rounded-lg border border-zinc-200/80 bg-white px-3 py-2 text-center shadow-sm shadow-zinc-950/[0.04] sm:max-w-[13rem]">
+        <span className="block text-xs font-medium leading-snug text-zinc-800 sm:text-sm">{text}</span>
+        <span className="mt-1 block text-[0.65rem] leading-snug text-zinc-500 sm:text-[11px]">
+          {hint}
+        </span>
       </span>
     </div>
   );
@@ -111,11 +122,17 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
         <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-relaxed text-zinc-600 sm:text-base">
           {t("subtitle")}
         </p>
+        <p className="mx-auto mt-4 max-w-xl text-center text-xs font-medium text-zinc-500 sm:text-sm">
+          {t("legitimacyLine")}
+        </p>
+        <p className="mx-auto mt-1.5 text-center text-[0.65rem] font-medium tracking-wide text-zinc-400 sm:text-xs">
+          {t("legitimacyTags")}
+        </p>
 
         <div className="relative mx-auto mt-10 max-w-5xl sm:mt-16">
           <div className="hidden gap-6 lg:grid lg:grid-cols-[minmax(0,10rem)_1fr_minmax(0,10rem)] lg:items-center lg:gap-8">
             <div className="flex flex-col justify-center gap-10 pt-4">
-              <CalloutPill text={t("callout1")} align="right" />
+              <CalloutPill text={t("callout1")} hint={t("callout1Hint")} align="right" />
             </div>
 
             <div className="relative z-[1] min-w-0">
@@ -128,8 +145,8 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
             </div>
 
             <div className="flex flex-col justify-center gap-10 pt-4">
-              <CalloutPill text={t("callout2")} align="left" />
-              <CalloutPill text={t("callout3")} align="left" />
+              <CalloutPill text={t("callout2")} hint={t("callout2Hint")} align="left" />
+              <CalloutPill text={t("callout3")} hint={t("callout3Hint")} align="left" />
             </div>
           </div>
 
@@ -141,16 +158,27 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
               {t("primaryCaption")}
             </p>
             <ul className="mt-5 space-y-2.5 sm:mt-6 sm:space-y-3">
-              {[t("callout1"), t("callout2"), t("callout3")].map((line) => (
+              {(
+                [
+                  ["callout1", "callout1Hint"],
+                  ["callout2", "callout2Hint"],
+                  ["callout3", "callout3Hint"],
+                ] as const
+              ).map(([lineKey, hintKey]) => (
                 <li
-                  key={line}
-                  className="flex items-start gap-2 rounded-lg border border-zinc-200/70 bg-white px-3 py-2.5 text-sm font-medium text-zinc-800 shadow-sm"
+                  key={lineKey}
+                  className="rounded-lg border border-zinc-200/70 bg-white px-3 py-2.5 text-left shadow-sm"
                 >
-                  <span
-                    className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500"
-                    aria-hidden
-                  />
-                  {line}
+                  <div className="flex items-start gap-2">
+                    <span
+                      className="mt-1.5 size-1.5 shrink-0 rounded-full bg-blue-500"
+                      aria-hidden
+                    />
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium text-zinc-800">{t(lineKey)}</p>
+                      <p className="mt-0.5 text-xs leading-snug text-zinc-500">{t(hintKey)}</p>
+                    </div>
+                  </div>
                 </li>
               ))}
             </ul>

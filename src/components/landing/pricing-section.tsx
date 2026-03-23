@@ -110,6 +110,7 @@ export async function PricingSection({ locale }: { locale: string }) {
                 >
                   <a href={trialHref}>{t("ctaTrial")}</a>
                 </Button>
+                <p className="text-center text-xs text-zinc-500">{t("litePostCta")}</p>
               </CardContent>
             </Card>
           </div>

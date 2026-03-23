@@ -18,7 +18,8 @@
     "localeEs": "ES"
   },
   "hero": {
-    "headline": "Consigue automáticamente más reseñas en Google después de cada trabajo completado",
+    "headlineLine1": "Consigue más reseñas en Google automáticamente",
+    "headlineLine2": "Después de cada trabajo completado",
     "subtitle": "Envía automáticamente solicitudes de reseña después de cada trabajo completado para que tu negocio gane de forma constante más reseñas de 5 estrellas en Google.",
     "ctaPrimary": "Iniciar prueba gratis de 14 días",
     "ctaSecondary": "Ver cómo funciona",
@@ -27,7 +28,7 @@
   },
   "industryStrip": {
     "eyebrow": "Sectores",
-    "title": "Lo usan negocios de servicios como:",
+    "title": "Pensado para negocios de servicios locales",
     "subtitle": "Cubiertas, contratistas y empresas de servicios para el hogar usan ReviewAware para hacer crecer su reputación online.",
     "roofing": "Techos",
     "hvac": "HVAC",
@@ -37,6 +38,7 @@
     "remodeling": "Reformas del hogar"
   },
   "demo": {
+    "introLine": "Mira exactamente cómo funciona ReviewAware",
     "title": "Demo interactiva del producto",
     "subtitle": "Trabajo completado → se envía la solicitud de reseña → el cliente hace clic.",
     "caption": "Cada trabajo completado envía automáticamente una solicitud de reseña como esta.",
@@ -102,6 +104,12 @@
     "card3Text": "Aborda las inquietudes del cliente antes de que se conviertan en reseñas negativas públicas.",
     "card3Sub": "Resuelve en privado manteniendo una reputación pública sólida."
   },
+  "reviewsImproveService": {
+    "title": "Las reseñas mejoran el servicio — no solo la puntuación",
+    "body1": "No todos los clientes dejan una reseña de 5 estrellas.",
+    "body2": "Pero cada solicitud de reseña te da información valiosa sobre tu negocio.",
+    "body3": "Detecta problemas con técnicos, agenda o comunicación antes de que dañen tu reputación."
+  },
   "features": {
     "title": "Todo Lo Que Necesitas Para Crecer en Reseñas",
     "f1": "Correos automáticos de solicitud de reseña",
@@ -113,11 +121,16 @@
   "screenshots": {
     "title": "Tu Flujo de Reseñas en un Solo Lugar",
     "subtitle": "Métricas del panel, trabajos, recursos QR y correos de reseña en un mismo flujo.",
+    "legitimacyLine": "Pensado para flujos de reseñas modernos",
+    "legitimacyTags": "Google • Opiniones • Reputación",
     "browserUrl": "app.reviewaware.com",
     "primaryCaption": "Vista general del panel",
     "callout1": "Seguimiento de solicitudes de reseña",
+    "callout1Hint": "Estado y volumen de un vistazo",
     "callout2": "Monitoreo de clics en enlaces",
+    "callout2Hint": "Saber qué clientes interactuaron",
     "callout3": "Identificar clientes que necesitan recordatorios",
+    "callout3Hint": "Dar seguimiento antes de que empeore",
     "secondaryHeading": "Más Vistas",
     "secondarySub": "Trabajos, diseños QR imprimibles y el correo que reciben tus clientes.",
     "s2Label": "Trabajos",
@@ -129,6 +142,7 @@
   },
   "reviewResults": {
     "title": "Resultados reales con solicitudes de reseña automáticas",
+    "footnote": "Basado en referencias habituales de solicitudes de reseña y gestión de reputación.",
     "stat1": "3–5× más reseñas",
     "stat1Text": "Los negocios que piden reseñas de forma constante reciben muchas más respuestas que los que no lo hacen.",
     "stat2": "El 90% de los clientes lee reseñas",
@@ -160,6 +174,7 @@
     "plusF3": "Gestión de reputación en Google",
     "plusF4": "Recursos QR para todas las plataformas",
     "ctaTrial": "Prueba Lite gratis 14 días",
+    "litePostCta": "Prueba gratis — en menos de 5 minutos",
     "ctaWaitlist": "Unirse a la lista de espera",
     "plusNote": "Las funciones de Plus llegan pronto. Únete a la lista de espera para acceso anticipado.",
     "waitlistModalTitle": "Únete a la lista de espera de ReviewAware Plus",

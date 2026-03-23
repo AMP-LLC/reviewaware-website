@@ -18,7 +18,8 @@
     "localeEs": "ES"
   },
   "hero": {
-    "headline": "Automatically Get More Google Reviews After Every Completed Job",
+    "headlineLine1": "Get More Google Reviews Automatically",
+    "headlineLine2": "After Every Completed Job",
     "subtitle": "Automatically send review requests after every completed job so your business consistently earns more 5-star Google reviews.",
     "ctaPrimary": "Start Free 14-Day Trial",
     "ctaSecondary": "See How It Works",
@@ -27,7 +28,7 @@
   },
   "industryStrip": {
     "eyebrow": "Industries",
-    "title": "Used by Service Businesses Like:",
+    "title": "Built for Local Service Businesses",
     "subtitle": "Roofers, contractors, and home service companies use ReviewAware to grow their online reputation.",
     "roofing": "Roofing",
     "hvac": "HVAC",
@@ -37,6 +38,7 @@
     "remodeling": "Home Remodeling"
   },
   "demo": {
+    "introLine": "See Exactly How ReviewAware Works",
     "title": "Interactive Product Demo",
     "subtitle": "Job completed → review request sent → customer clicks.",
     "caption": "Every completed job automatically sends a review request like this.",
@@ -102,6 +104,12 @@
     "card3Text": "Address customer concerns before they become negative public reviews.",
     "card3Sub": "Resolve issues privately while maintaining a strong public reputation."
   },
+  "reviewsImproveService": {
+    "title": "Reviews Improve Service — Not Just Ratings",
+    "body1": "Not every customer leaves a 5-star review.",
+    "body2": "But every review request gives you valuable feedback about your business.",
+    "body3": "Identify problems with technicians, scheduling, or communication before they damage your reputation."
+  },
   "features": {
     "title": "Everything You Need to Grow Reviews",
     "f1": "Automated Email Review Requests",
@@ -113,11 +121,16 @@
   "screenshots": {
     "title": "Your Review Pipeline in One Place",
     "subtitle": "See how dashboard metrics, jobs, QR assets, and review emails work together in one workflow.",
+    "legitimacyLine": "Built for modern review workflows",
+    "legitimacyTags": "Google • Feedback • Reputation",
     "browserUrl": "app.reviewaware.com",
     "primaryCaption": "Dashboard Overview",
     "callout1": "Track review requests",
+    "callout1Hint": "See status and volume at a glance",
     "callout2": "Monitor link clicks",
+    "callout2Hint": "Know which customers engaged",
     "callout3": "Identify customers needing reminders",
+    "callout3Hint": "Follow up before issues compound",
     "secondaryHeading": "Additional Views",
     "secondarySub": "Jobs, printable QR designs, and the email your customers receive.",
     "s2Label": "Jobs",
@@ -129,6 +142,7 @@
   },
   "reviewResults": {
     "title": "Real Results from Automated Review Requests",
+    "footnote": "Based on common review-request and reputation-management benchmarks.",
     "stat1": "3–5× More Reviews",
     "stat1Text": "Businesses that consistently ask customers for reviews receive dramatically more responses than those that do not.",
     "stat2": "90% of Customers Read Reviews",
@@ -160,6 +174,7 @@
     "plusF3": "Google reputation management",
     "plusF4": "QR assets for all platforms",
     "ctaTrial": "Start Lite Free for 14 Days",
+    "litePostCta": "Start Free Trial — Takes Less Than 5 Minutes",
     "ctaWaitlist": "Join Waitlist",
     "plusNote": "Plus features launching soon. Join the waitlist for early access.",
     "waitlistModalTitle": "Join the ReviewAware Plus waitlist",

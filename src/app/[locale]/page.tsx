@@ -16,6 +16,7 @@ import { PricingSection } from "@/components/landing/pricing-section";
 import { ProblemSection } from "@/components/landing/problem-section";
 import { ReviewResultsSection } from "@/components/landing/review-results-section";
 import { ScreenshotsSection } from "@/components/landing/screenshots-section";
+import { ReviewsImproveServiceSection } from "@/components/landing/reviews-improve-service-section";
 import { WhyReviewAwareSection } from "@/components/landing/why-reviewaware-section";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
@@ -48,6 +49,7 @@ export default async function HomePage({ params }: Props) {
         <SolutionSection />
         <HowItWorksSection />
         <WhyReviewAwareSection />
+        <ReviewsImproveServiceSection />
         <FeaturesSection />
         <ScreenshotsSection locale={locale} />
         <ReviewResultsSection />
