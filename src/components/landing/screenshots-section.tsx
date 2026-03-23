@@ -33,7 +33,7 @@ const secondaryPanels = [
 ];
 
 /** Bump when replacing files in `public/marketing` so next/image cache busts. */
-const MARKETING_SCREENSHOTS_VERSION = "2";
+const MARKETING_SCREENSHOTS_VERSION = "4";
 
 function marketingImagePath(locale: string, name: "dashboard" | "jobs" | "qr" | "email") {
   const prefix = locale === "es" ? "es" : "en";

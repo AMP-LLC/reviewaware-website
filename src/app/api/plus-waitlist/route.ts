@@ -5,8 +5,9 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 /**
  * POST JSON: `{ email: string, locale?: string }`
  *
- * Set `PLUS_WAITLIST_WEBHOOK_URL` on Vercel to receive signups (Zapier, Make, Slack, etc.).
- * In development, if unset, the request is logged and returns 200 so the UI can be tested.
+ * Preferred storage: Supabase table via `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`.
+ * Optional fallback: `PLUS_WAITLIST_WEBHOOK_URL` (Zapier, Make, Slack, etc.).
+ * In development, if neither is configured, request is logged and returns 200 for UI testing.
  */
 export async function POST(request: Request) {
   let body: unknown;
@@ -29,11 +30,51 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
 
+  const source = "marketing-plus-waitlist";
+  const submittedAt = new Date().toISOString();
+
+  const supabaseUrl = process.env.SUPABASE_URL?.trim();
+  const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
+
+  // Prefer DB persistence when Supabase is configured.
+  if (supabaseUrl && supabaseServiceRoleKey) {
+    const insertUrl = `${supabaseUrl.replace(/\/+$/, "")}/rest/v1/plus_waitlist_signups?on_conflict=email`;
+    try {
+      const res = await fetch(insertUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          apikey: supabaseServiceRoleKey,
+          Authorization: `Bearer ${supabaseServiceRoleKey}`,
+          Prefer: "resolution=merge-duplicates,return=minimal",
+        },
+        body: JSON.stringify({
+          email,
+          locale: locale || "en",
+          source,
+          submitted_at: submittedAt,
+        }),
+      });
+
+      if (res.ok) {
+        return NextResponse.json({ ok: true });
+      }
+
+      // If DB is configured but write fails, surface as upstream/config issue.
+      console.error("[plus-waitlist] supabase HTTP", res.status);
+      return NextResponse.json({ error: "Upstream error" }, { status: 502 });
+    } catch (e) {
+      console.error("[plus-waitlist] supabase", e);
+      return NextResponse.json({ error: "Request failed" }, { status: 502 });
+    }
+  }
+
   const webhook = process.env.PLUS_WAITLIST_WEBHOOK_URL?.trim();
 
+  // Fallback behavior when Supabase is not configured.
   if (!webhook) {
     if (process.env.NODE_ENV === "development") {
-      console.info("[plus-waitlist] (no PLUS_WAITLIST_WEBHOOK_URL)", { email, locale });
+      console.info("[plus-waitlist] (no Supabase or webhook configured)", { email, locale });
       return NextResponse.json({ ok: true });
     }
     return NextResponse.json({ error: "Waitlist not configured" }, { status: 503 });
@@ -46,8 +87,8 @@ export async function POST(request: Request) {
       body: JSON.stringify({
         email,
         locale: locale || "en",
-        source: "marketing-plus-waitlist",
-        submittedAt: new Date().toISOString(),
+        source,
+        submittedAt,
       }),
     });
 
