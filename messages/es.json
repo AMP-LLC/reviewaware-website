@@ -108,8 +108,22 @@
     "card3Text": "Aborda las inquietudes del cliente antes de que se conviertan en reseñas negativas públicas.",
     "card3Sub": "Resuelve en privado manteniendo una reputación pública sólida."
   },
+  "brandAwareness": {
+    "titleHighlight": "Infórmate",
+    "titleRest": "sobre la experiencia de tus clientes",
+    "body1": "ReviewAware ayuda a los negocios de servicios a entender cómo viven los clientes su trabajo.",
+    "body2": "Solicita reseñas automáticamente después de cada trabajo y descubre qué valoran los clientes — y dónde puede mejorar el servicio.",
+    "body3": "Una mejor comprensión fortalece la reputación y genera más reseñas positivas.",
+    "cardCustomerTitle": "Conciencia del cliente",
+    "cardCustomerBody": "Entiende qué piensan los clientes sobre tu servicio.",
+    "cardServiceTitle": "Conciencia del servicio",
+    "cardServiceBody": "Detecta a tiempo problemas con técnicos o procesos.",
+    "cardBrandTitle": "Conciencia de marca",
+    "cardBrandBody": "Más reseñas positivas aumentan la visibilidad y la confianza."
+  },
   "reviewsImproveService": {
-    "title": "Las reseñas mejoran el servicio — no solo la puntuación",
+    "eyebrow": "Perspectivas del cliente",
+    "title": "Las reseñas mejoran el servicio — no solo la reputación",
     "body1": "No todos los clientes dejan una reseña de 5 estrellas.",
     "body2": "Pero cada solicitud de reseña te da información valiosa sobre tu negocio.",
     "body3": "Detecta problemas con técnicos, agenda o comunicación antes de que dañen tu reputación."
@@ -145,14 +159,14 @@
     "s4Hint": "Mensajes con tu marca"
   },
   "reviewResults": {
-    "title": "Resultados reales con solicitudes de reseña automáticas",
+    "title": "Qué ocurre cuando pides reseñas de forma constante",
     "footnote": "Basado en referencias habituales de solicitudes de reseña y gestión de reputación.",
     "stat1": "3–5× más reseñas",
-    "stat1Text": "Los negocios que piden reseñas de forma constante reciben muchas más respuestas que los que no lo hacen.",
-    "stat2": "El 90% de los clientes lee reseñas",
-    "stat2Text": "Las reseñas online influyen fuertemente en qué negocio local elige el cliente.",
-    "stat3": "Mejores valoraciones generan confianza",
-    "stat3Text": "Los negocios con reseñas positivas recientes parecen más fiables para nuevos clientes."
+    "stat1Text": "Los negocios que solicitan reseñas de forma constante reciben mucha más retroalimentación que los que no lo hacen.",
+    "stat2": "2–4× más reseñas en Google",
+    "stat2Text": "Las solicitudes automáticas justo después del servicio aumentan de forma notable la tasa de respuesta de los clientes.",
+    "stat3": "Los clientes responden cuando es fácil",
+    "stat3Text": "Es mucho más probable que dejen una reseña si la solicitud llega justo después de completar el trabajo."
   },
   "pricing": {
     "title": "Precios Simples",

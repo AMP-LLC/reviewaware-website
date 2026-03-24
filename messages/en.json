@@ -108,7 +108,21 @@
     "card3Text": "Address customer concerns before they become negative public reviews.",
     "card3Sub": "Resolve issues privately while maintaining a strong public reputation."
   },
+  "brandAwareness": {
+    "titleHighlight": "Be Aware",
+    "titleRest": "of What Your Customers Experience",
+    "body1": "ReviewAware helps service businesses understand how customers experience their work.",
+    "body2": "Automatically request reviews after every completed job and discover what customers appreciate — and where service can improve.",
+    "body3": "Better awareness leads to stronger reputation and more positive reviews.",
+    "cardCustomerTitle": "Customer Awareness",
+    "cardCustomerBody": "Understand what customers think about your service.",
+    "cardServiceTitle": "Service Awareness",
+    "cardServiceBody": "Identify technician or process issues early.",
+    "cardBrandTitle": "Brand Awareness",
+    "cardBrandBody": "More positive reviews increase visibility and trust."
+  },
   "reviewsImproveService": {
+    "eyebrow": "Customer Insights",
     "title": "Reviews Improve Service — Not Just Reputation",
     "body1": "Not every customer leaves a 5-star review.",
     "body2": "But every review request gives you valuable feedback about your business.",
@@ -145,14 +159,14 @@
     "s4Hint": "On-brand messages"
   },
   "reviewResults": {
-    "title": "Real Results from Automated Review Requests",
-    "footnote": "Based on common review-request and reputation-management benchmarks.",
+    "title": "What Happens When You Ask for Reviews Consistently",
+    "footnote": "Based on common review request and reputation-management benchmarks.",
     "stat1": "3–5× More Reviews",
-    "stat1Text": "Businesses that consistently ask customers for reviews receive dramatically more responses than those that do not.",
-    "stat2": "90% of Customers Read Reviews",
-    "stat2Text": "Online reviews strongly influence which local businesses customers choose.",
-    "stat3": "Higher Ratings Build Trust",
-    "stat3Text": "Businesses with more recent positive reviews appear more credible to potential customers."
+    "stat1Text": "Businesses that consistently request reviews receive dramatically more feedback than those that do not.",
+    "stat2": "2–4× More Google Reviews",
+    "stat2Text": "Automated requests sent immediately after service significantly increase customer response rates.",
+    "stat3": "Customers Respond When It’s Easy",
+    "stat3Text": "Customers are far more likely to leave a review when the request arrives right after the job is completed."
   },
   "pricing": {
     "title": "Simple Pricing",

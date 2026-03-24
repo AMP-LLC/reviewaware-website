@@ -15,7 +15,7 @@ export async function ReviewsImproveServiceSection() {
         <Card className="mx-auto max-w-5xl overflow-hidden border-zinc-200/80 bg-gradient-to-b from-white to-zinc-50/60 shadow-lg shadow-zinc-950/[0.07] ring-1 ring-zinc-950/[0.03]">
           <CardContent className="px-6 py-9 text-center sm:px-12 sm:py-11 lg:px-14 lg:py-12">
             <p className="mx-auto inline-flex items-center rounded-full border border-blue-100 bg-blue-50/80 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-blue-700 sm:text-sm">
-              Customer Insights
+              {t("eyebrow")}
             </p>
             <h2
               id="reviews-improve-service-heading"
