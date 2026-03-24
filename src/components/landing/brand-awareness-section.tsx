@@ -21,7 +21,10 @@ export function BrandAwarenessSection() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-balance text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
-            Be Aware of What Your Customers Experience
+            <span className="relative inline-block after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-blue-500/90">
+              Be Aware
+            </span>{" "}
+            of What Your Customers Experience
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-pretty text-base leading-relaxed text-zinc-700 sm:text-lg">
             ReviewAware helps service businesses understand how customers experience their work.
@@ -38,10 +41,10 @@ export function BrandAwarenessSection() {
         <div className="mt-12 grid gap-8 md:grid-cols-3 md:gap-10">
           {awarenessCards.map((card) => (
             <Card key={card.title} className="rounded-xl border border-gray-200 bg-white shadow-sm">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-xl tracking-tight text-zinc-950">{card.title}</CardTitle>
+              <CardHeader className="pb-3 text-center">
+                <CardTitle className="text-xl tracking-tight text-blue-600">{card.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="text-center">
                 <p className="text-sm leading-relaxed text-zinc-700 sm:text-base">{card.body}</p>
               </CardContent>
             </Card>

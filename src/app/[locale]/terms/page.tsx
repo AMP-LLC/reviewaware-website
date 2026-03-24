@@ -2,10 +2,8 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
-import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
 type Props = {
@@ -39,9 +37,12 @@ export default async function TermsPage({ params }: Props) {
       <main className="border-b border-zinc-200/60 bg-white">
         <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <p className="mb-8 text-center text-sm text-muted-foreground">
-            <Link href="/" className="font-medium text-zinc-700 hover:text-zinc-950">
+            <a
+              href="https://reviewaware.com"
+              className="font-medium text-zinc-700 hover:text-zinc-950"
+            >
               {t("backToHome")}
-            </Link>
+            </a>
           </p>
           <h1 className="text-center text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
             {t("title")}

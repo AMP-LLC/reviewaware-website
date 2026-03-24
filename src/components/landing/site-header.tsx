@@ -71,8 +71,11 @@ export async function SiteHeader({ locale }: { locale: string }) {
               {t("localeEs")}
             </Link>
           </div>
-          <Button asChild size="sm" className="shrink-0">
+          <Button asChild size="sm" className="hidden shrink-0 md:inline-flex">
             <a href={trialHref}>{t("startTrial")}</a>
+          </Button>
+          <Button asChild size="sm" variant="secondary" className="shrink-0">
+            <a href="https://app.reviewaware.com/signin">{t("signIn")}</a>
           </Button>
         </div>
       </div>
