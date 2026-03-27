@@ -19,21 +19,20 @@
     "signIn": "Iniciar sesión"
   },
   "hero": {
-    "headlineLine1": "Más reseñas en Google…",
-    "headlineLine2": "Automáticamente.",
+    "headlineLine1": "Cada trabajo completado",
+    "headlineLine2": "se convierte en una oportunidad de reseña",
     "ctaPrimary": "Iniciar prueba gratis de 14 días",
     "ctaSecondary": "Ver cómo funciona",
     "reassuranceChip1": "Prueba gratis de 14 días",
     "reassuranceChip2": "Sin tarjeta de crédito",
     "reassuranceChip3": "Configuración en 5 minutos",
     "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online",
-    "subtitleLine1": "Envía solicitudes de reseña automáticamente después de cada trabajo.",
-    "subtitleLine2": "Sin seguimientos manuales."
+    "subtitleLine1": "Captura reseñas con tarjetas QR en obra y seguimientos automáticos después de cada trabajo.",
+    "subtitleLine2": ""
   },
   "industryStrip": {
     "eyebrow": "Sectores",
-    "title": "Lo usan negocios de servicios como:",
-    "subtitle": "Pensado para negocios de servicios locales.",
+    "title": "Construido para negocios de servicios locales",
     "roofing": "Techos",
     "hvac": "HVAC",
     "plumbing": "Fontanería",
@@ -68,6 +67,22 @@
     "item1": "Los clientes olvidan dejar reseñas",
     "item2": "Los técnicos olvidan pedirlas",
     "item3": "Los negocios no tienen un seguimiento constante"
+  },
+  "reviewCaptureDifferentiation": {
+    "title": "Captura reseñas donde trabaja tu negocio",
+    "onlineTitle": "Seguimientos en línea",
+    "onlineIntro": "Envía solicitudes de reseña automáticamente después de cada trabajo completado.",
+    "onlineBullet1": "Solicitudes por correo automatizadas",
+    "onlineBullet2": "Recordatorios inteligentes",
+    "onlineBullet3": "Seguimiento de enlaces de reseña",
+    "onlineBullet4": "Métricas en el panel",
+    "realWorldTitle": "Solicitudes de reseña en el mundo real",
+    "realWorldIntro": "Ofrece a los clientes una forma rápida de dejar una reseña al instante.",
+    "realWorldBullet1": "Tarjetas QR en obra para reseñas",
+    "realWorldBullet2": "Tarjetas para dejar al cliente",
+    "realWorldBullet3": "Pegatinas QR en facturas",
+    "realWorldBullet4": "Calcomanías QR en vehículos",
+    "closingLine": "ReviewAware conecta las interacciones presenciales con los clientes con el seguimiento automatizado de reseñas."
   },
   "builtForService": {
     "title": "Diseñado en torno a cómo trabajan los negocios de servicios",
@@ -160,6 +175,7 @@
   },
   "reviewResults": {
     "title": "Qué ocurre cuando pides reseñas de forma constante",
+    "credibilitySupport": "ReviewAware ayuda a los negocios de servicios a generar de forma constante más reseñas de 5 estrellas mediante solicitudes por trabajo, activos QR de reseñas y seguimientos automáticos.",
     "footnote": "Basado en referencias habituales de solicitudes de reseña y gestión de reputación.",
     "stat1": "3–5× más reseñas",
     "stat1Text": "Los negocios que solicitan reseñas de forma constante reciben mucha más retroalimentación que los que no lo hacen.",
@@ -187,6 +203,10 @@
     "liteSupport2": "No se requiere tarjeta de crédito",
     "liteSupport3": "Cancela cuando quieras",
     "liteSupport4": "La configuración toma menos de 5 minutos.",
+    "liteAnnualPill": "Mejor valor anual",
+    "liteAnnualHeadline": "Los planes anuales incluyen el Review Growth Kit gratis",
+    "liteAnnualSupport": "Ahorra más y equípate para pedir reseñas sobre el terreno.",
+    "liteAnnualSecondary": "Consigue un coste mensual efectivo menor más herramientas QR impresas para tu equipo.",
     "plusF1": "Solicitudes de correo ilimitadas",
     "plusF2": "Solicitudes de reseña por SMS",
     "plusF3": "Gestión de reputación en Google",

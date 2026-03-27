@@ -42,7 +42,7 @@ export async function PricingSection({ locale }: { locale: string }) {
   return (
     <section
       id="pricing"
-      className="border-b border-zinc-200/60 bg-zinc-50/90 py-24 md:py-32"
+      className="border-b border-zinc-200/60 bg-zinc-50/90 py-32 pb-36 md:py-40 md:pb-44"
     >
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
@@ -103,6 +103,22 @@ export async function PricingSection({ locale }: { locale: string }) {
                     </li>
                   ))}
                 </ul>
+
+                <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50/60 px-4 py-3 sm:px-4 sm:py-3.5">
+                  <p className="inline-flex items-center rounded-full border border-blue-100 bg-white px-2.5 py-1 text-xs font-semibold text-blue-800">
+                    {t("liteAnnualPill")}
+                  </p>
+                  <p className="mt-2.5 text-sm font-semibold leading-snug text-blue-700">
+                    {t("liteAnnualHeadline")}
+                  </p>
+                  <p className="mt-2 text-pretty text-sm leading-relaxed text-slate-600">
+                    {t("liteAnnualSupport")}
+                  </p>
+                  <p className="mt-2 text-pretty text-xs leading-relaxed text-slate-500">
+                    {t("liteAnnualSecondary")}
+                  </p>
+                </div>
+
                 <Button
                   asChild
                   size="lg"

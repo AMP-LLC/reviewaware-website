@@ -19,21 +19,20 @@
     "signIn": "Sign In"
   },
   "hero": {
-    "headlineLine1": "More Google Reviews…",
-    "headlineLine2": "Automatically.",
+    "headlineLine1": "Every Completed Job",
+    "headlineLine2": "Becomes a Review Opportunity",
     "ctaPrimary": "Start Free 14-Day Trial",
     "ctaSecondary": "See How It Works",
     "reassuranceChip1": "14-Day Free Trial",
     "reassuranceChip2": "No Credit Card Required",
     "reassuranceChip3": "Setup in 5 Minutes",
     "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation",
-    "subtitleLine1": "Send review requests automatically after every job.",
-    "subtitleLine2": "No manual follow-ups required."
+    "subtitleLine1": "Capture reviews with QR jobsite cards and automated follow-ups after every job.",
+    "subtitleLine2": ""
   },
   "industryStrip": {
     "eyebrow": "Industries",
-    "title": "Used by Service Businesses Like:",
-    "subtitle": "Built for local service businesses.",
+    "title": "Built for Local Service Businesses",
     "roofing": "Roofing",
     "hvac": "HVAC",
     "plumbing": "Plumbing",
@@ -68,6 +67,22 @@
     "item1": "Customers forget to leave reviews",
     "item2": "Technicians forget to ask",
     "item3": "Businesses have no consistent follow-up system"
+  },
+  "reviewCaptureDifferentiation": {
+    "title": "Capture Reviews Everywhere Your Business Works",
+    "onlineTitle": "Online Follow-Ups",
+    "onlineIntro": "Automatically send review requests after every completed job.",
+    "onlineBullet1": "Automated email requests",
+    "onlineBullet2": "Smart reminders",
+    "onlineBullet3": "Review link tracking",
+    "onlineBullet4": "Dashboard metrics",
+    "realWorldTitle": "Real-World Review Requests",
+    "realWorldIntro": "Give customers a fast way to leave a review immediately.",
+    "realWorldBullet1": "QR jobsite review cards",
+    "realWorldBullet2": "Technician leave-behind cards",
+    "realWorldBullet3": "Invoice QR stickers",
+    "realWorldBullet4": "Vehicle QR decals",
+    "closingLine": "ReviewAware connects real-world customer interactions with automated review follow-ups."
   },
   "builtForService": {
     "title": "Built Around the Way Service Businesses Work",
@@ -160,6 +175,7 @@
   },
   "reviewResults": {
     "title": "What Happens When You Ask for Reviews Consistently",
+    "credibilitySupport": "ReviewAware helps service businesses consistently generate more 5-star reviews through job-based requests, QR review assets, and automated follow-ups.",
     "footnote": "Based on common review request and reputation-management benchmarks.",
     "stat1": "3–5× More Reviews",
     "stat1Text": "Businesses that consistently request reviews receive dramatically more feedback than those that do not.",
@@ -187,6 +203,10 @@
     "liteSupport2": "No credit card required",
     "liteSupport3": "Cancel anytime",
     "liteSupport4": "Setup takes less than 5 minutes.",
+    "liteAnnualPill": "Best Annual Value",
+    "liteAnnualHeadline": "Annual plans include the Review Growth Kit free",
+    "liteAnnualSupport": "Save more and equip your team to request reviews in the field.",
+    "liteAnnualSecondary": "Get a lower effective monthly cost plus printed QR review tools for your team.",
     "plusF1": "Unlimited email requests",
     "plusF2": "SMS review requests",
     "plusF3": "Google reputation management",
