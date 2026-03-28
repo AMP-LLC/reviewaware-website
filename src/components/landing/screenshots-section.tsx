@@ -87,22 +87,23 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
   const dashSrc = marketingImagePath(locale, "dashboard");
 
   return (
-    <section className="border-b border-zinc-200/60 bg-gradient-to-b from-white to-zinc-50/90 py-24 md:py-32">
+    <section id="screenshots" className="border-b border-zinc-800/80 bg-slate-900 py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
+        <div className="rounded-2xl bg-slate-900 p-6 text-white shadow-xl shadow-black/20 md:p-12">
+        <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-relaxed text-zinc-600 sm:text-base">
+        <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-relaxed text-slate-300 sm:text-base">
           {t("subtitle")}
         </p>
-        <p className="mx-auto mt-4 max-w-xl text-center text-xs font-medium text-zinc-500 sm:text-sm">
+        <p className="mx-auto mt-4 max-w-xl text-center text-xs font-medium text-slate-400 sm:text-sm">
           {t("legitimacyLine")}
         </p>
-        <p className="mx-auto mt-1.5 text-center text-[0.65rem] font-medium tracking-wide text-zinc-400 sm:text-xs">
+        <p className="mx-auto mt-1.5 text-center text-[0.65rem] font-medium tracking-wide text-slate-500 sm:text-xs">
           {t("legitimacyTags")}
         </p>
 
-        <div className="relative mx-auto mt-10 max-w-[69rem] sm:mt-16">
+        <div className="relative mx-auto mt-8 max-w-[69rem] sm:mt-12">
           <div className="hidden lg:block">
             <div className="mx-auto mb-8 grid max-w-5xl gap-3 sm:grid-cols-3">
               {(
@@ -122,21 +123,38 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
               ))}
             </div>
 
+            <div className="mx-auto mb-8 max-w-2xl text-center">
+              <h3 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
+                {t("dashboardIntroTitle")}
+              </h3>
+              <p className="mt-2 text-pretty text-sm leading-relaxed text-slate-300 sm:text-base">
+                {t("dashboardIntroSubtitle")}
+              </p>
+            </div>
+
             <div className="relative z-[1] min-w-0">
               <BrowserFrame url={t("browserUrl")}>
                 <PrimaryScreenshot src={dashSrc} alt={t("primaryCaption")} />
               </BrowserFrame>
-              <p className="mt-2 text-center text-xs font-medium text-zinc-500">
+              <p className="mt-2 text-center text-xs font-medium text-slate-400">
                 {t("primaryCaption")}
               </p>
             </div>
           </div>
 
           <div className="mx-auto w-full max-w-lg lg:hidden lg:max-w-none">
+            <div className="mb-6 text-center">
+              <h3 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
+                {t("dashboardIntroTitle")}
+              </h3>
+              <p className="mt-2 text-pretty text-sm leading-relaxed text-slate-300 sm:text-base">
+                {t("dashboardIntroSubtitle")}
+              </p>
+            </div>
             <BrowserFrame url={t("browserUrl")}>
               <PrimaryScreenshot src={dashSrc} alt={t("primaryCaption")} />
             </BrowserFrame>
-            <p className="mt-2 text-center text-xs font-medium text-zinc-500">
+            <p className="mt-2 text-center text-xs font-medium text-slate-400">
               {t("primaryCaption")}
             </p>
             <ul className="mt-5 space-y-2.5 sm:mt-6 sm:space-y-3">
@@ -167,11 +185,11 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
           </div>
         </div>
 
-        <div className="mx-auto mt-14 max-w-5xl border-t border-zinc-200/60 pt-12 sm:mt-20 sm:pt-16">
-          <h3 className="text-center text-base font-semibold tracking-tight text-zinc-600">
+        <div className="mx-auto mt-12 max-w-5xl border-t border-zinc-200/60 pt-10 sm:mt-14 sm:pt-12">
+          <h3 className="text-center text-base font-semibold tracking-tight text-slate-300">
             {t("secondaryHeading")}
           </h3>
-          <p className="mx-auto mt-2 max-w-lg text-center text-xs text-zinc-500 sm:text-sm">
+          <p className="mx-auto mt-2 max-w-lg text-center text-xs text-slate-400 sm:text-sm">
             {t("secondarySub")}
           </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
@@ -200,6 +218,7 @@ export async function ScreenshotsSection({ locale }: { locale: string }) {
               </figure>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </section>

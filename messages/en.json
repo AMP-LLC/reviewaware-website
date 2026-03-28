@@ -32,7 +32,8 @@
   },
   "industryStrip": {
     "eyebrow": "Industries",
-    "title": "Built for Local Service Businesses",
+    "title": "Built for Field Service Businesses",
+    "subtitle": "ReviewAware is designed for companies that complete jobs in the real world — not just online. From roofing and HVAC to landscaping and remodeling, technicians can request reviews on the spot and follow up automatically.",
     "roofing": "Roofing",
     "hvac": "HVAC",
     "plumbing": "Plumbing",
@@ -63,13 +64,17 @@
     "stepAria": "Show step {n}"
   },
   "problem": {
-    "title": "Most Happy Customers Never Leave Reviews Unless You Ask.",
+    "title": "Most Happy Customers Never Leave Reviews… Unless You Ask",
+    "intro": "Most service businesses do great work every day — but that doesn't mean customers leave reviews.",
     "item1": "Customers forget to leave reviews",
     "item2": "Technicians forget to ask",
-    "item3": "Businesses have no consistent follow-up system"
+    "item3": "Businesses have no consistent follow-up system",
+    "closing": "Without a system, even happy customers stay silent."
   },
   "reviewCaptureDifferentiation": {
     "title": "Capture Reviews Everywhere Your Business Works",
+    "intro": "ReviewAware helps you capture reviews in person and follow up automatically so no completed job goes to waste.",
+    "supportingLine": "Built for roofing, HVAC, plumbing, landscaping, cleaning, and remodeling businesses.",
     "onlineTitle": "Online Follow-Ups",
     "onlineIntro": "Automatically send review requests after every completed job.",
     "onlineBullet1": "Automated email requests",
@@ -81,8 +86,7 @@
     "realWorldBullet1": "QR jobsite review cards",
     "realWorldBullet2": "Technician leave-behind cards",
     "realWorldBullet3": "Invoice QR stickers",
-    "realWorldBullet4": "Vehicle QR decals",
-    "closingLine": "ReviewAware connects real-world customer interactions with automated review follow-ups."
+    "realWorldBullet4": "Vehicle QR decals"
   },
   "builtForService": {
     "title": "Built Around the Way Service Businesses Work",
@@ -103,13 +107,14 @@
     "step4": "You Get More Reviews"
   },
   "howItWorks": {
-    "title": "How It Works",
-    "stepLabel1": "Step 1",
-    "stepLabel2": "Step 2",
-    "stepLabel3": "Step 3",
-    "step1": "Add your customer or import jobs.",
-    "step2": "Mark the job completed.",
-    "step3": "ReviewAware automatically sends the review request."
+    "title": "How ReviewAware Turns Completed Jobs Into Reviews",
+    "subtitle": "Send review requests automatically after every completed job.",
+    "step1Title": "Complete the Job",
+    "step1Description": "Your technician finishes the service call or job.",
+    "step2Title": "Review Request Is Sent Automatically",
+    "step2Description": "ReviewAware sends the customer a review request via email or QR scan.",
+    "step3Title": "Customer Leaves a Review",
+    "step3Description": "Customers click the link and leave a review on Google."
   },
   "whyReviewAware": {
     "title": "Why Service Businesses Use ReviewAware",
@@ -154,6 +159,8 @@
   "screenshots": {
     "title": "Your Review Pipeline in One Place",
     "subtitle": "See how dashboard metrics, jobs, QR assets, and review emails work together in one workflow.",
+    "dashboardIntroTitle": "A Simple Dashboard Built for Service Businesses",
+    "dashboardIntroSubtitle": "Track review requests, scans, responses, and growth from one simple dashboard.",
     "legitimacyLine": "Built for modern review workflows",
     "legitimacyTags": "Google • Feedback • Reputation",
     "browserUrl": "app.reviewaware.com",
@@ -174,6 +181,7 @@
     "s4Hint": "On-brand messages"
   },
   "reviewResults": {
+    "eyebrow": "Real Results",
     "title": "What Happens When You Ask for Reviews Consistently",
     "credibilitySupport": "ReviewAware helps service businesses consistently generate more 5-star reviews through job-based requests, QR review assets, and automated follow-ups.",
     "footnote": "Based on common review request and reputation-management benchmarks.",
@@ -181,7 +189,7 @@
     "stat1Text": "Businesses that consistently request reviews receive dramatically more feedback than those that do not.",
     "stat2": "2–4× More Google Reviews",
     "stat2Text": "Automated requests sent immediately after service significantly increase customer response rates.",
-    "stat3": "Customers Respond When It’s Easy",
+    "stat3": "Customers Respond When Asking Is Easy",
     "stat3Text": "Customers are far more likely to leave a review when the request arrives right after the job is completed."
   },
   "pricing": {
@@ -204,7 +212,10 @@
     "liteSupport3": "Cancel anytime",
     "liteSupport4": "Setup takes less than 5 minutes.",
     "liteAnnualPill": "Best Annual Value",
-    "liteAnnualHeadline": "Annual plans include the Review Growth Kit free",
+    "liteCtaCheck1": "No credit card required",
+    "liteCtaCheck2": "Setup takes less than 5 minutes",
+    "liteCtaCheck3": "Cancel anytime",
+    "liteAnnualHeadline": "Annual plans include the Review Growth Kit FREE ($79 value)",
     "liteAnnualSupport": "Save more and equip your team to request reviews in the field.",
     "liteAnnualSecondary": "Get a lower effective monthly cost plus printed QR review tools for your team.",
     "plusF1": "Unlimited email requests",
@@ -257,7 +268,8 @@
     "headline": "Start Getting More 5-Star Reviews — Automatically",
     "cta": "Start Your Free 14-Day Trial",
     "ctaSubInButton": "No credit card required",
-    "sub": "Setup takes less than 5 minutes."
+    "sub": "Setup takes less than 5 minutes.",
+    "supportingLine": "Join hundreds of service businesses growing their reputation with ReviewAware."
   },
   "footer": {
     "privacy": "Privacy Policy",
@@ -301,5 +313,162 @@
     "s5Body": "The service is provided “as is” without warranties to the fullest extent permitted by law. To the maximum extent permitted, ReviewAware is not liable for indirect, incidental, or consequential damages. Our total liability for any claim related to the service is limited to the fees you paid us in the twelve months before the claim.",
     "s6Title": "Contact",
     "s6Body": "Questions about these Terms: support@reviewaware.com."
+  },
+  "industryLanding": {
+    "metadata": {
+      "title": "{industry} Review Software — Get More Google Reviews | ReviewAware",
+      "description": "Turn every completed {industryService} into Google reviews with QR jobsite cards and automated follow-ups. Start your free 14-day trial."
+    },
+    "hero": {
+      "headlineLine1": "Get More Google Reviews for Your {industry} Company",
+      "headlineLine2": "",
+      "subtitleLine1": "Turn every completed {industryService} into a review opportunity with QR jobsite cards and automated follow-ups.",
+      "subtitleLine2": "",
+      "ctaPrimary": "Start Free 14-Day Trial",
+      "ctaSecondary": "See How It Works",
+      "credibilityLine": "Built for {industry} contractors and home service companies."
+    },
+    "problem": {
+      "title": "Great Jobs Don't Automatically Turn Into Great Reviews",
+      "card1": "Customers forget to leave reviews",
+      "card2": "Technicians don't always ask",
+      "card3": "Happy customers never follow through",
+      "closing": "ReviewAware solves this automatically."
+    },
+    "beforeAfter": {
+      "title": "What Happens Before and After ReviewAware",
+      "withoutTitle": "Without ReviewAware",
+      "without1": "Customers leave happy but never leave a review",
+      "without2": "Technicians forget to ask",
+      "without3": "Follow-ups rarely happen",
+      "without4": "Competitors collect the reviews instead",
+      "withTitle": "With ReviewAware",
+      "with1": "Technicians hand customers a QR review card",
+      "with2": "Customers leave reviews immediately",
+      "with3": "Automated follow-ups capture missed reviews",
+      "with4": "Your reputation grows after every job",
+      "supporting": "Businesses using ReviewAware consistently capture more reviews from the work they already do."
+    },
+    "workflowSectionTitle": "Turn Every {industryServiceHeadline} Into New Reviews",
+    "workflowStep1Title": "Finish the Job",
+    "workflowStep1Body": "The technician completes the {industryJob} and marks the job complete. ReviewAware schedules the review request automatically.",
+    "workflowStep2Title": "Request a Review on the Spot",
+    "workflowStep2Body": "Technicians can hand customers a QR review card so they can leave a review immediately.",
+    "workflowStep3Title": "Follow Up Automatically",
+    "workflowStep3Body": "If the customer does not leave a review right away, ReviewAware sends an automated review request and reminder.",
+    "useCasesTitle": "Built for Real {industry} Work",
+    "benefitsTitle": "Why {industry} Companies Use ReviewAware",
+    "benefit1": "Generate more Google reviews",
+    "benefit2": "Ensure technicians consistently request reviews",
+    "benefit3": "Automated reminders when customers forget",
+    "benefit4": "Improve local search visibility",
+    "reviewGrowthKit": {
+      "title": "The Review Growth Kit",
+      "subtitle": "Everything {industry} companies need to generate reviews in person and automatically.",
+      "card1Title": "QR Review Cards",
+      "card1Description": "Technicians hand customers a card with a QR code that opens the review page instantly.",
+      "card2Title": "Automated Review Requests",
+      "card2Description": "If customers forget, ReviewAware sends a follow-up request automatically.",
+      "card3Title": "Smart Reminders",
+      "card3Description": "Gentle reminders increase review completion."
+    },
+    "prePricingResults": {
+      "title": "{industry} Companies That Ask for Reviews Grow Faster",
+      "item1": "Generate more Google reviews",
+      "item2": "Improve local search ranking",
+      "item3": "Build trust with new customers",
+      "item4": "Stand out from competitors"
+    },
+    "pricingAnnualLeadIn": "Most {industry} companies choose the annual plan to save 20%.",
+    "dashboardIntro": {
+      "title": "A Simple Dashboard Built for Service Businesses",
+      "subtitle": "Track review requests, scans, responses, and growth from one simple dashboard."
+    },
+    "heroDashboard": {
+      "cardTitle": "Review Dashboard",
+      "kpiRequestsSent": "Requests Sent",
+      "kpiReviewsCollected": "Reviews Collected",
+      "kpiAverageRating": "Average Rating",
+      "kpiClickRate": "Click Rate",
+      "kpiQrScans": "QR Scans",
+      "kpiPrivateFeedback": "Private Feedback",
+      "kpiFiveStarReviews": "5-Star Reviews",
+      "kpiPendingFollowUps": "Pending Follow-Ups",
+      "activityTitle": "Recent activity",
+      "activityColJob": "Job",
+      "activityColStatus": "Status",
+      "row1": "Smith — Tune-up",
+      "row1Status": "Review left",
+      "row2": "Johnson — Install",
+      "row2Status": "Link opened",
+      "row3": "Patel — Maintenance",
+      "row3Status": "Request sent",
+      "row4": "Nguyen — Repair",
+      "row4Status": "Scheduled"
+    },
+    "workflowScreenMock": {
+      "jobsTitle": "Completed jobs",
+      "job1": "AC tune-up — Smith",
+      "job2": "Heat pump install — Johnson",
+      "job3": "Duct cleaning — Lee",
+      "detailTitle": "Job detail",
+      "customerLabel": "Customer",
+      "customerValue": "Sarah Johnson",
+      "serviceLabel": "Service",
+      "serviceValue": "AC tune-up",
+      "completedLabel": "Completed",
+      "completedValue": "Today, 2:14 PM",
+      "qrCardTitle": "Review link",
+      "qrUrl": "reviews.google.com/…",
+      "copyHint": "Tap to copy",
+      "timelineTitle": "Request status",
+      "timeline1": "Request sent",
+      "timeline2": "Email opened",
+      "timeline3": "Review submitted"
+    },
+    "qrToolkitMock": {
+      "panelTitle": "QR Toolkit",
+      "panelSubtitle": "Review assets connected to this account",
+      "statScansLabel": "Scans",
+      "statClicksLabel": "Clicks",
+      "statReviewsLabel": "Reviews",
+      "tileQrCards": "QR Review Cards",
+      "tileLeaveBehind": "Leave-Behind Cards",
+      "tileInvoice": "Invoice QR Stickers",
+      "tileVehicle": "Vehicle QR Decals"
+    },
+    "qrCardMockup": {
+      "stars": "★★★★★",
+      "headline": "Loved our service?",
+      "subline": "Scan to leave a quick review",
+      "scanHint": "Sample QR — opens your review page"
+    },
+    "productProof": {
+      "title": "Built for Real Service Businesses",
+      "badgeHvac": "HVAC",
+      "badgePlumbing": "Plumbing",
+      "badgeRoofing": "Roofing",
+      "badgeElectrical": "Electrical",
+      "badgeLandscaping": "Landscaping"
+    },
+    "seoEducation": {
+      "title": "How {industry} Companies Get More Google Reviews",
+      "subtitle": "Most {industry} companies rely on word-of-mouth, but the businesses that consistently grow their reputation use a repeatable review request system.",
+      "block1Title": "Ask Immediately After the Job",
+      "block1Text": "Customers are most likely to leave a review right after their {industryService} is completed. Technicians can hand customers a QR review card so they can leave feedback instantly.",
+      "block2Title": "Make It Easy for Customers",
+      "block2Text": "If leaving a review requires searching for your business online, most customers will never follow through. Providing a direct review link dramatically increases response rates.",
+      "block3Title": "Follow Up Automatically",
+      "block3Text": "Even happy customers forget. Automated review requests and reminders ensure more customers follow through and leave feedback.",
+      "block4Title": "Request Reviews Consistently",
+      "block4Text": "Companies that request reviews after every job typically generate significantly more reviews than companies that ask occasionally."
+    },
+    "finalCta": {
+      "headline": "Start Getting More Reviews for Your {industry} Business",
+      "cta": "Start Free Trial",
+      "ctaSubInButton": "No credit card required",
+      "sub": "Setup takes less than 5 minutes.",
+      "supportingLine": "Join hundreds of service businesses growing their reputation with ReviewAware."
+    }
   }
 }

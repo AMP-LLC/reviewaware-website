@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { getLiteTrialHref } from "@/lib/marketing-links";
 
 const nav = [
-  { href: "#demo", labelKey: "demo" as const },
+  { href: "#screenshots", labelKey: "demo" as const },
   { href: "#how-it-works", labelKey: "howItWorks" as const },
   { href: "#pricing", labelKey: "pricing" as const },
   { href: "#faq", labelKey: "faq" as const },

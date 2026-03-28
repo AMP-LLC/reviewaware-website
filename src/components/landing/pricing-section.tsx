@@ -11,16 +11,40 @@ import {
 import { getLiteTrialHref } from "@/lib/marketing-links";
 import { Check } from "lucide-react";
 
+import { cn } from "@/lib/utils";
+
 import { PlusWaitlistDialog } from "./plus-waitlist-dialog";
 
 const liteKeys = ["liteF1", "liteF2", "liteF3", "liteF4"] as const;
 const plusKeys = ["plusF1", "plusF2", "plusF3", "plusF4"] as const;
 const liteSupportKeys = ["liteSupport1", "liteSupport2", "liteSupport3", "liteSupport4"] as const;
 
-export async function PricingSection({ locale }: { locale: string }) {
+export async function PricingSection({
+  locale,
+  liteAnnualLeadIn,
+  liteCtaChecklist,
+  annualGrowthKitHighlight,
+  sectionClassName,
+}: {
+  locale: string;
+  /** e.g. industry-specific note shown above the Lite annual value block */
+  liteAnnualLeadIn?: string;
+  /** Shown under the Lite trial CTA (e.g. reassurance bullets) */
+  liteCtaChecklist?: readonly string[];
+  /** Replaces the default annual kit footnote in the Lite annual highlight box */
+  annualGrowthKitHighlight?: string;
+  sectionClassName?: string;
+}) {
   const t = await getTranslations("pricing");
 
   const trialHref = getLiteTrialHref(locale);
+
+  const defaultLiteCtaChecks = [
+    t("liteCtaCheck1"),
+    t("liteCtaCheck2"),
+    t("liteCtaCheck3"),
+  ] as const;
+  const liteChecks = liteCtaChecklist ?? defaultLiteCtaChecks;
 
   const waitlistCopy = {
     triggerLabel: t("ctaWaitlist"),
@@ -42,9 +66,15 @@ export async function PricingSection({ locale }: { locale: string }) {
   return (
     <section
       id="pricing"
-      className="border-b border-zinc-200/60 bg-zinc-50/90 py-32 pb-36 md:py-40 md:pb-44"
+      className={cn(
+        "border-b border-zinc-200/60 bg-white py-12 md:py-16 lg:py-24",
+        sectionClassName,
+      )}
     >
       <div className="mx-auto max-w-6xl px-6">
+        <p className="mb-4 text-center text-sm font-medium text-muted-foreground">
+          Most businesses start seeing new reviews within the first week.
+        </p>
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
         </h2>
@@ -60,7 +90,7 @@ export async function PricingSection({ locale }: { locale: string }) {
             <div className="absolute -top-3 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-blue-600 px-4 py-1 text-xs font-semibold text-white shadow-md shadow-blue-600/25">
               {t("mostPopular")}
             </div>
-            <Card className="border-2 border-blue-600 pt-6 shadow-2xl shadow-blue-600/25 ring-2 ring-blue-600/20 transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-blue-600/30 sm:pt-7 lg:scale-[1.03]">
+            <Card className="scale-[1.02] rounded-xl border-2 border-blue-600 bg-white pt-6 shadow-lg shadow-blue-600/20 ring-2 ring-blue-600/20 transition-shadow duration-300 hover:shadow-md sm:pt-7 lg:scale-[1.02]">
               <CardHeader className="space-y-0 px-5 pb-2 pt-5 sm:px-7 sm:pb-2 sm:pt-7">
                 <div className="flex items-center justify-between gap-2">
                   <CardTitle className="text-2xl tracking-tight">
@@ -79,6 +109,7 @@ export async function PricingSection({ locale }: { locale: string }) {
                   </span>
                   <span className="text-zinc-500"> {t("perMonth")}</span>
                 </CardDescription>
+                <p className="mt-1 text-sm text-muted-foreground">Save over 25% with annual billing</p>
                 <ul className="mt-3 space-y-1.5 text-xs font-medium text-zinc-600 sm:text-sm">
                   {liteSupportKeys.map((key) => (
                     <li key={key} className="flex items-center gap-2">
@@ -104,9 +135,17 @@ export async function PricingSection({ locale }: { locale: string }) {
                   ))}
                 </ul>
 
-                <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50/60 px-4 py-3 sm:px-4 sm:py-3.5">
-                  <p className="inline-flex items-center rounded-full border border-blue-100 bg-white px-2.5 py-1 text-xs font-semibold text-blue-800">
-                    {t("liteAnnualPill")}
+                {liteAnnualLeadIn ? (
+                  <p className="mt-5 text-center text-sm font-medium leading-snug text-zinc-700">
+                    {liteAnnualLeadIn}
+                  </p>
+                ) : null}
+
+                <div
+                  className={`rounded-xl border border-blue-500/40 bg-blue-50/60 px-4 py-3 shadow-sm transition-shadow hover:shadow-md sm:px-4 sm:py-3.5 ${liteAnnualLeadIn ? "mt-4" : "mt-5"}`}
+                >
+                  <p className="inline-flex items-center rounded bg-primary px-2 py-1 text-xs font-semibold text-white">
+                    Best Value
                   </p>
                   <p className="mt-2.5 text-sm font-semibold leading-snug text-blue-700">
                     {t("liteAnnualHeadline")}
@@ -114,8 +153,15 @@ export async function PricingSection({ locale }: { locale: string }) {
                   <p className="mt-2 text-pretty text-sm leading-relaxed text-slate-600">
                     {t("liteAnnualSupport")}
                   </p>
+                  <p className="mt-3 text-xs font-medium text-slate-600">Includes:</p>
+                  <ul className="mt-1 space-y-1 text-xs leading-relaxed text-slate-600">
+                    <li>QR Review Cards</li>
+                    <li>Technician Leave-Behind Cards</li>
+                    <li>Invoice QR Stickers</li>
+                    <li>Vehicle QR Decals</li>
+                  </ul>
                   <p className="mt-2 text-pretty text-xs leading-relaxed text-slate-500">
-                    {t("liteAnnualSecondary")}
+                    {annualGrowthKitHighlight ?? t("liteAnnualSecondary")}
                   </p>
                 </div>
 
@@ -126,12 +172,22 @@ export async function PricingSection({ locale }: { locale: string }) {
                 >
                   <a href={trialHref}>{t("ctaTrial")}</a>
                 </Button>
+                {liteChecks.length ? (
+                  <ul className="mt-4 space-y-2 text-center text-sm font-medium text-zinc-700">
+                    {liteChecks.map((line) => (
+                      <li key={line}>✓ {line}</li>
+                    ))}
+                  </ul>
+                ) : null}
                 <p className="text-center text-xs text-zinc-500">{t("litePostCta")}</p>
+                <p className="mt-2 text-center text-xs text-muted-foreground">
+                  Switch between monthly and annual anytime.
+                </p>
               </CardContent>
             </Card>
           </div>
 
-          <Card className="relative mx-auto w-full max-w-md scale-[0.99] border-zinc-200/90 bg-zinc-100/45 opacity-[0.9] lg:mx-0 lg:max-w-[22rem] lg:translate-y-3">
+          <Card className="relative mx-auto w-full max-w-md scale-[0.99] rounded-xl border border-zinc-200/90 bg-zinc-100/45 shadow-sm opacity-[0.9] transition-shadow hover:shadow-md lg:mx-0 lg:max-w-[22rem] lg:translate-y-3">
             <CardHeader className="px-5 py-5 sm:px-7 sm:py-7">
               <div className="flex items-center justify-between gap-2">
                 <CardTitle className="text-xl tracking-tight text-zinc-600">
@@ -161,6 +217,11 @@ export async function PricingSection({ locale }: { locale: string }) {
                 ))}
               </ul>
               <PlusWaitlistDialog locale={locale} copy={waitlistCopy} />
+              <ul className="mt-4 space-y-2 text-center text-sm font-medium text-zinc-600">
+                {defaultLiteCtaChecks.map((line) => (
+                  <li key={line}>✓ {line}</li>
+                ))}
+              </ul>
               <p className="text-center text-xs leading-relaxed text-zinc-500">
                 {t("plusNote")}
               </p>

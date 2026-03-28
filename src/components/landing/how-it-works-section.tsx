@@ -1,49 +1,61 @@
 import { getTranslations } from "next-intl/server";
+import { ClipboardCheck, Send, Star } from "lucide-react";
 
-import { Card, CardContent } from "@/components/ui/card";
-import { UserPlus, CheckCircle2, Send } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-const steps = [
-  { labelKey: "stepLabel1" as const, titleKey: "step1" as const, icon: UserPlus },
-  { labelKey: "stepLabel2" as const, titleKey: "step2" as const, icon: CheckCircle2 },
-  { labelKey: "stepLabel3" as const, titleKey: "step3" as const, icon: Send },
-];
+const STEP_ICONS = [ClipboardCheck, Send, Star] as const;
 
-export async function HowItWorksSection() {
+export async function HowItWorksSection({
+  sectionClassName,
+}: {
+  sectionClassName?: string;
+} = {}) {
   const t = await getTranslations("howItWorks");
+
+  const steps = [
+    { titleKey: "step1Title" as const, descKey: "step1Description" as const },
+    { titleKey: "step2Title" as const, descKey: "step2Description" as const },
+    { titleKey: "step3Title" as const, descKey: "step3Description" as const },
+  ] as const;
 
   return (
     <section
       id="how-it-works"
-      className="border-b border-zinc-200/60 bg-white py-24 md:py-32"
+      className={cn(
+        "border-b border-zinc-200/60 bg-white py-12 md:py-16 lg:py-24",
+        sectionClassName,
+      )}
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
-          {t("title")}
-        </h2>
-        <div className="mt-10 grid auto-rows-fr gap-5 md:mt-14 md:grid-cols-3 md:gap-6 lg:gap-8">
-          {steps.map(({ labelKey, titleKey, icon: Icon }) => (
-            <Card
-              key={labelKey}
-              className="flex h-full min-h-0 flex-col transition-all duration-300 ease-out hover:border-zinc-300/80 hover:shadow-lg hover:shadow-zinc-950/[0.06]"
-            >
-              <CardContent className="flex min-h-0 flex-1 flex-col justify-start p-0">
-                <div className="flex flex-col gap-4 px-6 py-5 sm:px-8 sm:py-6">
-                  <div className="inline-flex w-fit items-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-semibold tracking-tight text-white shadow-sm shadow-blue-600/25 sm:px-3.5 sm:text-sm">
-                    {t(labelKey)}
-                  </div>
-                  <div className="flex flex-row items-start gap-4">
-                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-blue-50/90 text-blue-600 ring-1 ring-blue-600/10">
-                      <Icon className="size-5" aria-hidden />
-                    </div>
-                    <p className="min-w-0 flex-1 text-base font-medium leading-snug text-zinc-800">
-                      {t(titleKey)}
-                    </p>
-                  </div>
+      <div className="mx-auto max-w-6xl px-6">
+        <header className="mx-auto max-w-3xl text-center">
+          <h2 className="text-balance text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
+            {t("title")}
+          </h2>
+          <p className="mt-3 text-pretty text-base text-muted-foreground sm:text-lg">
+            {t("subtitle")}
+          </p>
+        </header>
+
+        <div className="mt-10 grid grid-cols-1 gap-10 text-center md:grid-cols-3 md:gap-10 lg:mt-14">
+          {steps.map(({ titleKey, descKey }, index) => {
+            const Icon = STEP_ICONS[index] ?? ClipboardCheck;
+            return (
+              <div
+                key={titleKey}
+                className="rounded-xl border border-zinc-200/80 bg-white p-6 shadow-sm"
+              >
+                <div className="mx-auto flex size-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 ring-1 ring-blue-100">
+                  <Icon className="size-6" aria-hidden />
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+                <h3 className="mt-4 text-lg font-semibold tracking-tight text-zinc-950">
+                  {t(titleKey)}
+                </h3>
+                <p className="mt-2 text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base">
+                  {t(descKey)}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

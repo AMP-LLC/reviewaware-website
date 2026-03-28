@@ -20,7 +20,7 @@ export async function IndustryStripSection() {
       className="border-b border-zinc-200/60 bg-gradient-to-b from-white via-zinc-50/40 to-zinc-50/90"
       aria-labelledby="industry-strip-heading"
     >
-      <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6 py-32 md:py-40">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600/90">
             {t("eyebrow")}
@@ -31,7 +31,7 @@ export async function IndustryStripSection() {
           >
             {t("title")}
           </h2>
-          <p className="mt-4 text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base">
+          <p className="mx-auto mt-5 max-w-2xl text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base">
             {t("subtitle")}
           </p>
         </div>
