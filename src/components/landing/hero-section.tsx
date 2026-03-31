@@ -83,7 +83,7 @@ export async function HeroSection({
                 key={key}
                 className="inline-flex items-center rounded-full border border-blue-100 bg-white px-5 py-2.5 text-sm font-semibold text-primary shadow-sm"
               >
-                {key === "reassuranceChip3" ? "Be Review-Aware in 5 Minutes" : t(key)}
+                {t(key)}
               </span>
             ))}
           </div>

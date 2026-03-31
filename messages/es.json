@@ -88,6 +88,22 @@
     "realWorldBullet3": "Pegatinas QR en facturas",
     "realWorldBullet4": "Calcomanías QR en vehículos"
   },
+  "platformLogos": {
+    "title": "Recoge reseñas donde tus clientes ya opinan",
+    "subtitle": "Dirige a tus clientes a las plataformas que más importan para tu negocio."
+  },
+  "realWorldWorkflow": {
+    "title": "Convierte cada trabajo completado en nuevas reseñas",
+    "step1Label": "Paso 1",
+    "step1Title": "Termina el trabajo",
+    "step1Body": "El técnico completa la visita de servicio y marca el trabajo como finalizado. ReviewAware programa automáticamente la solicitud de reseña.",
+    "step2Label": "Paso 2",
+    "step2Title": "Pide la reseña en el momento",
+    "step2Body": "Los técnicos pueden entregar una tarjeta QR para que el cliente deje una reseña al instante.",
+    "step3Label": "Paso 3",
+    "step3Title": "Haz seguimiento automáticamente",
+    "step3Body": "Si el cliente no deja la reseña de inmediato, ReviewAware envía una solicitud de reseña y un recordatorio automáticos."
+  },
   "builtForService": {
     "title": "Diseñado en torno a cómo trabajan los negocios de servicios",
     "subtitle": "ReviewAware se adapta de forma natural a tu flujo de trabajo.",
@@ -212,6 +228,9 @@
     "liteSupport3": "Cancela cuando quieras",
     "liteSupport4": "La configuración toma menos de 5 minutos.",
     "liteAnnualPill": "Mejor valor anual",
+    "resultsLeadIn": "La mayoría de los negocios empieza a ver nuevas reseñas durante la primera semana.",
+    "annualBillingNote": "Ahorra más del 15% con facturación anual (12 meses por el precio de 10)",
+    "billingSwitchNote": "Cambia entre facturación mensual y anual cuando quieras.",
     "liteCtaCheck1": "Sin tarjeta de crédito",
     "liteCtaCheck2": "La configuración lleva menos de 5 minutos",
     "liteCtaCheck3": "Cancela cuando quieras",

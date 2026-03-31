@@ -70,7 +70,7 @@ export async function PricingSection({
     >
       <div className="mx-auto max-w-6xl px-6">
         <p className="mb-4 text-center text-sm font-medium text-muted-foreground">
-          Most businesses start seeing new reviews within the first week.
+          {t("resultsLeadIn")}
         </p>
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {t("title")}
@@ -107,7 +107,7 @@ export async function PricingSection({
                   <span className="text-zinc-500"> {t("perMonth")}</span>
                 </CardDescription>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Save over 15% with annual billing (12 Months for the price of 10)
+                  {t("annualBillingNote")}
                 </p>
                 <ul className="mt-3 space-y-1.5 text-xs font-medium text-zinc-600 sm:text-sm">
                   {liteSupportKeys.map((key) => (
@@ -156,7 +156,7 @@ export async function PricingSection({
                 ) : null}
                 <p className="text-center text-xs text-zinc-500">{t("litePostCta")}</p>
                 <p className="mt-2 text-center text-xs text-muted-foreground">
-                  Switch between monthly and annual anytime.
+                  {t("billingSwitchNote")}
                 </p>
               </CardContent>
             </Card>

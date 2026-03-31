@@ -1,13 +1,11 @@
+import { getTranslations } from "next-intl/server";
+
 import { PlatformLogoMarks, PlatformLogoStrip } from "@/components/landing/platform-logo-marks";
 import { cn } from "@/lib/utils";
 
-const DEFAULT_TITLE = "Collect Reviews Where Customers Already Leave Them";
-const DEFAULT_SUBTITLE =
-  "Direct customers to the platforms that matter most for your business.";
-
-export function PlatformLogosSection({
-  title = DEFAULT_TITLE,
-  subtitle = DEFAULT_SUBTITLE,
+export async function PlatformLogosSection({
+  title,
+  subtitle,
   sectionClassName,
   layout = "strip",
 }: {
@@ -17,6 +15,10 @@ export function PlatformLogosSection({
   /** `strip`: centered row; `marquee`: infinite scroll */
   layout?: "marquee" | "strip";
 } = {}) {
+  const t = await getTranslations("platformLogos");
+  const resolvedTitle = title ?? t("title");
+  const resolvedSubtitle = subtitle ?? t("subtitle");
+
   return (
     <section
       className={cn(
@@ -26,9 +28,9 @@ export function PlatformLogosSection({
     >
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="mx-auto max-w-3xl text-balance text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
-          {title}
+          {resolvedTitle}
         </h2>
-        <p className="mt-2 text-center text-sm text-muted-foreground">{subtitle}</p>
+        <p className="mt-2 text-center text-sm text-muted-foreground">{resolvedSubtitle}</p>
         <div className="mt-8 md:mt-9">
           {layout === "strip" ? <PlatformLogoStrip /> : <PlatformLogoMarks />}
         </div>

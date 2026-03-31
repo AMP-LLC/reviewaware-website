@@ -88,6 +88,22 @@
     "realWorldBullet3": "Invoice QR stickers",
     "realWorldBullet4": "Vehicle QR decals"
   },
+  "platformLogos": {
+    "title": "Collect Reviews Where Customers Already Leave Them",
+    "subtitle": "Direct customers to the platforms that matter most for your business."
+  },
+  "realWorldWorkflow": {
+    "title": "Turn Every Completed Job Into New Reviews",
+    "step1Label": "Step 1",
+    "step1Title": "Finish the Job",
+    "step1Body": "The technician completes the service call and marks the job complete. ReviewAware schedules the review request automatically.",
+    "step2Label": "Step 2",
+    "step2Title": "Request a Review on the Spot",
+    "step2Body": "Technicians can hand customers a QR review card so they can leave a review immediately.",
+    "step3Label": "Step 3",
+    "step3Title": "Follow Up Automatically",
+    "step3Body": "If the customer does not leave a review right away, ReviewAware sends an automated review request and reminder."
+  },
   "builtForService": {
     "title": "Built Around the Way Service Businesses Work",
     "subtitle": "ReviewAware fits naturally into your workflow.",
@@ -212,6 +228,9 @@
     "liteSupport3": "Cancel anytime",
     "liteSupport4": "Setup takes less than 5 minutes.",
     "liteAnnualPill": "Best Annual Value",
+    "resultsLeadIn": "Most businesses start seeing new reviews within the first week.",
+    "annualBillingNote": "Save over 15% with annual billing (12 Months for the price of 10)",
+    "billingSwitchNote": "Switch between monthly and annual anytime.",
     "liteCtaCheck1": "No credit card required",
     "liteCtaCheck2": "Setup takes less than 5 minutes",
     "liteCtaCheck3": "Cancel anytime",

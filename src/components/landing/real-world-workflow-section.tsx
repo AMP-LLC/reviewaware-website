@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, QrCode, Send } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -9,38 +11,41 @@ export type RealWorldWorkflowStep = {
   icon: LucideIcon;
 };
 
-const DEFAULT_SECTION_TITLE = "Turn Every Completed Job Into New Reviews";
-
-const defaultSteps: RealWorldWorkflowStep[] = [
-  {
-    step: "Step 1",
-    title: "Finish the Job",
-    body: "The technician completes the service call and marks the job complete. ReviewAware schedules the review request automatically.",
-    icon: CheckCircle2,
-  },
-  {
-    step: "Step 2",
-    title: "Request a Review on the Spot",
-    body: "Technicians can hand customers a QR review card so they can leave a review immediately.",
-    icon: QrCode,
-  },
-  {
-    step: "Step 3",
-    title: "Follow Up Automatically",
-    body: "If the customer does not leave a review right away, ReviewAware sends an automated review request and reminder.",
-    icon: Send,
-  },
-];
-
-export function RealWorldWorkflowSection({
-  sectionTitle = DEFAULT_SECTION_TITLE,
-  steps = defaultSteps,
+export async function RealWorldWorkflowSection({
+  sectionTitle,
+  steps,
   variant = "default",
 }: {
   sectionTitle?: string;
   steps?: RealWorldWorkflowStep[];
   variant?: "default" | "numbered";
 } = {}) {
+  const t = await getTranslations("realWorldWorkflow");
+
+  const resolvedSectionTitle = sectionTitle ?? t("title");
+  const resolvedSteps =
+    steps ??
+    ([
+      {
+        step: t("step1Label"),
+        title: t("step1Title"),
+        body: t("step1Body"),
+        icon: CheckCircle2,
+      },
+      {
+        step: t("step2Label"),
+        title: t("step2Title"),
+        body: t("step2Body"),
+        icon: QrCode,
+      },
+      {
+        step: t("step3Label"),
+        title: t("step3Title"),
+        body: t("step3Body"),
+        icon: Send,
+      },
+    ] satisfies RealWorldWorkflowStep[]);
+
   const isNumbered = variant === "numbered";
 
   return (
@@ -48,7 +53,7 @@ export function RealWorldWorkflowSection({
       <div className="mx-auto max-w-6xl px-6">
         <div id="demo" aria-hidden />
         <h2 className="mx-auto max-w-3xl text-balance text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
-          {sectionTitle}
+          {resolvedSectionTitle}
         </h2>
         <div
           className={
@@ -57,7 +62,7 @@ export function RealWorldWorkflowSection({
               : "mt-14 grid gap-8 md:grid-cols-3 md:gap-10"
           }
         >
-          {steps.map(({ step, title, body, icon: Icon }, index) =>
+          {resolvedSteps.map(({ step, title, body, icon: Icon }, index) =>
             isNumbered ? (
               <Card
                 className="rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md"
