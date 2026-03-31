@@ -9,7 +9,6 @@ import {
   IndustryLandingWorkflowVisual,
   IndustryProductProofSection,
   IndustryQrCardMockup,
-  IndustryQrToolkitVisual,
   IndustryWorkflowJobScreenVisual,
 } from "@/components/landing/industry-landing-visuals";
 import { IndustryResultsBulletsSection } from "@/components/landing/industry-results-bullets-section";
@@ -163,18 +162,6 @@ export async function IndustryLandingPageContent({
     timeline3: t("workflowScreenMock.timeline3"),
   };
 
-  const qrToolkitLabels = {
-    panelTitle: t("qrToolkitMock.panelTitle"),
-    panelSubtitle: t("qrToolkitMock.panelSubtitle"),
-    statScansLabel: t("qrToolkitMock.statScansLabel"),
-    statClicksLabel: t("qrToolkitMock.statClicksLabel"),
-    statReviewsLabel: t("qrToolkitMock.statReviewsLabel"),
-    tileQrCards: t("qrToolkitMock.tileQrCards"),
-    tileLeaveBehind: t("qrToolkitMock.tileLeaveBehind"),
-    tileInvoice: t("qrToolkitMock.tileInvoice"),
-    tileVehicle: t("qrToolkitMock.tileVehicle"),
-  };
-
   return (
     <>
       <SiteHeader locale={locale} />
@@ -228,7 +215,6 @@ export async function IndustryLandingPageContent({
           cardIcons={[QrCode, Mail, BellRing]}
           emphasizedHeader
           sectionClassName={sectionY}
-          bottomSlot={<IndustryQrToolkitVisual labels={qrToolkitLabels} />}
         />
         <IndustryUseCasesSection
           title={t("useCasesTitle", v)}

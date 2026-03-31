@@ -106,7 +106,9 @@ export async function PricingSection({
                   </span>
                   <span className="text-zinc-500"> {t("perMonth")}</span>
                 </CardDescription>
-                <p className="mt-1 text-sm text-muted-foreground">Save over 25% with annual billing</p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Save over 15% with annual billing (12 Months for the price of 10)
+                </p>
                 <ul className="mt-3 space-y-1.5 text-xs font-medium text-zinc-600 sm:text-sm">
                   {liteSupportKeys.map((key) => (
                     <li key={key} className="flex items-center gap-2">
@@ -141,7 +143,7 @@ export async function PricingSection({
                 <Button
                   asChild
                   size="lg"
-                  className="h-12 w-full text-base font-semibold shadow-lg shadow-blue-600/25"
+                  className="h-12 w-full text-base font-semibold text-white shadow-lg shadow-blue-600/25 hover:text-white"
                 >
                   <a href={trialHref}>{t("ctaTrial")}</a>
                 </Button>

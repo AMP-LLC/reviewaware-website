@@ -28,7 +28,7 @@ export function IndustryResultsBulletsSection({
         >
           {title}
         </h2>
-        <ul className="mx-auto mt-10 max-w-xl space-y-4 sm:mt-12">
+        <ul className="mx-auto mt-10 w-fit max-w-xl space-y-4 text-left sm:mt-12">
           {items.map((text) => (
             <li
               key={text}
