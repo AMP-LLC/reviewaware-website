@@ -23,7 +23,6 @@ export async function PricingSection({
   locale,
   liteAnnualLeadIn,
   liteCtaChecklist,
-  annualGrowthKitHighlight,
   sectionClassName,
 }: {
   locale: string;
@@ -31,8 +30,6 @@ export async function PricingSection({
   liteAnnualLeadIn?: string;
   /** Shown under the Lite trial CTA (e.g. reassurance bullets) */
   liteCtaChecklist?: readonly string[];
-  /** Replaces the default annual kit footnote in the Lite annual highlight box */
-  annualGrowthKitHighlight?: string;
   sectionClassName?: string;
 }) {
   const t = await getTranslations("pricing");
@@ -140,30 +137,6 @@ export async function PricingSection({
                     {liteAnnualLeadIn}
                   </p>
                 ) : null}
-
-                <div
-                  className={`rounded-xl border border-blue-500/40 bg-blue-50/60 px-4 py-3 shadow-sm transition-shadow hover:shadow-md sm:px-4 sm:py-3.5 ${liteAnnualLeadIn ? "mt-4" : "mt-5"}`}
-                >
-                  <p className="inline-flex items-center rounded bg-primary px-2 py-1 text-xs font-semibold text-white">
-                    Best Value
-                  </p>
-                  <p className="mt-2.5 text-sm font-semibold leading-snug text-blue-700">
-                    {t("liteAnnualHeadline")}
-                  </p>
-                  <p className="mt-2 text-pretty text-sm leading-relaxed text-slate-600">
-                    {t("liteAnnualSupport")}
-                  </p>
-                  <p className="mt-3 text-xs font-medium text-slate-600">Includes:</p>
-                  <ul className="mt-1 space-y-1 text-xs leading-relaxed text-slate-600">
-                    <li>QR Review Cards</li>
-                    <li>Technician Leave-Behind Cards</li>
-                    <li>Invoice QR Stickers</li>
-                    <li>Vehicle QR Decals</li>
-                  </ul>
-                  <p className="mt-2 text-pretty text-xs leading-relaxed text-slate-500">
-                    {annualGrowthKitHighlight ?? t("liteAnnualSecondary")}
-                  </p>
-                </div>
 
                 <Button
                   asChild
