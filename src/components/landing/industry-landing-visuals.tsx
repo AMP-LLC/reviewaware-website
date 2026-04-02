@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { HeroSectionCopy } from "@/components/landing/hero-section";
 import { Link } from "@/i18n/navigation";
-import { getLiteTrialHref } from "@/lib/marketing-links";
+import { getLiteTrialHref, getLiveDemoHref } from "@/lib/marketing-links";
 import { cn } from "@/lib/utils";
 
 const WORKFLOW_ICONS = [ClipboardList, QrCode, Mail] as const;
@@ -49,6 +49,7 @@ export async function IndustryLandingHero({
   const tIndustry = await getTranslations("industryLanding");
   const tDash = await getTranslations("industryLanding.heroDashboard");
   const trialHref = getLiteTrialHref(locale);
+  const demoHref = getLiveDemoHref(locale);
 
   const {
     headlineLine1,
@@ -57,8 +58,10 @@ export async function IndustryLandingHero({
     subtitleLine2,
     ctaPrimary,
     ctaSecondary,
+    ctaDemo,
     credibilityLine,
   } = copy;
+  const demoLabel = ctaDemo ?? tHero("ctaDemo");
 
   return (
     <section
@@ -88,7 +91,7 @@ export async function IndustryLandingHero({
               <span className="block">{subtitleLine1}</span>
               {subtitleLine2 ? <span className="block">{subtitleLine2}</span> : null}
             </p>
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start sm:gap-4">
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap lg:justify-start sm:gap-4">
               <Button
                 asChild
                 size="lg"
@@ -103,6 +106,16 @@ export async function IndustryLandingHero({
                 className="h-12 w-full min-w-[200px] border border-zinc-300 bg-white/90 px-8 sm:w-auto"
               >
                 <a href="#demo">{ctaSecondary}</a>
+              </Button>
+              <Button
+                asChild
+                variant="secondary"
+                size="lg"
+                className="h-12 w-full min-w-[200px] border border-blue-200 bg-white px-8 text-base font-semibold text-blue-700 shadow-sm hover:border-blue-300 hover:bg-blue-50/80 sm:w-auto"
+              >
+                <a href={demoHref} target="_blank" rel="noopener noreferrer">
+                  {demoLabel}
+                </a>
               </Button>
             </div>
             <p className="mt-4 text-center text-sm text-muted-foreground lg:text-left">

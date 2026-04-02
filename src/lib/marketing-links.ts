@@ -12,6 +12,32 @@
 const DEFAULT_SIGNUP_EN = "https://app.reviewaware.com/signup";
 const DEFAULT_SIGNUP_ES = "https://app.reviewaware.com/signup?lang=es";
 
+const DEFAULT_LIVE_DEMO_EN = "https://app.reviewaware.com/demo";
+const DEFAULT_LIVE_DEMO_ES = "https://app.reviewaware.com/demo?lang=es";
+
+/** Public live product demo (customer review flow). */
+export function getLiveDemoHref(locale: string): string {
+  const isEs = locale === "es";
+
+  if (isEs) {
+    const configuredEs = process.env.NEXT_PUBLIC_LIVE_DEMO_URL_ES;
+    if (configuredEs && configuredEs.trim().length > 0) {
+      return configuredEs.trim();
+    }
+    return DEFAULT_LIVE_DEMO_ES;
+  }
+
+  const configured = process.env.NEXT_PUBLIC_LIVE_DEMO_URL?.trim();
+  if (configured && configured.length > 0) {
+    const looksSpanish =
+      /[?&]lang=es\b/i.test(configured) || /[?&]locale=es\b/i.test(configured);
+    if (!looksSpanish) {
+      return configured;
+    }
+  }
+  return DEFAULT_LIVE_DEMO_EN;
+}
+
 export function getLiteTrialHref(locale: string): string {
   const isEs = locale === "es";
 

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
-import { getLiteTrialHref } from "@/lib/marketing-links";
+import { getLiteTrialHref, getLiveDemoHref } from "@/lib/marketing-links";
 
 export type HeroSectionCopy = {
   headlineLine1: string;
@@ -10,6 +10,8 @@ export type HeroSectionCopy = {
   subtitleLine2?: string;
   ctaPrimary: string;
   ctaSecondary: string;
+  /** Live demo on app.reviewaware.com */
+  ctaDemo?: string;
   /** Shown below primary/secondary CTAs, before reassurance chips */
   credibilityLine?: string;
 };
@@ -23,6 +25,7 @@ export async function HeroSection({
 }) {
   const t = await getTranslations("hero");
   const trialHref = getLiteTrialHref(locale);
+  const demoHref = getLiveDemoHref(locale);
 
   const headlineLine1 = copy?.headlineLine1 ?? t("headlineLine1");
   const headlineLine2 = copy?.headlineLine2 ?? t("headlineLine2");
@@ -30,6 +33,7 @@ export async function HeroSection({
   const subtitleLine2 = copy?.subtitleLine2 ?? t("subtitleLine2");
   const ctaPrimary = copy?.ctaPrimary ?? t("ctaPrimary");
   const ctaSecondary = copy?.ctaSecondary ?? t("ctaSecondary");
+  const ctaDemo = copy?.ctaDemo ?? t("ctaDemo");
   const credibilityLine = copy?.credibilityLine;
 
   return (
@@ -54,7 +58,7 @@ export async function HeroSection({
             <span className="block">{subtitleLine1}</span>
             {subtitleLine2 ? <span className="block">{subtitleLine2}</span> : null}
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <Button
               asChild
               size="lg"
@@ -68,7 +72,17 @@ export async function HeroSection({
               size="lg"
               className="h-12 w-full min-w-[200px] border border-zinc-300 bg-white/90 px-8 sm:w-auto"
             >
-              <a href="#demo">{ctaSecondary}</a>
+              <a href="#how-it-works">{ctaSecondary}</a>
+            </Button>
+            <Button
+              asChild
+              variant="secondary"
+              size="lg"
+              className="h-12 w-full min-w-[200px] border border-blue-200 bg-white px-8 text-base font-semibold text-blue-700 shadow-sm hover:border-blue-300 hover:bg-blue-50/80 sm:w-auto"
+            >
+              <a href={demoHref} target="_blank" rel="noopener noreferrer">
+                {ctaDemo}
+              </a>
             </Button>
           </div>
           <p className="mt-4 text-center text-sm text-muted-foreground">{t("socialProofLine")}</p>

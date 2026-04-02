@@ -3,18 +3,18 @@ import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import { getLiteTrialHref } from "@/lib/marketing-links";
+import { getLiteTrialHref, getLiveDemoHref } from "@/lib/marketing-links";
 
 const nav = [
-  { href: "#screenshots", labelKey: "demo" as const },
   { href: "#how-it-works", labelKey: "howItWorks" as const },
   { href: "#pricing", labelKey: "pricing" as const },
   { href: "#faq", labelKey: "faq" as const },
-];
+] as const;
 
 export async function SiteHeader({ locale }: { locale: string }) {
   const t = await getTranslations("header");
   const trialHref = getLiteTrialHref(locale);
+  const demoHref = getLiveDemoHref(locale);
 
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-200/60 bg-white/85 backdrop-blur-md supports-[backdrop-filter]:bg-white/70">
@@ -30,6 +30,14 @@ export async function SiteHeader({ locale }: { locale: string }) {
           />
         </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          <a
+            href={demoHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-zinc-600 transition-colors duration-200 hover:text-zinc-950"
+          >
+            {t("demo")}
+          </a>
           {nav.map((item) => (
             <a
               key={item.href}
