@@ -24,12 +24,14 @@ import { ReviewGrowthKitSection } from "@/components/landing/review-growth-kit-s
 import { ReviewPainSection } from "@/components/landing/review-pain-section";
 import { ReviewResultsSection } from "@/components/landing/review-results-section";
 import { SeoEducationCardsSection } from "@/components/landing/seo-education-cards-section";
+import { SeoInternalLinksSection } from "@/components/landing/seo-internal-links-section";
 import { SiteHeader } from "@/components/landing/site-header";
 import {
   buildIndustryLandingMessageValues,
   getIndustryLandingDefinition,
   SERVICE_PROFESSIONAL_TRADE_LINKS,
 } from "@/lib/industry-landing";
+import { TRADE_TO_UMBRELLA_LINK_SPECS } from "@/lib/seo-layers/link-presets";
 
 const sectionY = "py-12 md:py-16 lg:py-24";
 
@@ -53,6 +55,7 @@ export async function IndustryLandingPageContent({
   const tokens = def.tokens[locale === "es" ? "es" : "en"];
   const v = buildIndustryLandingMessageValues(tokens, locale);
   const t = await getTranslations("industryLanding");
+  const tLinks = await getTranslations("internalLinks");
   const loc = locale === "es" ? "es" : "en";
   const heroOverride = def.copyOverrides?.[loc]?.hero;
 
@@ -296,6 +299,16 @@ export async function IndustryLandingPageContent({
           liteAnnualLeadIn={t("pricingAnnualLeadIn", v)}
           sectionClassName={sectionY}
         />
+        {!isUmbrella ? (
+          <SeoInternalLinksSection
+            title={t("layerNav.tradeUmbrellaHubsTitle")}
+            links={TRADE_TO_UMBRELLA_LINK_SPECS.map((spec) => ({
+              href: spec.href,
+              label: tLinks(spec.labelKey),
+            }))}
+            compact
+          />
+        ) : null}
         {!isUmbrella ? (
           <IndustryServiceProsCompactSection
             title={t("servicePros.alsoBuiltForOther")}

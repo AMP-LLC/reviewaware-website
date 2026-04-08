@@ -125,7 +125,7 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
           headlineLine1: "Review Software Built for Home Service Businesses",
           headlineLine2: "",
           subtitleLine1:
-            "Turn every completed service call into a new Google review with QR cards, automated follow-ups, and reputation management built for service companies.",
+            "Turn every completed service call into a new Google review with QR cards, automated follow-ups, and a repeatable review rhythm built for service companies.",
           subtitleLine2: "",
           ctaPrimary: "Start Getting More Reviews",
           ctaSecondary: "See How It Works",
@@ -145,7 +145,7 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
             "Software de reseñas pensado para empresas de servicios del hogar",
           headlineLine2: "",
           subtitleLine1:
-            "Convierte cada visita de servicio completada en una nueva reseña de Google con tarjetas QR, seguimientos automáticos y gestión de reputación pensada para empresas de servicios.",
+            "Convierte cada visita de servicio completada en una nueva reseña de Google con tarjetas QR, seguimientos automáticos y un ritmo repetible de reseñas pensado para empresas de servicios.",
           subtitleLine2: "",
           ctaPrimary: "Empieza a conseguir más reseñas",
           ctaSecondary: "Ver cómo funciona",

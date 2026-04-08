@@ -1,0 +1,496 @@
+{
+  "internalLinks": {
+    "coreProductExploreTitle": "Built for field teams — explore industries & tactics",
+    "useCaseRelatedTitle": "Product fit & related industries",
+    "contractorUmbrella": "Contractor review software",
+    "homeServiceUmbrella": "Home service review software",
+    "tradeHvac": "HVAC review software",
+    "tradePlumbing": "Plumbing review software",
+    "tradeRoofing": "Roofing review software",
+    "googleReviewSoftwareShort": "Google review software",
+    "reviewRequestSoftwareShort": "Review request software",
+    "reviewManagementSoftwareShort": "Review management software",
+    "customerReviewSoftwareShort": "Customer review software",
+    "reputationManagementSoftwareShort": "Reputation management software",
+    "getMoreGoogleReviews": "Get more Google reviews",
+    "howToGetMoreGoogleReviews": "How to get more Google reviews",
+    "qrCodeReviewSystem": "QR code review system",
+    "reviewCardsForBusiness": "Review cards for business",
+    "jobsiteReviewSystem": "Jobsite review system",
+    "automatedReviewRequests": "Automated review requests",
+    "reviewGrowthKit": "Review Growth Kit",
+    "reviewFunnel": "Review funnel"
+  },
+  "productPages": {
+    "reviewManagementSoftware": {
+      "metadata": {
+        "title": "Review Management Software for Field Service Teams | ReviewAware",
+        "description": "Run review requests from completed jobs: automated emails, QR jobsite assets, and reminders in one review management workflow for contractors and home service businesses."
+      },
+      "hero": {
+        "headlineLine1": "Review Management Software",
+        "headlineLine2": "Built for On-the-Job Workflows",
+        "subtitleLine1": "Turn completed jobs into a repeatable review program—without spreadsheets, chasing technicians, or hoping customers remember.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Designed for HVAC, plumbing, roofing, cleaning, and other field service companies."
+      },
+      "differentiator": {
+        "title": "What review management means when work happens in the field",
+        "p1": "Review management is not a generic inbox tool. For service businesses, it means tying every review touchpoint to a completed job so requests are timely, trackable, and consistent.",
+        "p2": "ReviewAware connects the moment the job is marked complete to the outbound request—whether that is a QR card in the customer’s hand or an automated email sequence with reminders.",
+        "p3": "You keep one system of record for jobs, links, and follow-ups, so managers can see what was sent and what still needs a nudge."
+      },
+      "reviewPain": {
+        "title": "Why most review management efforts stall",
+        "card1": "Requests go out late—after the customer has already moved on",
+        "card2": "Technicians ask inconsistently, so results look random month to month",
+        "card3": "No clear owner for follow-ups once the crew leaves the site",
+        "closing": "A job-based workflow fixes the timing problem: requests launch when motivation is highest."
+      },
+      "finalCta": {
+        "headline": "Manage Review Requests Like Any Other Operational Process",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Connect your review link and send the first requests in minutes.",
+        "supportingLine": "See how teams standardize requests without adding admin work."
+      }
+    },
+    "googleReviewSoftware": {
+      "metadata": {
+        "title": "Google Review Software for Service Businesses | ReviewAware",
+        "description": "Get more Google reviews after every completed job with QR review cards, direct Google links, and automated follow-ups built for contractors and home services."
+      },
+      "hero": {
+        "headlineLine1": "Google Review Software",
+        "headlineLine2": "That Triggers After Every Job",
+        "subtitleLine1": "Send customers straight to your Google review page from the driveway, the invoice, or their inbox—automatically after the job is closed.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Built for local service businesses that win or lose the next job on Google stars."
+      },
+      "differentiator": {
+        "title": "Why a Google-specific workflow beats a generic review blast",
+        "p1": "Google rewards recency and consistency. Sporadic campaigns create spikes; job-timed requests create steady growth that matches how you actually operate.",
+        "p2": "ReviewAware focuses on getting the customer to the right destination fast—especially right after service when they still remember the technician’s name.",
+        "p3": "You reduce friction by pairing an immediate QR moment with polite email follow-ups when someone does not tap the link the same day."
+      },
+      "reviewPain": {
+        "title": "The Google review gap for service companies",
+        "card1": "Happy customers leave—then never open Google to search for you",
+        "card2": "Staff remember to ask on some jobs, not others, so results look uneven",
+        "card3": "Generic tools are not built around completed visits or crews",
+        "closing": "Job-based timing is the lever most teams miss—especially on Google."
+      },
+      "finalCta": {
+        "headline": "Make Google Reviews Part of Every Completed Job",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Paste your review link, add a job, and the first request can go out today.",
+        "supportingLine": "Built for teams that need practical Google growth—not another dashboard."
+      }
+    },
+    "customerReviewSoftware": {
+      "metadata": {
+        "title": "Customer Review Software for Field Service Teams | ReviewAware",
+        "description": "Collect more customer reviews in person and online after each completed job. QR cards, automated requests, and reminders tailored to service businesses."
+      },
+      "hero": {
+        "headlineLine1": "Customer Review Software",
+        "headlineLine2": "for Teams That Finish Real Jobs",
+        "subtitleLine1": "Meet customers where the work ends: hand off a QR review card, send the email automatically, and nudge politely if they forget.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Ideal when your reputation depends on trust right after service."
+      },
+      "differentiator": {
+        "title": "Customer reviews need both the human moment and the system",
+        "p1": "The best window to earn a customer review is when the technician is still on site and the outcome feels fresh.",
+        "p2": "ReviewAware standardizes that moment with print-ready QR assets, while guaranteeing nobody slips through the cracks when life gets busy.",
+        "p3": "You still sound human—the system just makes sure the ask happens every time, for every crew, without nagging customers the wrong way."
+      },
+      "reviewPain": {
+        "title": "Why happy customers still stay quiet",
+        "card1": "They intend to review later—and never do",
+        "card2": "They need a direct link; searching your business adds friction",
+        "card3": "Follow-up is ad hoc, so only the loudest voices show up online",
+        "closing": "Pair on-the-spot ease with gentle automation and the quiet majority shows up."
+      },
+      "finalCta": {
+        "headline": "Turn Happy Customers Into Public Reviews",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Launch a simple review loop your technicians can actually follow.",
+        "supportingLine": "Built for service businesses—not ecommerce funnels."
+      }
+    },
+    "reputationManagementSoftware": {
+      "metadata": {
+        "title": "Reputation Management Software Grounded in Completed Jobs | ReviewAware",
+        "description": "Grow and protect your online reputation with job-based review requests, QR follow-ups, and measurable sending—before issues become one-star stories."
+      },
+      "hero": {
+        "headlineLine1": "Reputation Management",
+        "headlineLine2": "Powered by Every Finished Job",
+        "subtitleLine1": "Reputation is not a quarterly project. ReviewAware helps you earn fresh reviews continuously—and catch unhappy customers while you can still solve the problem privately.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "For owner-operators and ops leaders who want reputation to track real service volume."
+      },
+      "differentiator": {
+        "title": "Reputation management starts with volume—and timing matters",
+        "p1": "Many reputation products focus on dashboards after the fact. ReviewAware emphasizes proactive requests tied to service delivery so your public profile reflects today’s quality of work.",
+        "p2": "When requests are automatic, you reduce the randomness that makes ratings swing after slow months or busy seasons.",
+        "p3": "You also create more chances to learn from feedback before it turns into a public complaint—because the conversation starts in the normal course of service."
+      },
+      "reviewPain": {
+        "title": "Where reputation programs usually break down",
+        "card1": "Reviews cluster after big pushes, then stall for weeks",
+        "card2": "Negative experiences surface online before anyone hears them internally",
+        "card3": "Leadership cannot see whether crews are actually asking",
+        "closing": "A job-linked system keeps reputation tied to operations—not a quarterly campaign."
+      },
+      "finalCta": {
+        "headline": "Build Reputation the Same Way You Build Revenue",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "See how consistent requests change your trajectory in weeks—not quarters.",
+        "supportingLine": "Operational reputation management for service businesses."
+      }
+    },
+    "reviewRequestSoftware": {
+      "metadata": {
+        "title": "Review Request Software After Every Completed Job | ReviewAware",
+        "description": "Automate review requests when jobs close: email sequences, QR handoffs, and reminders so you never miss the best moment to ask."
+      },
+      "hero": {
+        "headlineLine1": "Review Request Software",
+        "headlineLine2": "That Sends at Job Completion",
+        "subtitleLine1": "Stop relying on memory. Trigger review requests automatically when the job is done—plus optional QR moments for customers still on site.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Purpose-built for dispatch-based teams and field technicians."
+      },
+      "differentiator": {
+        "title": "The difference between asking and requesting well",
+        "p1": "A review request only works if it arrives when the customer still cares—and if the path to leave feedback takes one tap, not ten minutes of searching.",
+        "p2": "ReviewAware treats the request as part of your job-close checklist: the system sends, tracks clicks, and schedules reminders that feel helpful, not spammy.",
+        "p3": "Teams stop debating whether follow-up happened because the workflow is the same on every truck, every job."
+      },
+      "reviewPain": {
+        "title": "Manual review requests do not scale",
+        "card1": "Office staff forgets after a busy day of dispatching",
+        "card2": "Technicians move to the next job before sending the link",
+        "card3": "Customers say “sure” and still need a second nudge",
+        "closing": "Automation protects consistency without adding a new role."
+      },
+      "finalCta": {
+        "headline": "Send Review Requests Automatically—Starting Today",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Hook up your review URL and your first automated send can happen on the next completed job.",
+        "supportingLine": "Built for high-volume field operations."
+      }
+    }
+  },
+  "useCasePages": {
+    "getMoreGoogleReviews": {
+      "metadata": {
+        "title": "Get More Google Reviews After Field Service Jobs | ReviewAware",
+        "description": "Practical playbook: ask at the right moment, remove friction with QR + links, and follow up automatically so more customers actually leave Google reviews."
+      },
+      "hero": {
+        "headlineLine1": "Get More Google Reviews",
+        "headlineLine2": "From the Work You Already Do",
+        "subtitleLine1": "You do not need hacks—you need timing. Capture reviews when the job ends and keep polite follow-ups running without babysitting spreadsheets.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Best for contractors and home service teams competing on local search."
+      },
+      "differentiator": {
+        "title": "A simple playbook that beats inconsistent asking",
+        "p1": "The highest-response window is right after service, while the customer still associates the five-star experience with a person, not an invoice number.",
+        "p2": "Give them a direct path to Google—QR on the jobsite plus email for people who prefer to act later on their phone.",
+        "p3": "Automate one or two reminders so polite busy people still convert, without turning into spam.",
+        "p4": "Measure what was sent so managers know the process is working—not just hope it is."
+      },
+      "reviewPain": {
+        "title": "Why Google growth feels stuck",
+        "card1": "You only remember to ask on slow weeks",
+        "card2": "Customers mean to review but life gets in the way",
+        "card3": "You compete with pros who request on every job",
+        "closing": "Consistency beats intensity—especially for Google."
+      },
+      "finalCta": {
+        "headline": "Turn This Playbook Into a Daily Habit",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Launch job-timed requests in one afternoon.",
+        "supportingLine": "See why teams treat Google reviews like operations."
+      }
+    },
+    "howToGetMoreGoogleReviews": {
+      "metadata": {
+        "title": "How to Get More Google Reviews (Field Service Guide) | ReviewAware",
+        "description": "Step-by-step guidance for service businesses: when to ask, how to remove friction, what to automate, and how to protect your rating while growing volume."
+      },
+      "hero": {
+        "headlineLine1": "How to Get More Google Reviews",
+        "headlineLine2": "Without Sounding Desperate",
+        "subtitleLine1": "Use technician-friendly habits, QR handoffs, and light automation so happy customers actually finish the review.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Written for owners who want a system, not another marketing trend."
+      },
+      "differentiator": {
+        "title": "What actually moves the number",
+        "p1": "Ask once at the emotional peak: job completion, walkthrough finished, problem solved—before the truck pulls away.",
+        "p2": "Remove every extra step. If customers have to hunt for your Google listing, most will quit—even if they like you.",
+        "p3": "Use one polite reminder—not five. Reminders should feel like a helpful nudge, not pressure.",
+        "p4": "Operationalize it. If only your best technician asks, your reputation will always lag your true quality."
+      },
+      "reviewPain": {
+        "title": "Common mistakes that waste good work",
+        "card1": "Waiting days to ask when excitement fades",
+        "card2": "Sending long emails with too many choices",
+        "card3": "Assuming “they will find us on Google”",
+        "closing": "Small process tweaks beat big ad spends for local trust."
+      },
+      "finalCta": {
+        "headline": "Put the System on Autopilot",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Pair this guide with software that enforces the habit.",
+        "supportingLine": "Built for teams that live in dispatch boards and vans."
+      }
+    },
+    "qrCodeReviewSystem": {
+      "metadata": {
+        "title": "QR Code Review System for Jobsites & Service Visits | ReviewAware",
+        "description": "Use QR-connected review links on cards, invoices, and leave-behinds so customers open your review page in one scan—ideal for technicians in the field."
+      },
+      "hero": {
+        "headlineLine1": "A QR Code Review System",
+        "headlineLine2": "Technicians Can Actually Use",
+        "subtitleLine1": "Print-ready assets + tracked links so crews hand customers a one-scan path to your review page while you still have goodwill on site.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Built for messy trucks, gloves, and bright sunlight—not desktop-only workflows."
+      },
+      "differentiator": {
+        "title": "Why QR wins in the field",
+        "p1": "Typing a business name into Google is high-friction on a phone. A QR code removes search ambiguity and lands on the exact review destination.",
+        "p2": "QR is not a gimmick when it is paired with job completion—it is the bridge between a handshake and a public testimonial.",
+        "p3": "ReviewAware gives you printable layouts so the asset looks legitimate and on-brand, not like a random sticker.",
+        "p4": "You still benefit from email follow-ups when customers do not scan the same day—because life happens."
+      },
+      "reviewPain": {
+        "title": "Paper cards fail without a system",
+        "card1": "Links go out of date or point to the wrong profile",
+        "card2": "Nobody knows whether scans led to reviews",
+        "card3": "Crews run out of cards and stop asking",
+        "closing": "Treat QR like inventory: predictable, replenishable, measurable."
+      },
+      "finalCta": {
+        "headline": "Ship QR Review Assets Your Team Will Use",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Generate print layouts connected to tracked review links.",
+        "supportingLine": "Pairs with automated email when scans do not happen instantly."
+      }
+    },
+    "reviewCardsForBusiness": {
+      "metadata": {
+        "title": "Review Cards for Business (Print + QR) | ReviewAware",
+        "description": "Leave-behind review cards that link straight to Google: templates, QR review URLs, and workflows so field teams ask consistently after every job."
+      },
+      "hero": {
+        "headlineLine1": "Review Cards for Business",
+        "headlineLine2": "Your Crew Can Hand Customers",
+        "subtitleLine1": "Turn a simple card into a professional, trackable review ask—without making technicians memorize scripts or hunt for links.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Works for roofers, cleaners, landscapers, and any team with a physical touchpoint."
+      },
+      "differentiator": {
+        "title": "Cards work when they feel legitimate",
+        "p1": "Cheap printouts undermine trust. Customers should instantly recognize your brand and understand what the QR does.",
+        "p2": "Pair the card with a consistent moment: “We’d love your feedback—scan when you have a minute.” That is it.",
+        "p3": "Operations should own replenishment—just like business cards or yard signs—so asking never depends on heroics.",
+        "p4": "Software ties the card to the right link and shows whether customers engaged, so you improve the process over time."
+      },
+      "reviewPain": {
+        "title": "Where DIY cards fall apart",
+        "card1": "Every truck uses a different URL",
+        "card2": "Managers cannot tell if cards help or gather dust",
+        "card3": "Customers scan but abandon a confusing landing path",
+        "closing": "Standardize the asset and the ask together."
+      },
+      "finalCta": {
+        "headline": "Move From One-Off Cards to a Repeatable Ritual",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Create cards connected to tracked review links and optional email follow-up.",
+        "supportingLine": "Built for businesses that win on trust at the door."
+      }
+    },
+    "jobsiteReviewSystem": {
+      "metadata": {
+        "title": "Jobsite Review System for Contractors & Technicians | ReviewAware",
+        "description": "Capture reviews where the work happens: job-close triggers, QR handoffs on site, and automated email so residential and commercial jobs feed your reputation."
+      },
+      "hero": {
+        "headlineLine1": "A Jobsite Review System",
+        "headlineLine2": "That Matches How Crews Work",
+        "subtitleLine1": "Close the job, trigger the request, and give customers a frictionless path to review—before the trailer rolls to the next stop.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Ideal for remodelers, roofers, HVAC, and multi-visit projects."
+      },
+      "differentiator": {
+        "title": "Jobsites are noisy—your review flow should not be",
+        "p1": "The best moment is still when the customer sees the finished outcome—paint dry, system cooling, leak stopped.",
+        "p2": "A jobsite system respects safety and pace: the ask is quick, optional, and does not slow the punch list.",
+        "p3": "Because not everyone reviews on the spot, automation picks up later with context tied to that job—not a random blast.",
+        "p4": "Dispatchers and owners get visibility into what was sent, so accountability lives in ops—not marketing alone."
+      },
+      "reviewPain": {
+        "title": "Paper checklists rarely survive Friday afternoons",
+        "card1": "Teams forget the ask when schedules stack",
+        "card2": "Commercial GC workflows differ from residential—without flexibility you get zero adoption",
+        "card3": "You cannot improve what you do not track",
+        "closing": "Connect the jobsite moment to software and follow-through becomes reliable."
+      },
+      "finalCta": {
+        "headline": "Bring Reviews Into the Job-Close Ritual",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Tie completed jobs to on-site QR plus email backup.",
+        "supportingLine": "Built for real-world job sites—not desk jobs."
+      }
+    },
+    "automatedReviewRequests": {
+      "metadata": {
+        "title": "Automated Review Requests for Service Businesses | ReviewAware",
+        "description": "Trigger review emails and reminders automatically when jobs close. Reduce manual follow-up while increasing consistent Google and platform reviews."
+      },
+      "hero": {
+        "headlineLine1": "Automated Review Requests",
+        "headlineLine2": "Triggered by Completed Jobs",
+        "subtitleLine1": "Stop copying and pasting links. Let the finish line start the sequence—polite, timed, and measurable.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Best when dispatch volume makes manual follow-up unrealistic."
+      },
+      "differentiator": {
+        "title": "Automation should feel personal, not robotic",
+        "p1": "Customers respond when the note matches the moment they paid or signed off—not a generic monthly newsletter.",
+        "p2": "ReviewAware anchors sends to job completion so timing stays accurate even when crews forget to log details perfectly.",
+        "p3": "Reminders are limited and spaced so you stay helpful; you are not training customers to ignore you.",
+        "p4": "You get a record of sends and clicks, which is how you coach teams and improve conversion without guessing."
+      },
+      "reviewPain": {
+        "title": "Manual email ruins consistency",
+        "card1": "Who owns follow-up when three techs touched the job?",
+        "card2": "Busy weeks mean silent customers",
+        "card3": "Owners discover gaps only after ratings drop",
+        "closing": "Job-triggered automation removes the single point of failure: human memory."
+      },
+      "finalCta": {
+        "headline": "Turn Automation Into Steady Review Growth",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Connect your workflow and send the first automated request this week.",
+        "supportingLine": "Ops-friendly email sequences for field service."
+      }
+    },
+    "reviewGrowthKit": {
+      "metadata": {
+        "title": "Review Growth Kit — QR Print Tools for Field Teams | ReviewAware",
+        "description": "Equip trucks and technicians with printed QR review tools tied to tracked links. Included on annual plans—paired with automated follow-up when scans lag."
+      },
+      "hero": {
+        "headlineLine1": "The Review Growth Kit",
+        "headlineLine2": "Puts QR Tools in the Field",
+        "subtitleLine1": "Print-ready QR assets help crews ask in person while software ensures nobody slips through if they skip the scan.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Designed as the physical half of a digital review system."
+      },
+      "differentiator": {
+        "title": "Why the kit matters alongside software",
+        "p1": "Some customers want an analog nudge—a card on the counter beats another email they will read tonight.",
+        "p2": "The kit is not swag; it is operational equipment for technicians who live on jobsites.",
+        "p3": "Annual value bundling helps teams justify looking professional while keeping per-job costs low.",
+        "p4": "Software still runs follow-up so the kit amplifies results instead of replacing disciplined sending."
+      },
+      "reviewPain": {
+        "title": "T-shirts do not collect reviews",
+        "card1": "Teams need tools that match how customers act in the moment",
+        "card2": "One-off print runs stall when links change",
+        "card3": "Without tracking, you cannot prove ROI on field spend",
+        "closing": "Pair physical tools with digital accountability."
+      },
+      "finalCta": {
+        "headline": "Bundle Print Assets With Automated Follow-Up",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "See annual plan details and kit value in pricing.",
+        "supportingLine": "Built for owners who want crews equipped—not empty-handed."
+      }
+    },
+    "reviewFunnel": {
+      "metadata": {
+        "title": "Review Funnel for Contractors — Job to Published Review | ReviewAware",
+        "description": "Map the path from completed job to published review: triggers, QR capture, email follow-up, and reminders—so more happy customers cross the finish line."
+      },
+      "hero": {
+        "headlineLine1": "A Review Funnel",
+        "headlineLine2": "Grounded in Real Completed Jobs",
+        "subtitleLine1": "Design the path once: job closes → immediate ask → backup email → light reminders → feedback captured.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "For teams tired of leaky manual funnels that depend on memory."
+      },
+      "differentiator": {
+        "title": "Funnels fail when the first step is fuzzy",
+        "p1": "If “job complete” is not the trigger, your funnel starts too late—or not at all.",
+        "p2": "A strong field funnel gives two on-ramps: scan now for motivated customers, email later for busy ones.",
+        "p3": "Each stage should have a single clear action; confusion is what kills conversion.",
+        "p4": "Measurement tells you whether the leak is timing, copy, or technicians skipping the handoff—fix with data, not arguments."
+      },
+      "reviewPain": {
+        "title": "Random asks create random results",
+        "card1": "No defined stages—just hope",
+        "card2": "Marketing language that does not match how crews talk",
+        "card3": "No way to see drop-off between send and review",
+        "closing": "A simple funnel beats a clever slogan."
+      },
+      "finalCta": {
+        "headline": "Run a Funnel Your Technicians Can Follow",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Connect triggers, QR, and email in one workflow.",
+        "supportingLine": "Operational funnels—not marketing theory."
+      }
+    }
+  },
+  "industryLanding": {
+    "layerNav": {
+      "tradeUmbrellaHubsTitle": "Industry hubs: contractors & home services"
+    }
+  }
+}

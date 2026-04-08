@@ -1,0 +1,496 @@
+{
+  "internalLinks": {
+    "coreProductExploreTitle": "Pensado para equipos de campo: explora industrias y tácticas",
+    "useCaseRelatedTitle": "Encaje del producto e industrias relacionadas",
+    "contractorUmbrella": "Software de reseñas para contratistas",
+    "homeServiceUmbrella": "Software de reseñas para servicios del hogar",
+    "tradeHvac": "Software de reseñas HVAC",
+    "tradePlumbing": "Software de reseñas de fontanería",
+    "tradeRoofing": "Software de reseñas de techado",
+    "googleReviewSoftwareShort": "Software de reseñas en Google",
+    "reviewRequestSoftwareShort": "Software de solicitudes de reseña",
+    "reviewManagementSoftwareShort": "Software de gestión de reseñas",
+    "customerReviewSoftwareShort": "Software de reseñas de clientes",
+    "reputationManagementSoftwareShort": "Software de gestión de reputación",
+    "getMoreGoogleReviews": "Consigue más reseñas en Google",
+    "howToGetMoreGoogleReviews": "Cómo conseguir más reseñas en Google",
+    "qrCodeReviewSystem": "Sistema de reseñas con código QR",
+    "reviewCardsForBusiness": "Tarjetas de reseña para empresas",
+    "jobsiteReviewSystem": "Sistema de reseñas en obra",
+    "automatedReviewRequests": "Solicitudes de reseña automáticas",
+    "reviewGrowthKit": "Kit de crecimiento de reseñas",
+    "reviewFunnel": "Embudo de reseñas"
+  },
+  "productPages": {
+    "reviewManagementSoftware": {
+      "metadata": {
+        "title": "Software de gestión de reseñas para equipos de servicios de campo | ReviewAware",
+        "description": "Ejecuta solicitudes de reseña desde trabajos completados: correos automáticos, activos QR en obra y recordatorios en un flujo de gestión para contratistas y servicios del hogar."
+      },
+      "hero": {
+        "headlineLine1": "Software de gestión de reseñas",
+        "headlineLine2": "pensado para flujos en obra",
+        "subtitleLine1": "Convierte trabajos completados en un programa repetible de reseñas: sin hojas de cálculo, sin perseguir a los técnicos ni cruzar los dedos.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Diseñado para HVAC, fontanería, techado, limpieza y otros servicios de campo."
+      },
+      "differentiator": {
+        "title": "Qué significa gestionar reseñas cuando el trabajo es presencial",
+        "p1": "Gestionar reseñas no es una bandeja genérica. Para servicios significa vincular cada contacto a un trabajo cerrado para que la petición sea oportuna, trazable y uniforme.",
+        "p2": "ReviewAware conecta el momento en que se marca el trabajo con la solicitud, ya sea una tarjeta QR en la mano del cliente o un correo con recordatorios.",
+        "p3": "Conservas un solo registro de trabajos, enlaces y seguimientos para que dirección vea qué salió y qué falta."
+      },
+      "reviewPain": {
+        "title": "Por qué tantos planes de reseñas se estancan",
+        "card1": "Las peticiones salen tarde, cuando el cliente ya pasó página",
+        "card2": "Los técnicos piden a ratos y los resultados parecen azar",
+        "card3": "Nadie asume los seguimientos cuando la cuadrilla se va",
+        "closing": "Un flujo basado en trabajos arregla el timing: pides cuando la motivación es máxima."
+      },
+      "finalCta": {
+        "headline": "Gestiona solicitudes de reseña como cualquier otro proceso operativo",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Conecta tu enlace y envía las primeras solicitudes en minutos.",
+        "supportingLine": "Mira cómo estandarizan sin añadir trabajo administrativo."
+      }
+    },
+    "googleReviewSoftware": {
+      "metadata": {
+        "title": "Software de reseñas en Google para empresas de servicios | ReviewAware",
+        "description": "Consigue más reseñas en Google tras cada trabajo con tarjetas QR, enlaces directos y seguimientos automáticos para contratistas y servicios del hogar."
+      },
+      "hero": {
+        "headlineLine1": "Software de reseñas en Google",
+        "headlineLine2": "que se activa tras cada trabajo",
+        "subtitleLine1": "Lleva al cliente a tu página de reseñas desde el camión de acceso, la factura o el correo—automáticamente al cerrar el trabajo.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Pensado para negocios locales que ganan o pierden el siguiente cliente con las estrellas de Google."
+      },
+      "differentiator": {
+        "title": "Por qué un flujo específico para Google supera un envío genérico",
+        "p1": "Google premia constancia y recencia. Campañas aisladas dan picos; peticiones ligadas a trabajos generan ritmo real.",
+        "p2": "ReviewAware acelera llegar al sitio correcto, sobre todo justo después del servicio cuando aún recuerdan al técnico.",
+        "p3": "Añades segundos correos educados cuando no hay clic el mismo día, sin pasarte de insistente."
+      },
+      "reviewPain": {
+        "title": "El hueco de reseñas en Google para servicios",
+        "card1": "Los clientes contentos se van y no abren Google a buscarte",
+        "card2": "Unos días piden reseña, otros no, y los números bailan",
+        "card3": "Herramientas genéricas no giran en torno a visitas o cuadrillas",
+        "closing": "El timing ligado al trabajo es la palanca que muchos equipos pasan por alto."
+      },
+      "finalCta": {
+        "headline": "Haz de las reseñas en Google parte de cada cierre",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Pega tu enlace, añade un trabajo y la primera solicitud puede salir hoy.",
+        "supportingLine": "Para equipos que quieren crecer en Google sin otro panel vacío."
+      }
+    },
+    "customerReviewSoftware": {
+      "metadata": {
+        "title": "Software de reseñas de clientes para equipos de campo | ReviewAware",
+        "description": "Recoge más reseñas presencialmente y online tras cada trabajo. Tarjetas QR, solicitudes automáticas y recordatorios para empresas de servicios."
+      },
+      "hero": {
+        "headlineLine1": "Software de reseñas de clientes",
+        "headlineLine2": "para quienes terminan trabajos reales",
+        "subtitleLine1": "Encuentra al cliente donde acaba el trabajo: tarjeta QR, correo automático y un empujón amable si se olvidan.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Ideal cuando tu reputación depende de la confianza justo después del servicio."
+      },
+      "differentiator": {
+        "title": "Las reseñas necesitan el gesto humano y el sistema detrás",
+        "p1": "La mejor ventana es con el técnico aún en sitio y el resultado reciente.",
+        "p2": "ReviewAware normaliza ese momento con QR imprimible y evita que nadie se caiga cuando el día se complica.",
+        "p3": "Sigues sonando humano; el sistema solo asegura que la petición ocurre en cada cuadrilla, sin molestar mal."
+      },
+      "reviewPain": {
+        "title": "Por qué los clientes felices callan",
+        "card1": "Piensan dejar reseña más tarde—y no pasa",
+        "card2": "Necesitan enlace directo; buscarte en Google fricciona",
+        "card3": "El seguimiento es manual y solo aparecen las voces más altas",
+        "closing": "Combina facilidad in situ con automatización ligera y aparece la mayoría silenciosa."
+      },
+      "finalCta": {
+        "headline": "Convierte clientes contentos en reseñas públicas",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Lanza un bucle simple que los técnicos sí pueden seguir.",
+        "supportingLine": "Para servicios de campo, no embudos de ecommerce."
+      }
+    },
+    "reputationManagementSoftware": {
+      "metadata": {
+        "title": "Software de reputación anclado en trabajos completados | ReviewAware",
+        "description": "Haz crecer y proteger tu reputación con solicitudes ligadas a trabajos, seguimiento QR y envíos medibles—antes de que un problema sea una estrella mala."
+      },
+      "hero": {
+        "headlineLine1": "Gestión de reputación",
+        "headlineLine2": "impulsada por cada trabajo cerrado",
+        "subtitleLine1": "La reputación no es un proyecto trimestral. Gana reseñas frescas cada día y detecta enfados antes de que exploten en público.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Para propietarios y operaciones que quieren que la reputación siga al volumen de servicio."
+      },
+      "differentiator": {
+        "title": "La reputación empieza por volumen—y el momento importa",
+        "p1": "Muchos productos miran tableros a posteriori. ReviewAware enfatiza peticiones proactivas ligadas al servicio para que el perfil refleje tu calidad actual.",
+        "p2": "Con envíos automáticos reduces el azar que hace subir y bajar notas entre temporadas.",
+        "p3": "Ganas más oportunidades de feedback antes de una queja pública, porque la conversación nace en el curso normal del servicio."
+      },
+      "reviewPain": {
+        "title": "Dónde suelen romperse los programas de reputación",
+        "card1": "Las reseñas llegan en rachas y luego se cortan",
+        "card2": "Las malas experiencias saltan online antes de que operaciones las oiga",
+        "card3": "Dirección no sabe si de verdad se está pidiendo",
+        "closing": "Un sistema ligado al trabajo mantiene reputación y operaciones alineadas."
+      },
+      "finalCta": {
+        "headline": "Construye reputación como construyes facturación",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Mira cómo peticiones constantes cambian la tendencia en semanas.",
+        "supportingLine": "Reputación operativa para servicios de campo."
+      }
+    },
+    "reviewRequestSoftware": {
+      "metadata": {
+        "title": "Software de solicitudes de reseña tras cada trabajo | ReviewAware",
+        "description": "Automatiza solicitudes al cerrar trabajos: correos, entrega QR y recordatorios para no perder el mejor momento de pedir."
+      },
+      "hero": {
+        "headlineLine1": "Software de solicitudes de reseña",
+        "headlineLine2": "que envía al completar el trabajo",
+        "subtitleLine1": "Deja de depender de la memoria. Activa solicitudes automáticamente al cerrar—más QR opcional para quien siga en sitio.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Hecho para despachos y técnicos de campo."
+      },
+      "differentiator": {
+        "title": "La diferencia entre pedir y pedir bien",
+        "p1": "Solo funciona si llega cuando al cliente aún le importa—y si dejar la reseña es un toque, no diez minutos buscando.",
+        "p2": "ReviewAware trata la petición como parte del cierre: envía, rastrea clics y programa recordatorios útiles.",
+        "p3": "El equipo deja de discutir si hubo seguimiento porque el flujo es el mismo en cada camión."
+      },
+      "reviewPain": {
+        "title": "Las peticiones manuales no escalan",
+        "card1": "Oficina olvida tras un día de despachos",
+        "card2": "El técnico pasa al siguiente trabajo sin enviar el enlace",
+        "card3": "El cliente dice “sí” y aun así hace falta un segundo empujón",
+        "closing": "La automatización protege la constancia sin crear un puesto nuevo."
+      },
+      "finalCta": {
+        "headline": "Envía solicitudes de reseña automáticamente—desde hoy",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Conecta tu URL y el primer envío automático puede ser en el próximo trabajo cerrado.",
+        "supportingLine": "Pensado para operaciones de campo de alto volumen."
+      }
+    }
+  },
+  "useCasePages": {
+    "getMoreGoogleReviews": {
+      "metadata": {
+        "title": "Consigue más reseñas en Google tras trabajos de servicio | ReviewAware",
+        "description": "Guía práctica: pide en el momento adecuado, quita fricción con QR y enlaces, y haz seguimiento automático para que más clientes publiquen en Google."
+      },
+      "hero": {
+        "headlineLine1": "Consigue más reseñas en Google",
+        "headlineLine2": "con el trabajo que ya haces",
+        "subtitleLine1": "No necesitas trucos—necesitas timing. Captura reseñas al terminar el trabajo y mantén seguimientos sin vigilar hojas de cálculo.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Ideal para contratistas y servicios del hogar que compiten en búsqueda local."
+      },
+      "differentiator": {
+        "title": "Una guía simple que gana a pedir a ratos",
+        "p1": "La ventana de mayor respuesta es justo después del servicio, cuando la buena experiencia va ligada a una persona.",
+        "p2": "Da un camino directo a Google: QR en obra más correo para quien prefiere actuar más tarde.",
+        "p3": "Automatiza uno o dos recordatorios educados para gente ocupada, sin parecer spam.",
+        "p4": "Mide envíos para saber si el proceso corre—no solo confiar."
+      },
+      "reviewPain": {
+        "title": "Por qué Google parece estancado",
+        "card1": "Solo pides cuando el ritmo baja",
+        "card2": "El cliente quiere pero la vida interrumpe",
+        "card3": "Compites con quien pide en cada trabajo",
+        "closing": "La constancia vence la intensidad—sobre todo en Google."
+      },
+      "finalCta": {
+        "headline": "Convierte esta guía en hábito diario",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Lanza peticiones ligadas a trabajos en una tarde.",
+        "supportingLine": "Por qué equipos tratan reseñas como operaciones."
+      }
+    },
+    "howToGetMoreGoogleReviews": {
+      "metadata": {
+        "title": "Cómo conseguir más reseñas en Google (guía de servicios) | ReviewAware",
+        "description": "Pasos para empresas de servicio: cuándo pedir, cómo quitar fricción, qué automatizar y cómo proteger nota mientras sube volumen."
+      },
+      "hero": {
+        "headlineLine1": "Cómo conseguir más reseñas en Google",
+        "headlineLine2": "sin sonar desesperado",
+        "subtitleLine1": "Hábitos fáciles para técnicos, entrega QR y automatización ligera para que clientes contentos terminen la reseña.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Para propietarios que quieren sistema, no moda de marketing."
+      },
+      "differentiator": {
+        "title": "Qué mueve de verdad el número",
+        "p1": "Pide en el pico emocional: trabajo acabado, problema resuelto—antes de que se vaya la furgoneta.",
+        "p2": "Elimina pasos. Si deben buscarte en Google, muchos abandonan aunque les gustes.",
+        "p3": "Usa un recordatorio educado—no cinco. Debe sonar a ayuda, no presión.",
+        "p4": "Operacionalízalo. Si solo lo pide tu mejor técnico, tu reputación siempre va a la zaga."
+      },
+      "reviewPain": {
+        "title": "Errores que desperdician buen trabajo",
+        "card1": "Esperar días cuando baja el entusiasmo",
+        "card2": "Correos largos con demasiadas opciones",
+        "card3": "Asumir que “ya nos encontrarán en Google”",
+        "closing": "Pequeños cambios de proceso superan grandes gastos en confianza local."
+      },
+      "finalCta": {
+        "headline": "Pon el sistema en piloto automático",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Junta esta guía con software que refuerza el hábito.",
+        "supportingLine": "Pensado para equipos que viven en agenda y furgonetas."
+      }
+    },
+    "qrCodeReviewSystem": {
+      "metadata": {
+        "title": "Sistema de reseñas con QR para obras y visitas | ReviewAware",
+        "description": "Enlaces de reseña en códigos QR en tarjetas y facturas para que el cliente abra tu página en un escaneo—ideal para técnicos en ruta."
+      },
+      "hero": {
+        "headlineLine1": "Un sistema de reseñas con QR",
+        "headlineLine2": "que los técnicos sí usan",
+        "subtitleLine1": "Activos imprimibles y enlaces rastreados para entregar un escaneo al destino de reseña mientras el buen gesto sigue ahí.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Para camiones, guantes y sol—not solo escritorio."
+      },
+      "differentiator": {
+        "title": "Por qué el QR gana en campo",
+        "p1": "Escribir tu nombre en el móvil fricciona. El QR evita la búsqueda y lleva al sitio exacto.",
+        "p2": "No es gimmick si va con el cierre del trabajo: es el puente entre el apretón de manos y el testimonio público.",
+        "p3": "ReviewAware ofrece diseños imprimibles que parecen de marca seria, no un sticker cualquiera.",
+        "p4": "Sigues ganando con correo de respaldo cuando no escanean el mismo día."
+      },
+      "reviewPain": {
+        "title": "El papel falla sin sistema",
+        "card1": "Enlaces caducados o al perfil equivocado",
+        "card2": "Nadie sabe si el escaneo se convirtió en reseña",
+        "card3": "Se acaban las tarjetas y se deja de pedir",
+        "closing": "Trata el QR como inventario: previsible, reponible, medible."
+      },
+      "finalCta": {
+        "headline": "Entrega activos QR que el equipo usará",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Genera diseños con enlaces rastreados.",
+        "supportingLine": "Combinado con correo automático si no escanean al instante."
+      }
+    },
+    "reviewCardsForBusiness": {
+      "metadata": {
+        "title": "Tarjetas de reseña para empresas (impresión + QR) | ReviewAware",
+        "description": "Tarjetas de dejar con QR que enlazan directo a Google: plantillas, URLs y flujos para que el equipo pida siempre tras el trabajo."
+      },
+      "hero": {
+        "headlineLine1": "Tarjetas de reseña",
+        "headlineLine2": "que tu cuadrilla puede entregar",
+        "subtitleLine1": "Convierte una tarjeta en una petición profesional y trazable—sin memorizar guiones ni buscar enlaces.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Techadores, limpieza, paisajismo y cualquier contacto físico."
+      },
+      "differentiator": {
+        "title": "Las tarjetas funcionan cuando inspiran confianza",
+        "p1": "Impresiones cutres restan credibilidad. El cliente debe reconocerte y entender el QR.",
+        "p2": "Enlaza la tarjeta a un momento fijo: “Nos encantaría tu opinión—escanea cuando puedas.”",
+        "p3": "Operaciones debe reponerlas como tarjetas de visita para que no dependa de héroes.",
+        "p4": "El software ata la tarjeta al enlace correcto y muestra si hubo clic para mejorar."
+      },
+      "reviewPain": {
+        "title": "Dónde se rompen las tarjetas caseras",
+        "card1": "Cada camión usa otra URL",
+        "card2": "Dirección no ve si ayudan o se guardan",
+        "card3": "Escanean pero abandonan un camino confuso",
+        "closing": "Estandariza activo y petición a la vez."
+      },
+      "finalCta": {
+        "headline": "Pasa de tarjetas sueltas a ritual repetible",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Crea tarjetas con enlaces rastreados y correo de respaldo.",
+        "supportingLine": "Para negocios que ganan en la puerta."
+      }
+    },
+    "jobsiteReviewSystem": {
+      "metadata": {
+        "title": "Sistema de reseñas en obra para contratistas | ReviewAware",
+        "description": "Captura reseñas donde ocurre el trabajo: disparadores al cerrar, QR en sitio y correo automático para obra residencial y comercial."
+      },
+      "hero": {
+        "headlineLine1": "Un sistema de reseñas en obra",
+        "headlineLine2": "alineado con las cuadrillas",
+        "subtitleLine1": "Cierra el trabajo, dispara la petición y da un camino sin fricción antes de que el remolque salga al siguiente punto.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Reformas, techado, HVAC y proyectos de varias visitas."
+      },
+      "differentiator": {
+        "title": "La obra es ruidosa—tu flujo no",
+        "p1": "El mejor momento sigue siendo ver el trabajo acabado: pintura seca, equipo enfriando, fuga tapada.",
+        "p2": "Un sistema de obra respeta ritmo y seguridad: la petición es breve, opcional, no frena el punch list.",
+        "p3": "Si no reseñan al instante, la automatización sigue con contexto del trabajo—no un envío aleatorio.",
+        "p4": "Despacho y propietarios ven qué se envió; la cuenta queda en operaciones, no solo marketing."
+      },
+      "reviewPain": {
+        "title": "Los checklists en papel no aguantan los viernes",
+        "card1": "Se olvida el pedido cuando se amontonan visitas",
+        "card2": "Obra comercial vs residencial exige flexibilidad",
+        "card3": "Sin datos no mejoras el proceso",
+        "closing": "Conecta el momento en obra con software y el seguimiento es fiable."
+      },
+      "finalCta": {
+        "headline": "Mete las reseñas en el ritual de cierre",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Une trabajos cerrados a QR in situ y correo de respaldo.",
+        "supportingLine": "Para obras reales—no despachos."
+      }
+    },
+    "automatedReviewRequests": {
+      "metadata": {
+        "title": "Solicitudes de reseña automáticas para servicios | ReviewAware",
+        "description": "Dispara correos y recordatorios al cerrar trabajos. Menos seguimiento manual y más reseñas constantes en Google y otras plataformas."
+      },
+      "hero": {
+        "headlineLine1": "Solicitudes de reseña automáticas",
+        "headlineLine2": "dispadas al completar trabajos",
+        "subtitleLine1": "Deja de copiar enlaces. Que el cierre inicie la secuencia—educada, a tiempo y medible.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Cuando el volumen de despacho hace imposible el seguimiento manual."
+      },
+      "differentiator": {
+        "title": "La automatización debe sonar personal, no robótica",
+        "p1": "Los clientes responden cuando el mensaje coincide con el pago o la firma—no con un boletín mensual.",
+        "p2": "ReviewAware ancla envíos al cierre para que el timing aguante aunque el equipo falle al anotar.",
+        "p3": "Recordatorios limitados y espaciados; educas sin cansar.",
+        "p4": "Historial de envíos y clics para entrenar equipos y subir conversión con datos."
+      },
+      "reviewPain": {
+        "title": "El correo manual mata la constancia",
+        "card1": "¿Quién sigue cuando tres técnicos tocaron el trabajo?",
+        "card2": "Semanas fuertes = clientes silenciosos",
+        "card3": "Los dueños ven huecos solo cuando cae la nota",
+        "closing": "La automatización disparada por trabajo elimina depender de la memoria."
+      },
+      "finalCta": {
+        "headline": "Convierte la automatización en crecimiento estable",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Conecta tu flujo y envía la primera solicitud automática esta semana.",
+        "supportingLine": "Secuencias amigables con operaciones de campo."
+      }
+    },
+    "reviewGrowthKit": {
+      "metadata": {
+        "title": "Kit de crecimiento de reseñas — herramientas impresas QR | ReviewAware",
+        "description": "Equipo camiones con QR impreso enlazado a URLs rastreadas. Incluido en planes anuales, con seguimiento por correo si escanean tarde."
+      },
+      "hero": {
+        "headlineLine1": "El kit de crecimiento de reseñas",
+        "headlineLine2": "lleva QR al campo",
+        "subtitleLine1": "Activos imprimibles para pedir en persona mientras el software evita que se pierda nadie si no escanean.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "La mitad física de un sistema digital de reseñas."
+      },
+      "differentiator": {
+        "title": "Por qué el kit importa junto al software",
+        "p1": "Algunos clientes quieren un empujón físico—una tarjeta vence a otro correo medianoche.",
+        "p2": "No es merchandising; es equipo operativo para quien vive en obra.",
+        "p3": "El valor anual ayuda a verse profesional sin disparar coste por trabajo.",
+        "p4": "El software sigue con seguimiento para que el kit amplifique, no sustituya el envío disciplinado."
+      },
+      "reviewPain": {
+        "title": "Las camisetas no reúnen reseñas",
+        "card1": "Hace falta herramienta acorde a cómo actúa el cliente",
+        "card2": "Tiradas únicas paran si el enlace cambia",
+        "card3": "Sin métricas no demuestras ROI en campo",
+        "closing": "Junta lo físico con responsabilidad digital."
+      },
+      "finalCta": {
+        "headline": "Empaqueta impresión con seguimiento automático",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Mira planes anuales y valor del kit en precios.",
+        "supportingLine": "Para dueños que quieren cuadrillas equipadas."
+      }
+    },
+    "reviewFunnel": {
+      "metadata": {
+        "title": "Embudo de reseñas para contratistas — de trabajo a publicación | ReviewAware",
+        "description": "Ruta desde trabajo cerrado hasta reseña publicada: disparadores, QR, correo y recordatorios para que más clientes crucen la meta."
+      },
+      "hero": {
+        "headlineLine1": "Un embudo de reseñas",
+        "headlineLine2": "basado en trabajos reales",
+        "subtitleLine1": "Diseña la ruta una vez: trabajo cerrado → petición inmediata → correo de respaldo → recordatorios ligeros → feedback capturado.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Para equipos hartos de embudos manuales que dependen de memoria."
+      },
+      "differentiator": {
+        "title": "El embudo falla si el primer paso es vago",
+        "p1": "Si “trabajo completo” no es el disparador, empiezas tarde o nunca.",
+        "p2": "Un buen embudo de campo ofrece dos entradas: escanear ya o correo después.",
+        "p3": "Cada fase debe tener una sola acción clara; la confusión mata conversión.",
+        "p4": "Medir te dice si el problema es timing, texto o técnicos que saltan el traspaso—arreglas con datos."
+      },
+      "reviewPain": {
+        "title": "Peticiones aleatorias dan resultados aleatorios",
+        "card1": "Sin etapas definidas—solo esperanza",
+        "card2": "Lenguaje de marketing que no suena a cuadrilla",
+        "card3": "No ves la caída entre envío y reseña",
+        "closing": "Un embudo simple gana al eslogan listo."
+      },
+      "finalCta": {
+        "headline": "Ejecuta un embudo que los técnicos entiendan",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Une disparadores, QR y correo en un flujo.",
+        "supportingLine": "Embudos operativos—no teoría de marketing."
+      }
+    }
+  },
+  "industryLanding": {
+    "layerNav": {
+      "tradeUmbrellaHubsTitle": "Centros por industria: contratistas y servicios del hogar"
+    }
+  }
+}
