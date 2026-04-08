@@ -39,7 +39,7 @@ Defined in `src/lib/seo-layers/link-presets.ts` and wired in page templates (no 
 | **Product** | `PRODUCT_PAGE_INTERNAL_LINKS`: both umbrella hubs + one contextual use-case each. |
 | **Umbrella industry** | Trades via “Built for Service Professionals”; **plus** compact `UMBRELLA_CORE_PRODUCT_LINKS` → three core product URLs. |
 | **Trade** | `TRADE_LAYER_INTERNAL_LINKS`: both umbrellas + `google-review-software`; then compact sibling trades (unchanged). |
-| **Use-case** | `USE_CASE_RELATED_LINKS`: mix of product, umbrella, trade, and other use-cases (`useCasePagePath`). |
+| **Use-case** | `USE_CASE_RELATED_LINKS`: mix of product, umbrella, trade, and other use-cases (`getUseCasePagePath`). |
 | **Comparison** | `COMPARISON_PAGE_RELATED_LINKS`: product + umbrella + playbook use-case per comparison slug. |
 
 ## Metadata

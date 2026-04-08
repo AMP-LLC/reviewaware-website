@@ -115,6 +115,6 @@ export function getUseCasePageDefinition(slug: string): UseCasePageDefinition | 
 }
 
 /** Root path for a use-case page (locale prefix added by next-intl Link when needed). */
-export function useCasePagePath(slug: string): `/${string}` {
+export function getUseCasePagePath(slug: string): `/${string}` {
   return `/${slug}` as `/${string}`;
 }

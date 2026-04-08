@@ -5,7 +5,7 @@
 
 import type { ComparisonPageSlug } from "@/lib/comparison-pages/registry";
 import type { ProductPageSlug } from "@/lib/product-pages/registry";
-import { useCasePagePath, type UseCasePageSlug } from "@/lib/use-case-pages/registry";
+import { getUseCasePagePath, type UseCasePageSlug } from "@/lib/use-case-pages/registry";
 
 export type InternalLinkSpec = {
   readonly href: string;
@@ -45,23 +45,23 @@ export const PRODUCT_PAGE_INTERNAL_LINKS: Record<
 > = {
   "review-management-software": [
     ...UMBRELLA_INDUSTRY_LINK_SPECS,
-    { href: useCasePagePath("automated-review-requests"), labelKey: "automatedReviewRequests" },
+    { href: getUseCasePagePath("automated-review-requests"), labelKey: "automatedReviewRequests" },
   ],
   "google-review-software": [
     ...UMBRELLA_INDUSTRY_LINK_SPECS,
-    { href: useCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
+    { href: getUseCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
   ],
   "customer-review-software": [
     ...UMBRELLA_INDUSTRY_LINK_SPECS,
-    { href: useCasePagePath("jobsite-review-system"), labelKey: "jobsiteReviewSystem" },
+    { href: getUseCasePagePath("jobsite-review-system"), labelKey: "jobsiteReviewSystem" },
   ],
   "reputation-management-software": [
     ...UMBRELLA_INDUSTRY_LINK_SPECS,
-    { href: useCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
+    { href: getUseCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
   ],
   "review-request-software": [
     ...UMBRELLA_INDUSTRY_LINK_SPECS,
-    { href: useCasePagePath("review-funnel"), labelKey: "reviewFunnel" },
+    { href: getUseCasePagePath("review-funnel"), labelKey: "reviewFunnel" },
   ],
 };
 
@@ -74,7 +74,7 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
     { href: "/home-service-review-software", labelKey: "homeServiceUmbrella" },
   ],
   "how-to-get-more-google-reviews": [
-    { href: useCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
+    { href: getUseCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
     { href: "/review-request-software", labelKey: "reviewRequestSoftwareShort" },
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
@@ -82,37 +82,37 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
   ],
   "qr-code-review-system": [
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
-    { href: useCasePagePath("review-cards-for-business"), labelKey: "reviewCardsForBusiness" },
-    { href: useCasePagePath("jobsite-review-system"), labelKey: "jobsiteReviewSystem" },
+    { href: getUseCasePagePath("review-cards-for-business"), labelKey: "reviewCardsForBusiness" },
+    { href: getUseCasePagePath("jobsite-review-system"), labelKey: "jobsiteReviewSystem" },
     { href: "/hvac-review-software", labelKey: "tradeHvac" },
   ],
   "review-cards-for-business": [
-    { href: useCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
-    { href: useCasePagePath("jobsite-review-system"), labelKey: "jobsiteReviewSystem" },
+    { href: getUseCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
+    { href: getUseCasePagePath("jobsite-review-system"), labelKey: "jobsiteReviewSystem" },
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
     { href: "/roofing-review-software", labelKey: "tradeRoofing" },
   ],
   "jobsite-review-system": [
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
     { href: "/home-service-review-software", labelKey: "homeServiceUmbrella" },
-    { href: useCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
+    { href: getUseCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
     { href: "/review-management-software", labelKey: "reviewManagementSoftwareShort" },
   ],
   "automated-review-requests": [
     { href: "/review-request-software", labelKey: "reviewRequestSoftwareShort" },
     { href: "/review-management-software", labelKey: "reviewManagementSoftwareShort" },
     { href: "/home-service-review-software", labelKey: "homeServiceUmbrella" },
-    { href: useCasePagePath("review-funnel"), labelKey: "reviewFunnel" },
+    { href: getUseCasePagePath("review-funnel"), labelKey: "reviewFunnel" },
   ],
   "review-growth-kit": [
     { href: "/review-management-software", labelKey: "reviewManagementSoftwareShort" },
-    { href: useCasePagePath("review-cards-for-business"), labelKey: "reviewCardsForBusiness" },
+    { href: getUseCasePagePath("review-cards-for-business"), labelKey: "reviewCardsForBusiness" },
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
     { href: "/hvac-review-software", labelKey: "tradeHvac" },
   ],
   "review-funnel": [
     { href: "/review-management-software", labelKey: "reviewManagementSoftwareShort" },
-    { href: useCasePagePath("automated-review-requests"), labelKey: "automatedReviewRequests" },
+    { href: getUseCasePagePath("automated-review-requests"), labelKey: "automatedReviewRequests" },
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
   ],
@@ -126,7 +126,7 @@ export const COMPARISON_PAGE_RELATED_LINKS: Record<
   "reviewaware-vs-podium": [
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
-    { href: useCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
+    { href: getUseCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
   ],
 };
 
