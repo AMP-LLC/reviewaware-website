@@ -1,4 +1,8 @@
-export type { IndustryLandingDefinition, IndustryLandingTokens } from "./types";
+export type {
+  IndustryLandingCopyOverrides,
+  IndustryLandingDefinition,
+  IndustryLandingTokens,
+} from "./types";
 export {
   buildIndustryLandingMessageValues,
   toIndustryServiceHeadline,
@@ -9,3 +13,4 @@ export {
   INDUSTRY_LANDING_REGISTRY,
   INDUSTRY_LANDING_SLUGS,
 } from "./registry";
+export { SERVICE_PROFESSIONAL_TRADE_LINKS } from "./service-professionals-links";

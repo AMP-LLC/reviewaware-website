@@ -14,12 +14,24 @@ export function toIndustryServiceHeadline(phrase: string): string {
 
 export type IndustryLandingMessageValues = IndustryLandingTokens & {
   industryServiceHeadline: string;
+  industryPlural: string;
+  job: string;
+  service: string;
+  jobs: string;
+  services: string;
 };
 
 export function buildIndustryLandingMessageValues(
   tokens: IndustryLandingTokens,
   locale: string,
 ): IndustryLandingMessageValues {
+  const industryPlural =
+    tokens.industryPlural ?? `${tokens.industry}s`;
+  const job = tokens.job ?? tokens.industryJob;
+  const service = tokens.service ?? tokens.industryService;
+  const jobs = tokens.jobs ?? `${tokens.industry} jobs`;
+  const services = tokens.services ?? `${tokens.industry} services`;
+
   const industryServiceHeadline =
     locale === "es"
       ? tokens.industryService.charAt(0).toUpperCase() + tokens.industryService.slice(1)
@@ -27,6 +39,11 @@ export function buildIndustryLandingMessageValues(
 
   return {
     ...tokens,
+    industryPlural,
+    job,
+    service,
+    jobs,
+    services,
     industryServiceHeadline,
   };
 }

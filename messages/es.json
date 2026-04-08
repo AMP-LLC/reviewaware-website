@@ -471,6 +471,20 @@
       "badgeElectrical": "Electricidad",
       "badgeLandscaping": "Paisajismo"
     },
+    "servicePros": {
+      "title": "Pensado para profesionales de servicios",
+      "tradeHvac": "HVAC",
+      "tradePlumbing": "Fontanería",
+      "tradeElectrical": "Electricidad",
+      "tradeRoofing": "Techado",
+      "tradeLandscaping": "Paisajismo",
+      "tradeCleaning": "Limpieza",
+      "tradeGarageDoor": "Puertas de garaje",
+      "tradePestControl": "Control de plagas",
+      "tradeTreeService": "Servicio de árboles",
+      "tradePoolService": "Mantenimiento de piscinas",
+      "tradePressureWashing": "Hidrolimpieza"
+    },
     "seoEducation": {
       "title": "Cómo las empresas de {industry} consiguen más reseñas en Google",
       "subtitle": "Muchas empresas de {industry} dependen del boca a boca, pero las que hacen crecer su reputación suelen usar un sistema repetible para pedir reseñas.",

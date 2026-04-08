@@ -29,13 +29,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
-  const tokens = def.tokens[locale === "es" ? "es" : "en"];
+  const loc = locale === "es" ? "es" : "en";
+  const tokens = def.tokens[loc];
   const v = buildIndustryLandingMessageValues(tokens, locale);
   const t = await getTranslations({ locale, namespace: "industryLanding" });
 
+  const metaOverride = def.copyOverrides?.[loc]?.metadata;
+
   return {
-    title: t("metadata.title", v),
-    description: t("metadata.description", v),
+    title: metaOverride?.title ?? t("metadata.title", v),
+    description: metaOverride?.description ?? t("metadata.description", v),
     openGraph: {
       locale: locale === "es" ? "es" : "en_US",
     },

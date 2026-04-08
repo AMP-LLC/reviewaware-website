@@ -27,6 +27,7 @@ import { SiteHeader } from "@/components/landing/site-header";
 import {
   buildIndustryLandingMessageValues,
   getIndustryLandingDefinition,
+  SERVICE_PROFESSIONAL_TRADE_LINKS,
 } from "@/lib/industry-landing";
 
 const sectionY = "py-12 md:py-16 lg:py-24";
@@ -46,16 +47,29 @@ export async function IndustryLandingPageContent({
   const tokens = def.tokens[locale === "es" ? "es" : "en"];
   const v = buildIndustryLandingMessageValues(tokens, locale);
   const t = await getTranslations("industryLanding");
+  const loc = locale === "es" ? "es" : "en";
+  const heroOverride = def.copyOverrides?.[loc]?.hero;
 
-  const heroCopy = {
-    headlineLine1: t("hero.headlineLine1", v),
-    headlineLine2: t("hero.headlineLine2", v),
-    subtitleLine1: t("hero.subtitleLine1", v),
-    subtitleLine2: t("hero.subtitleLine2", v),
-    ctaPrimary: t("hero.ctaPrimary", v),
-    ctaSecondary: t("hero.ctaSecondary", v),
-    credibilityLine: t("hero.credibilityLine", v),
-  };
+  const heroCopy = heroOverride
+    ? {
+        headlineLine1: heroOverride.headlineLine1,
+        headlineLine2: heroOverride.headlineLine2 ?? "",
+        subtitleLine1: heroOverride.subtitleLine1,
+        subtitleLine2: heroOverride.subtitleLine2 ?? "",
+        ctaPrimary: heroOverride.ctaPrimary,
+        ctaSecondary: heroOverride.ctaSecondary,
+        credibilityLine:
+          heroOverride.credibilityLine ?? t("hero.credibilityLine", v),
+      }
+    : {
+        headlineLine1: t("hero.headlineLine1", v),
+        headlineLine2: t("hero.headlineLine2", v),
+        subtitleLine1: t("hero.subtitleLine1", v),
+        subtitleLine2: t("hero.subtitleLine2", v),
+        ctaPrimary: t("hero.ctaPrimary", v),
+        ctaSecondary: t("hero.ctaSecondary", v),
+        credibilityLine: t("hero.credibilityLine", v),
+      };
 
   const painCopy = {
     title: t("problem.title", v),
@@ -125,6 +139,12 @@ export async function IndustryLandingPageContent({
 
   const useCases = def.useCases[locale === "es" ? "es" : "en"];
 
+  const serviceProBadges = SERVICE_PROFESSIONAL_TRADE_LINKS.map((item) => ({
+    id: item.id,
+    label: t(`servicePros.${item.labelKey}` as "servicePros.tradeHvac"),
+    href: `/${item.slug}`,
+  }));
+
   const productProofBadges = [
     { id: "hvac", label: t("productProof.badgeHvac"), href: "/hvac-review-software" },
     {
@@ -133,7 +153,11 @@ export async function IndustryLandingPageContent({
       href: "/plumber-review-software",
     },
     { id: "roofing", label: t("productProof.badgeRoofing"), href: "/roofing-review-software" },
-    { id: "electrical", label: t("productProof.badgeElectrical") },
+    {
+      id: "electrical",
+      label: t("productProof.badgeElectrical"),
+      href: "/electrical-review-software",
+    },
     {
       id: "landscaping",
       label: t("productProof.badgeLandscaping"),
@@ -207,6 +231,11 @@ export async function IndustryLandingPageContent({
           sectionClassName={sectionY}
           title={t("productProof.title")}
           badges={productProofBadges}
+        />
+        <IndustryProductProofSection
+          sectionClassName={sectionY}
+          title={t("servicePros.title")}
+          badges={serviceProBadges}
         />
         <ReviewGrowthKitSection
           title={t("reviewGrowthKit.title", v)}

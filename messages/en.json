@@ -471,6 +471,20 @@
       "badgeElectrical": "Electrical",
       "badgeLandscaping": "Landscaping"
     },
+    "servicePros": {
+      "title": "Built for Service Professionals",
+      "tradeHvac": "HVAC",
+      "tradePlumbing": "Plumbing",
+      "tradeElectrical": "Electrical",
+      "tradeRoofing": "Roofing",
+      "tradeLandscaping": "Landscaping",
+      "tradeCleaning": "Cleaning",
+      "tradeGarageDoor": "Garage Door",
+      "tradePestControl": "Pest Control",
+      "tradeTreeService": "Tree Service",
+      "tradePoolService": "Pool Service",
+      "tradePressureWashing": "Pressure Washing"
+    },
     "seoEducation": {
       "title": "How {industry} Companies Get More Google Reviews",
       "subtitle": "Most {industry} companies rely on word-of-mouth, but the businesses that consistently grow their reputation use a repeatable review request system.",
