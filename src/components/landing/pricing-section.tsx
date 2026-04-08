@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { getLiteTrialHref } from "@/lib/marketing-links";
+import { getLiteTrialHref, getPlusSignupHref } from "@/lib/marketing-links";
 import { Check } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -33,6 +33,7 @@ export async function PricingSection({
   const t = await getTranslations("pricing");
 
   const trialHref = getLiteTrialHref(locale);
+  const plusSignupHref = getPlusSignupHref(locale);
 
   const defaultLiteCtaChecks = [
     t("liteCtaCheck1"),
@@ -172,14 +173,8 @@ export async function PricingSection({
                   </li>
                 ))}
               </ul>
-              <Button
-                type="button"
-                variant="default"
-                size="lg"
-                className="w-full"
-                aria-disabled="true"
-              >
-                {t("ctaPlus")}
+              <Button asChild variant="default" size="lg" className="w-full">
+                <a href={plusSignupHref}>{t("ctaPlus")}</a>
               </Button>
               <ul className="mt-4 space-y-2 text-center text-sm font-medium text-zinc-600">
                 {defaultLiteCtaChecks.map((line) => (
