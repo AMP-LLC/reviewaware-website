@@ -13,8 +13,6 @@ import { Check } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
-import { PlusWaitlistDialog } from "./plus-waitlist-dialog";
-
 const liteKeys = ["liteF1", "liteF2", "liteF3", "liteF4"] as const;
 const plusKeys = ["plusF1", "plusF2", "plusF3", "plusF4"] as const;
 const liteSupportKeys = ["liteSupport1", "liteSupport2", "liteSupport3", "liteSupport4"] as const;
@@ -42,23 +40,6 @@ export async function PricingSection({
     t("liteCtaCheck3"),
   ] as const;
   const liteChecks = liteCtaChecklist ?? defaultLiteCtaChecks;
-
-  const waitlistCopy = {
-    triggerLabel: t("ctaWaitlist"),
-    title: t("waitlistModalTitle"),
-    description: t("waitlistModalDescription"),
-    emailLabel: t("waitlistEmailLabel"),
-    emailPlaceholder: t("waitlistEmailPlaceholder"),
-    submitLabel: t("waitlistSubmit"),
-    cancelLabel: t("waitlistCancel"),
-    submittingLabel: t("waitlistSubmitting"),
-    successMessage: t("waitlistSuccess"),
-    errorMessage: t("waitlistError"),
-    configErrorMessage: t("waitlistConfigError"),
-    emailInvalid: t("waitlistEmailInvalid"),
-    doneLabel: t("waitlistDone"),
-    closeAriaLabel: t("waitlistCloseAria"),
-  };
 
   return (
     <section
@@ -162,36 +143,44 @@ export async function PricingSection({
             </Card>
           </div>
 
-          <Card className="relative mx-auto w-full max-w-md scale-[0.99] rounded-xl border border-zinc-200/90 bg-zinc-100/45 shadow-sm opacity-[0.9] transition-shadow hover:shadow-md lg:mx-0 lg:max-w-[22rem] lg:translate-y-3">
+          <Card className="relative mx-auto w-full max-w-md scale-[0.99] rounded-xl border border-blue-200/80 bg-blue-50/40 shadow-sm transition-shadow hover:shadow-md lg:mx-0 lg:max-w-[22rem] lg:translate-y-3">
             <CardHeader className="px-5 py-5 sm:px-7 sm:py-7">
               <div className="flex items-center justify-between gap-2">
-                <CardTitle className="text-xl tracking-tight text-zinc-600">
+                <CardTitle className="text-xl tracking-tight text-zinc-900">
                   {t("plusName")}
                 </CardTitle>
-                <span className="rounded-full bg-zinc-200/90 px-2.5 py-0.5 text-xs font-semibold text-zinc-600">
+                <span className="rounded-full bg-blue-600 px-2.5 py-0.5 text-xs font-semibold text-white shadow-sm shadow-blue-600/20">
                   {t("plusBadge")}
                 </span>
               </div>
-              <CardDescription className="text-base text-zinc-500">
-                <span className="text-2xl font-semibold tracking-tight text-zinc-500">
+              <CardDescription className="text-base text-zinc-600">
+                <span className="text-2xl font-semibold tracking-tight text-zinc-900">
                   $49.99
                 </span>
                 <span> {t("perMonth")}</span>
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6 px-5 sm:space-y-8 sm:px-7">
-              <ul className="space-y-3 text-sm leading-relaxed text-zinc-500 sm:space-y-3.5">
+              <ul className="space-y-3 text-sm leading-relaxed text-zinc-700 sm:space-y-3.5">
                 {plusKeys.map((key) => (
                   <li key={key} className="flex gap-2">
                     <Check
-                      className="mt-0.5 size-4 shrink-0 text-zinc-400"
+                      className="mt-0.5 size-4 shrink-0 text-blue-600"
                       aria-hidden
                     />
                     <span>{t(key)}</span>
                   </li>
                 ))}
               </ul>
-              <PlusWaitlistDialog locale={locale} copy={waitlistCopy} />
+              <Button
+                type="button"
+                variant="default"
+                size="lg"
+                className="w-full"
+                aria-disabled="true"
+              >
+                {t("ctaPlus")}
+              </Button>
               <ul className="mt-4 space-y-2 text-center text-sm font-medium text-zinc-600">
                 {defaultLiteCtaChecks.map((line) => (
                   <li key={line}>✓ {line}</li>
