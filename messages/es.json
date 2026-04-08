@@ -473,6 +473,7 @@
     },
     "servicePros": {
       "title": "Pensado para profesionales de servicios",
+      "alsoBuiltForOther": "También pensado para otras empresas de servicios",
       "tradeHvac": "HVAC",
       "tradePlumbing": "Fontanería",
       "tradeElectrical": "Electricidad",

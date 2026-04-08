@@ -9,6 +9,7 @@ import {
   IndustryLandingWorkflowVisual,
   IndustryProductProofSection,
   IndustryQrCardMockup,
+  IndustryServiceProsCompactSection,
   IndustryWorkflowJobScreenVisual,
 } from "@/components/landing/industry-landing-visuals";
 import { IndustryResultsBulletsSection } from "@/components/landing/industry-results-bullets-section";
@@ -31,6 +32,11 @@ import {
 } from "@/lib/industry-landing";
 
 const sectionY = "py-12 md:py-16 lg:py-24";
+
+const UMBRELLA_INDUSTRY_SLUGS = new Set([
+  "contractor-review-software",
+  "home-service-review-software",
+]);
 
 export async function IndustryLandingPageContent({
   locale,
@@ -139,7 +145,17 @@ export async function IndustryLandingPageContent({
 
   const useCases = def.useCases[locale === "es" ? "es" : "en"];
 
+  const isUmbrella = UMBRELLA_INDUSTRY_SLUGS.has(industrySlug);
+
   const serviceProBadges = SERVICE_PROFESSIONAL_TRADE_LINKS.map((item) => ({
+    id: item.id,
+    label: t(`servicePros.${item.labelKey}` as "servicePros.tradeHvac"),
+    href: `/${item.slug}`,
+  }));
+
+  const serviceProBadgesExcludingCurrent = SERVICE_PROFESSIONAL_TRADE_LINKS.filter(
+    (item) => item.slug !== industrySlug,
+  ).map((item) => ({
     id: item.id,
     label: t(`servicePros.${item.labelKey}` as "servicePros.tradeHvac"),
     href: `/${item.slug}`,
@@ -232,11 +248,13 @@ export async function IndustryLandingPageContent({
           title={t("productProof.title")}
           badges={productProofBadges}
         />
-        <IndustryProductProofSection
-          sectionClassName={sectionY}
-          title={t("servicePros.title")}
-          badges={serviceProBadges}
-        />
+        {isUmbrella ? (
+          <IndustryProductProofSection
+            sectionClassName={sectionY}
+            title={t("servicePros.title")}
+            badges={serviceProBadges}
+          />
+        ) : null}
         <ReviewGrowthKitSection
           title={t("reviewGrowthKit.title", v)}
           subtitle={t("reviewGrowthKit.subtitle", v)}
@@ -278,6 +296,12 @@ export async function IndustryLandingPageContent({
           liteAnnualLeadIn={t("pricingAnnualLeadIn", v)}
           sectionClassName={sectionY}
         />
+        {!isUmbrella ? (
+          <IndustryServiceProsCompactSection
+            title={t("servicePros.alsoBuiltForOther")}
+            badges={serviceProBadgesExcludingCurrent}
+          />
+        ) : null}
         <FaqSection sectionClassName={sectionY} />
         <FinalCtaSection
           locale={locale}

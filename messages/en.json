@@ -473,6 +473,7 @@
     },
     "servicePros": {
       "title": "Built for Service Professionals",
+      "alsoBuiltForOther": "Also Built for Other Service Businesses",
       "tradeHvac": "HVAC",
       "tradePlumbing": "Plumbing",
       "tradeElectrical": "Electrical",

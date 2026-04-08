@@ -525,6 +525,48 @@ export function IndustryQrCardMockup({
 const pillClass =
   "inline-flex items-center rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-800 shadow-sm transition hover:border-blue-200 hover:bg-blue-50/50 hover:text-blue-900";
 
+const pillClassCompact =
+  "inline-flex items-center rounded-full border border-zinc-200/90 bg-zinc-50/80 px-2.5 py-1 text-xs font-medium text-zinc-700 transition hover:border-blue-200 hover:bg-white hover:text-blue-900";
+
+/** Lighter cross-link row for trade industry pages (smaller than IndustryProductProofSection). */
+export function IndustryServiceProsCompactSection({
+  title,
+  badges,
+  sectionClassName,
+}: {
+  title: string;
+  badges: readonly { id: string; label: string; href?: string }[];
+  sectionClassName?: string;
+}) {
+  return (
+    <section
+      className={cn(
+        "border-b border-zinc-200/60 bg-zinc-50/50 py-8 md:py-10",
+        sectionClassName,
+      )}
+    >
+      <div className="mx-auto max-w-6xl px-6 text-center">
+        <h2 className="text-base font-semibold leading-snug tracking-tight text-zinc-800 sm:text-lg">
+          {title}
+        </h2>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
+          {badges.map(({ id, label, href }) =>
+            href ? (
+              <Link key={id} href={href} className={cn(pillClassCompact, "no-underline")}>
+                {label}
+              </Link>
+            ) : (
+              <span key={id} className={cn(pillClassCompact, "cursor-default text-zinc-500")}>
+                {label}
+              </span>
+            ),
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function IndustryProductProofSection({
   title,
   badges,
