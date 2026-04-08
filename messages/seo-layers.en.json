@@ -19,7 +19,10 @@
     "jobsiteReviewSystem": "Jobsite review system",
     "automatedReviewRequests": "Automated review requests",
     "reviewGrowthKit": "Review Growth Kit",
-    "reviewFunnel": "Review funnel"
+    "reviewFunnel": "Review funnel",
+    "umbrellaCoreProductTitle": "Core product categories",
+    "tradeLayerBrowseTitle": "Industry hubs & product overview",
+    "comparisonRelatedTitle": "Keep exploring ReviewAware"
   },
   "productPages": {
     "reviewManagementSoftware": {
@@ -485,6 +488,83 @@
         "ctaSubInButton": "No credit card required",
         "sub": "Connect triggers, QR, and email in one workflow.",
         "supportingLine": "Operational funnels—not marketing theory."
+      }
+    }
+  },
+  "comparisonPages": {
+    "reviewawareVsPodium": {
+      "metadata": {
+        "title": "ReviewAware vs Podium — Field Service Review Software Comparison | ReviewAware",
+        "description": "Compare ReviewAware and Podium for Google reviews, QR jobsite tools, and job-based review requests built for contractors and home service businesses.",
+        "primaryKeyword": "ReviewAware vs Podium"
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs Podium",
+        "headlineLine2": "Which Fits Field Service Better?",
+        "subtitleLine1": "Both help you request reviews—but the best fit depends on whether your workflow is built around completed jobs, trucks, and jobsites.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Side-by-side look at features teams actually use after every service call."
+      },
+      "whySwitch": {
+        "title": "Why businesses evaluate alternatives",
+        "intro": "Field service teams often switch when they need tighter timing around job completion, simpler QR handoffs, and pricing that matches smaller fleets—not enterprise bundles.",
+        "bullet1": "You want review requests triggered when the job is marked complete—not only from marketing campaigns.",
+        "bullet2": "Technicians need QR assets that work on real jobsites, not only office workflows.",
+        "bullet3": "Owners want predictable costs while still growing Google reviews consistently."
+      },
+      "features": {
+        "sectionTitle": "Feature comparison",
+        "sectionSubtitle": "High-level summary for typical field service use cases. Verify current plans on each vendor’s site before you buy.",
+        "colFeature": "Capability",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "Feature names and packaging change over time. Use this table as a starting point, not legal or contractual advice."
+      },
+      "rows": {
+        "fieldServiceFocus": {
+          "label": "Built first for field service & completed jobs"
+        },
+        "jobCompletionTrigger": {
+          "label": "Review requests tied to job completion"
+        },
+        "qrJobsiteCards": {
+          "label": "Printable QR / jobsite review handoffs"
+        },
+        "automatedEmailSms": {
+          "label": "Automated email & SMS review requests"
+        },
+        "transparentLitePricing": {
+          "label": "Self-serve plan with public pricing (typical small teams)"
+        },
+        "fastSetup": {
+          "label": "Fast setup without a long implementation project"
+        }
+      },
+      "pricingCompare": {
+        "title": "Pricing comparison (typical small business)",
+        "subtitle": "Illustrative positioning—always confirm current pricing and contract terms on each vendor’s website.",
+        "raPrice": "ReviewAware Lite from $24.99/mo (annual options available)",
+        "raNote": "Designed for owner-operators and small fleets that want job-based review requests and QR assets without enterprise minimums.",
+        "cpPrice": "Podium: often custom / quote-based for larger deployments",
+        "cpNote": "Many teams use Podium across locations and messaging channels; pricing frequently scales with seats, messaging volume, and add-ons.",
+        "footnote": "Prices and packaging change. This summary is for comparison only."
+      },
+      "bestFor": {
+        "title": "Who each platform is usually best for",
+        "raBullet1": "Home service, HVAC, plumbing, roofing, and other businesses that complete jobs in the field",
+        "raBullet2": "Teams that want job-close timing, QR handoffs, and simple dashboards without a long rollout",
+        "raBullet3": "Owners who prefer transparent Lite pricing for getting started quickly",
+        "cpBullet1": "Larger multi-location brands investing in broad customer messaging and engagement platforms",
+        "cpBullet2": "Organizations that want a wide product suite beyond reviews (may include chat, payments, and more)",
+        "cpBullet3": "Buyers comfortable with sales-led pricing and enterprise-style packaging"
+      },
+      "finalCta": {
+        "headline": "Try ReviewAware on Real Jobs This Week",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "See job-based review requests and QR assets in a workflow built for technicians.",
+        "supportingLine": "Compare in practice—not just on paper."
       }
     }
   },

@@ -2,7 +2,7 @@
  * Registry for solution / intent pages (Layer 3).
  * Copy & metadata: next-intl namespace `useCasePages.{messageKey}`.
  *
- * Routes: /[locale]/solutions/[slug]
+ * Routes: /[locale]/[slug] (same segment as product + industry; slugs are disjoint)
  */
 
 export type UseCasePageSections = {
@@ -114,7 +114,7 @@ export function getUseCasePageDefinition(slug: string): UseCasePageDefinition | 
   return USE_CASE_PAGE_REGISTRY[slug as UseCasePageSlug];
 }
 
-/** Path segment for Link hrefs (locale added by next-intl Link). */
-export function useCasePagePath(slug: string): `/solutions/${string}` {
-  return `/solutions/${slug}` as `/solutions/${string}`;
+/** Root path for a use-case page (locale prefix added by next-intl Link when needed). */
+export function useCasePagePath(slug: string): `/${string}` {
+  return `/${slug}` as `/${string}`;
 }

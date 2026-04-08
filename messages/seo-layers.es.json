@@ -19,7 +19,10 @@
     "jobsiteReviewSystem": "Sistema de reseñas en obra",
     "automatedReviewRequests": "Solicitudes de reseña automáticas",
     "reviewGrowthKit": "Kit de crecimiento de reseñas",
-    "reviewFunnel": "Embudo de reseñas"
+    "reviewFunnel": "Embudo de reseñas",
+    "umbrellaCoreProductTitle": "Categorías de producto",
+    "tradeLayerBrowseTitle": "Centros por industria y vista del producto",
+    "comparisonRelatedTitle": "Sigue explorando ReviewAware"
   },
   "productPages": {
     "reviewManagementSoftware": {
@@ -485,6 +488,83 @@
         "ctaSubInButton": "No se requiere tarjeta",
         "sub": "Une disparadores, QR y correo en un flujo.",
         "supportingLine": "Embudos operativos—no teoría de marketing."
+      }
+    }
+  },
+  "comparisonPages": {
+    "reviewawareVsPodium": {
+      "metadata": {
+        "title": "ReviewAware vs Podium — Comparación para servicios de campo | ReviewAware",
+        "description": "Compara ReviewAware y Podium para reseñas en Google, QR en obra y solicitudes ligadas a trabajos para contratistas y servicios del hogar.",
+        "primaryKeyword": "ReviewAware vs Podium"
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs Podium",
+        "headlineLine2": "¿Cuál encaja mejor en servicios de campo?",
+        "subtitleLine1": "Ambos ayudan a pedir reseñas, pero la mejor opción depende de si tu flujo gira en torno a trabajos cerrados, cuadrillas y obras.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Comparación directa de lo que los equipos usan tras cada visita."
+      },
+      "whySwitch": {
+        "title": "Por qué las empresas miran alternativas",
+        "intro": "Los equipos de campo suelen cambiar cuando necesitan un mejor timing al cerrar el trabajo, entregas QR sencillas y precios acordes a flotas pequeñas—no solo paquetes enterprise.",
+        "bullet1": "Quieres solicitudes disparadas al marcar el trabajo completado, no solo desde campañas de marketing.",
+        "bullet2": "Los técnicos necesitan activos QR que funcionen en obra real, no solo flujos de oficina.",
+        "bullet3": "Los propietarios quieren costes previsibles y aun así crecer en reseñas de Google."
+      },
+      "features": {
+        "sectionTitle": "Comparación de funciones",
+        "sectionSubtitle": "Resumen orientativo para servicios de campo típicos. Verifica planes actuales en cada web antes de contratar.",
+        "colFeature": "Capacidad",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "Los nombres y paquetes cambian con el tiempo. Usa esta tabla como punto de partida, no como asesoramiento legal o contractual."
+      },
+      "rows": {
+        "fieldServiceFocus": {
+          "label": "Pensado primero para servicios de campo y trabajos cerrados"
+        },
+        "jobCompletionTrigger": {
+          "label": "Solicitudes de reseña ligadas al cierre del trabajo"
+        },
+        "qrJobsiteCards": {
+          "label": "QR imprimibles / entrega de reseña en obra"
+        },
+        "automatedEmailSms": {
+          "label": "Solicitudes automáticas por correo y SMS"
+        },
+        "transparentLitePricing": {
+          "label": "Plan autoservicio con precio público (equipos pequeños típicos)"
+        },
+        "fastSetup": {
+          "label": "Puesta en marcha rápida sin proyecto largo"
+        }
+      },
+      "pricingCompare": {
+        "title": "Precios (empresa pequeña típica)",
+        "subtitle": "Posicionamiento ilustrativo—confirma siempre precios y condiciones en cada web.",
+        "raPrice": "ReviewAware Lite desde 24,99 $/mes (opciones anuales disponibles)",
+        "raNote": "Pensado para propietarios y flotas pequeñas que quieren solicitudes por trabajo y QR sin mínimos enterprise.",
+        "cpPrice": "Podium: suele ser personalizado / por presupuesto en despliegues grandes",
+        "cpNote": "Muchos equipos usan Podium en varias sedes y canales de mensajería; el precio suele escalar con plazas, volumen y complementos.",
+        "footnote": "Los precios y paquetes cambian. Este resumen es solo comparativo."
+      },
+      "bestFor": {
+        "title": "Para quién suele encajar mejor cada plataforma",
+        "raBullet1": "Servicios del hogar, HVAC, fontanería, techado y negocios que terminan trabajos en campo",
+        "raBullet2": "Equipos que quieren timing al cerrar trabajo, QR y paneles sencillos sin despliegue eterno",
+        "raBullet3": "Propietarios que prefieren precios Lite transparentes para empezar rápido",
+        "cpBullet1": "Marcas multisede que invierten en mensajería y engagement más allá de reseñas",
+        "cpBullet2": "Organizaciones que quieren un conjunto amplio de producto (chat, pagos, etc.)",
+        "cpBullet3": "Compradores acostumbrados a precios con ventas y paquetes tipo enterprise"
+      },
+      "finalCta": {
+        "headline": "Prueba ReviewAware en trabajos reales esta semana",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Mira solicitudes por trabajo y QR en un flujo pensado para técnicos.",
+        "supportingLine": "Compara en la práctica—no solo en papel."
       }
     }
   },

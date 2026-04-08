@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { IndustryLandingPageContent } from "@/components/landing/industry-landing-page-content";
 import { ProductPageContent } from "@/components/landing/product-page-content";
 import { SiteFooter } from "@/components/landing/site-footer";
+import { UseCasePageContent } from "@/components/landing/use-case-page-content";
 import {
   buildIndustryLandingMessageValues,
   getIndustryLandingDefinition,
@@ -17,13 +18,24 @@ import {
   isProductPageSlug,
   PRODUCT_PAGE_SLUGS,
 } from "@/lib/product-pages/registry";
+import {
+  getUseCasePageDefinition,
+  isUseCasePageSlug,
+  USE_CASE_PAGE_SLUGS,
+} from "@/lib/use-case-pages/registry";
 
 type Props = {
   params: Promise<{ locale: string; productSlug: string }>;
 };
 
 export function generateStaticParams() {
-  const slugUnion = [...new Set([...PRODUCT_PAGE_SLUGS, ...INDUSTRY_LANDING_SLUGS])];
+  const slugUnion = [
+    ...new Set([
+      ...PRODUCT_PAGE_SLUGS,
+      ...INDUSTRY_LANDING_SLUGS,
+      ...USE_CASE_PAGE_SLUGS,
+    ]),
+  ];
   return routing.locales.flatMap((locale) =>
     slugUnion.map((productSlug) => ({ locale, productSlug })),
   );
@@ -43,6 +55,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t(`${k}.metadata.title`),
       description: t(`${k}.metadata.description`),
       keywords: [productDef.primaryKeyword],
+      openGraph: { locale: locale === "es" ? "es" : "en_US" },
+    };
+  }
+
+  const useCaseDef = getUseCasePageDefinition(productSlug);
+  if (useCaseDef) {
+    const t = await getTranslations({ locale, namespace: "useCasePages" });
+    const k = useCaseDef.messageKey;
+    return {
+      title: t(`${k}.metadata.title`),
+      description: t(`${k}.metadata.description`),
+      keywords: [useCaseDef.primaryKeyword],
       openGraph: { locale: locale === "es" ? "es" : "en_US" },
     };
   }
@@ -86,6 +110,15 @@ export default async function ProductOrIndustryPage({ params }: Props) {
     return (
       <>
         <IndustryLandingPageContent locale={locale} industrySlug={productSlug} />
+        <SiteFooter />
+      </>
+    );
+  }
+
+  if (isUseCasePageSlug(productSlug)) {
+    return (
+      <>
+        <UseCasePageContent locale={locale} slug={productSlug} />
         <SiteFooter />
       </>
     );

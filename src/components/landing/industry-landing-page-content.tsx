@@ -31,7 +31,10 @@ import {
   getIndustryLandingDefinition,
   SERVICE_PROFESSIONAL_TRADE_LINKS,
 } from "@/lib/industry-landing";
-import { TRADE_TO_UMBRELLA_LINK_SPECS } from "@/lib/seo-layers/link-presets";
+import {
+  TRADE_LAYER_INTERNAL_LINKS,
+  UMBRELLA_CORE_PRODUCT_LINKS,
+} from "@/lib/seo-layers/link-presets";
 
 const sectionY = "py-12 md:py-16 lg:py-24";
 
@@ -258,6 +261,16 @@ export async function IndustryLandingPageContent({
             badges={serviceProBadges}
           />
         ) : null}
+        {isUmbrella ? (
+          <SeoInternalLinksSection
+            title={tLinks("umbrellaCoreProductTitle")}
+            links={UMBRELLA_CORE_PRODUCT_LINKS.map((spec) => ({
+              href: spec.href,
+              label: tLinks(spec.labelKey),
+            }))}
+            compact
+          />
+        ) : null}
         <ReviewGrowthKitSection
           title={t("reviewGrowthKit.title", v)}
           subtitle={t("reviewGrowthKit.subtitle", v)}
@@ -301,8 +314,8 @@ export async function IndustryLandingPageContent({
         />
         {!isUmbrella ? (
           <SeoInternalLinksSection
-            title={t("layerNav.tradeUmbrellaHubsTitle")}
-            links={TRADE_TO_UMBRELLA_LINK_SPECS.map((spec) => ({
+            title={tLinks("tradeLayerBrowseTitle")}
+            links={TRADE_LAYER_INTERNAL_LINKS.map((spec) => ({
               href: spec.href,
               label: tLinks(spec.labelKey),
             }))}

@@ -3,14 +3,14 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { ComparisonPageContent } from "@/components/landing/comparison-page-content";
 import { SiteFooter } from "@/components/landing/site-footer";
-import { UseCasePageContent } from "@/components/landing/use-case-page-content";
 import { routing } from "@/i18n/routing";
 import {
-  getUseCasePageDefinition,
-  isUseCasePageSlug,
-  USE_CASE_PAGE_SLUGS,
-} from "@/lib/use-case-pages/registry";
+  COMPARISON_PAGE_SLUGS,
+  getComparisonPageDefinition,
+  isComparisonPageSlug,
+} from "@/lib/comparison-pages/registry";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -18,7 +18,7 @@ type Props = {
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    USE_CASE_PAGE_SLUGS.map((slug) => ({ locale, slug })),
+    COMPARISON_PAGE_SLUGS.map((slug) => ({ locale, slug })),
   );
 }
 
@@ -28,10 +28,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
-  const def = getUseCasePageDefinition(slug);
+  const def = getComparisonPageDefinition(slug);
   if (!def) return {};
 
-  const t = await getTranslations({ locale, namespace: "useCasePages" });
+  const t = await getTranslations({ locale, namespace: "comparisonPages" });
   const k = def.messageKey;
   return {
     title: t(`${k}.metadata.title`),
@@ -41,14 +41,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function SolutionPage({ params }: Props) {
+export default async function ComparisonPage({ params }: Props) {
   const { locale, slug } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
-  if (!isUseCasePageSlug(slug)) {
+  if (!isComparisonPageSlug(slug)) {
     notFound();
   }
 
@@ -56,7 +56,7 @@ export default async function SolutionPage({ params }: Props) {
 
   return (
     <>
-      <UseCasePageContent locale={locale} slug={slug} />
+      <ComparisonPageContent locale={locale} slug={slug} />
       <SiteFooter />
     </>
   );

@@ -17,13 +17,13 @@ const nextConfig: NextConfig = {
     return [
       ...USE_CASE_PAGE_SLUGS.flatMap((slug) => [
         {
-          source: `/${slug}`,
-          destination: `/solutions/${slug}`,
+          source: `/solutions/${slug}`,
+          destination: `/${slug}`,
           permanent: true,
         },
         {
-          source: `/es/${slug}`,
-          destination: `/es/solutions/${slug}`,
+          source: `/es/solutions/${slug}`,
+          destination: `/es/${slug}`,
           permanent: true,
         },
       ]),

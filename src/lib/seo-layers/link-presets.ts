@@ -3,6 +3,7 @@
  * @see docs/seo-content-architecture.md
  */
 
+import type { ComparisonPageSlug } from "@/lib/comparison-pages/registry";
 import type { ProductPageSlug } from "@/lib/product-pages/registry";
 import { useCasePagePath, type UseCasePageSlug } from "@/lib/use-case-pages/registry";
 
@@ -19,6 +20,21 @@ export const UMBRELLA_INDUSTRY_LINK_SPECS: readonly InternalLinkSpec[] = [
 
 /** Trade pages link up to umbrella hubs. */
 export const TRADE_TO_UMBRELLA_LINK_SPECS = UMBRELLA_INDUSTRY_LINK_SPECS;
+
+/** Umbrella industry pages → sparse links down to core product category pages (Layer 1). */
+export const UMBRELLA_CORE_PRODUCT_LINKS: readonly InternalLinkSpec[] = [
+  { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
+  { href: "/review-management-software", labelKey: "reviewManagementSoftwareShort" },
+  { href: "/review-request-software", labelKey: "reviewRequestSoftwareShort" },
+] as const;
+
+/**
+ * Trade pages → umbrellas + one core product anchor (Layer 1), kept to 3 links.
+ */
+export const TRADE_LAYER_INTERNAL_LINKS: readonly InternalLinkSpec[] = [
+  ...TRADE_TO_UMBRELLA_LINK_SPECS,
+  { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
+] as const;
 
 /**
  * Product pages → both umbrella industry hubs + one contextual solution (sparse).
@@ -99,6 +115,18 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
     { href: useCasePagePath("automated-review-requests"), labelKey: "automatedReviewRequests" },
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
+  ],
+};
+
+/** Comparison pages (Layer 4) → core product + umbrella + playbook use-case. */
+export const COMPARISON_PAGE_RELATED_LINKS: Record<
+  ComparisonPageSlug,
+  readonly InternalLinkSpec[]
+> = {
+  "reviewaware-vs-podium": [
+    { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
+    { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
+    { href: useCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
   ],
 };
 
