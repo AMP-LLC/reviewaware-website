@@ -234,14 +234,12 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
     { href: "/roofing-review-software", labelKey: "tradeRoofing" },
   ],
   "how-to-get-more-google-reviews": [
-    { href: getUseCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
-    { href: "/review-request-software", labelKey: "reviewRequestSoftwareShort" },
     { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
-    { href: "/home-service-review-software", labelKey: "homeServiceUmbrella" },
     { href: "/hvac-review-software", labelKey: "tradeHvac" },
     { href: "/plumber-review-software", labelKey: "tradePlumbing" },
-    { href: "/electrical-review-software", labelKey: "tradeElectrical" },
+    { href: getUseCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
+    { href: getUseCasePagePath("review-cards-for-business"), labelKey: "reviewCardsForBusiness" },
   ],
   "qr-code-review-system": [
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },

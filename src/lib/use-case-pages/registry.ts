@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Registry for solution / intent pages (Layer 3).
  * Copy & metadata: next-intl namespace `useCasePages.{messageKey}`.
  *
@@ -12,10 +12,14 @@ export type UseCasePageSections = {
   showHowItWorks?: boolean;
 };
 
+export type UseCasePageLayout = "default" | "longFormGuide";
+
 export type UseCasePageDefinition = {
   slug: string;
   primaryKeyword: string;
   messageKey: string;
+  /** When `longFormGuide`, the template renders pillar content + HowTo JSON-LD. */
+  layout?: UseCasePageLayout;
   sections?: UseCasePageSections;
 };
 
@@ -34,6 +38,7 @@ export const USE_CASE_PAGE_REGISTRY = {
     slug: "how-to-get-more-google-reviews",
     primaryKeyword: "how to get more google reviews",
     messageKey: "howToGetMoreGoogleReviews",
+    layout: "longFormGuide",
     sections: {
       showCaptureReviewsAnywhere: true,
       showPlatformLogos: true,

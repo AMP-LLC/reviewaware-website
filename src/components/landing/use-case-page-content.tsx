@@ -1,9 +1,11 @@
-import { getTranslations } from "next-intl/server";
+﻿import { getTranslations } from "next-intl/server";
 
 import { CaptureReviewsAnywhereSection } from "@/components/landing/capture-reviews-anywhere-section";
 import { FaqSection } from "@/components/landing/faq-section";
+import { FinalCtaSection } from "@/components/landing/final-cta-section";
 import { HeroSection } from "@/components/landing/hero-section";
 import { HowItWorksSection } from "@/components/landing/how-it-works-section";
+import { HowToGoogleReviewsGuide } from "@/components/landing/how-to-google-reviews-guide";
 import { PlatformLogosSection } from "@/components/landing/platform-logos-section";
 import { ReviewPainSection } from "@/components/landing/review-pain-section";
 import { SeoDifferentiatorSection } from "@/components/landing/seo-differentiator-section";
@@ -43,7 +45,47 @@ export async function UseCasePageContent({
     credibilityLine: t(`${k}.hero.credibilityLine`),
   };
 
-  /** Problem framing — distinct from core product pages. */
+  const related = USE_CASE_RELATED_LINKS[slug].map((spec) => ({
+    href: spec.href,
+    label: tLinks(spec.labelKey),
+  }));
+
+  if (def.layout === "longFormGuide") {
+    const finalCtaCopy = {
+      headline: t(`${k}.finalCta.headline`),
+      cta: t(`${k}.finalCta.cta`),
+      ctaSubInButton: t(`${k}.finalCta.ctaSubInButton`),
+      sub: t(`${k}.finalCta.sub`),
+      supportingLine: t(`${k}.finalCta.supportingLine`),
+    };
+
+    return (
+      <>
+        <SiteHeader locale={locale} />
+        <main>
+          <HeroSection locale={locale} copy={heroCopy} />
+          <HowToGoogleReviewsGuide locale={locale} />
+          <SeoInternalLinksSection
+            title={tLinks("useCaseRelatedTitle")}
+            links={related}
+            sectionClassName="bg-zinc-50/50"
+          />
+          {sections.showCaptureReviewsAnywhere !== false ? (
+            <CaptureReviewsAnywhereSection />
+          ) : null}
+          {sections.showPlatformLogos !== false ? (
+            <PlatformLogosSection sectionClassName={sectionY} />
+          ) : null}
+          {sections.showHowItWorks !== false ? (
+            <HowItWorksSection sectionClassName={sectionY} />
+          ) : null}
+          <FinalCtaSection locale={locale} copy={finalCtaCopy} sectionClassName={sectionY} />
+          <FaqSection sectionClassName={sectionY} />
+        </main>
+      </>
+    );
+  }
+
   const painCopy = {
     title: t(`${k}.reviewPain.title`),
     layout: "cards" as const,
@@ -61,11 +103,6 @@ export async function UseCasePageContent({
     t(`${k}.differentiator.p3`),
     t(`${k}.differentiator.p4`),
   ].filter((p) => p.trim().length > 0);
-
-  const related = USE_CASE_RELATED_LINKS[slug].map((spec) => ({
-    href: spec.href,
-    label: tLinks(spec.labelKey),
-  }));
 
   return (
     <>
