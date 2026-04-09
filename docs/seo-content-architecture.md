@@ -36,11 +36,11 @@ Defined in `src/lib/seo-layers/link-presets.ts` and wired in page templates (no 
 
 | Layer | Downward / lateral links |
 |-------|---------------------------|
-| **Product** | `PRODUCT_PAGE_INTERNAL_LINKS`: both umbrella hubs + one contextual use-case each. |
-| **Umbrella industry** | Trades via “Built for Service Professionals”; **plus** compact `UMBRELLA_CORE_PRODUCT_LINKS` → three core product URLs. |
-| **Trade** | `TRADE_LAYER_INTERNAL_LINKS`: both umbrellas + `google-review-software`; then compact sibling trades (unchanged). |
+| **Product** | `PRODUCT_PAGE_INTERNAL_LINKS`: both umbrella hubs + **two** contextual use-cases + **one** comparison URL each. |
+| **Umbrella industry** | Trades via “Built for Service Professionals”; **plus** one compact `UMBRELLA_PAGE_FOCUS_LINKS` strip (featured trades + 2 products + 1 playbook). |
+| **Trade** | **Top 10 priority trades:** `PRIORITY_TRADE_CONTEXTUAL_LINKS` (umbrellas + siblings + product + playbook). **Other trades:** `TRADE_LAYER_INTERNAL_LINKS` + full sibling compact grid. |
 | **Use-case** | `USE_CASE_RELATED_LINKS`: mix of product, umbrella, trade, and other use-cases (`getUseCasePagePath`). |
-| **Comparison** | `COMPARISON_PAGE_RELATED_LINKS`: same Layer 1 trio on every vs page (`review-management-software`, `google-review-software`, `contractor-review-software`). |
+| **Comparison** | `COMPARISON_PAGE_RELATED_LINKS`: Google + review-request + both umbrellas (commercial cluster). |
 
 ## Metadata & discovery
 

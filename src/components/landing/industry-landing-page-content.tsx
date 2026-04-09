@@ -32,8 +32,11 @@ import {
   SERVICE_PROFESSIONAL_TRADE_LINKS,
 } from "@/lib/industry-landing";
 import {
+  isPriorityTradeSlug,
+  PRIORITY_TRADE_CONTEXTUAL_LINKS,
   TRADE_LAYER_INTERNAL_LINKS,
-  UMBRELLA_CORE_PRODUCT_LINKS,
+  UMBRELLA_PAGE_FOCUS_LINKS,
+  type UmbrellaFocusSlug,
 } from "@/lib/seo-layers/link-presets";
 
 const sectionY = "py-12 md:py-16 lg:py-24";
@@ -152,6 +155,9 @@ export async function IndustryLandingPageContent({
   const useCases = def.useCases[locale === "es" ? "es" : "en"];
 
   const isUmbrella = UMBRELLA_INDUSTRY_SLUGS.has(industrySlug);
+  const priorityTradeLinks = isPriorityTradeSlug(industrySlug)
+    ? PRIORITY_TRADE_CONTEXTUAL_LINKS[industrySlug]
+    : null;
 
   const serviceProBadges = SERVICE_PROFESSIONAL_TRADE_LINKS.map((item) => ({
     id: item.id,
@@ -263,8 +269,8 @@ export async function IndustryLandingPageContent({
         ) : null}
         {isUmbrella ? (
           <SeoInternalLinksSection
-            title={tLinks("umbrellaCoreProductTitle")}
-            links={UMBRELLA_CORE_PRODUCT_LINKS.map((spec) => ({
+            title={tLinks("umbrellaExploreTitle")}
+            links={UMBRELLA_PAGE_FOCUS_LINKS[industrySlug as UmbrellaFocusSlug].map((spec) => ({
               href: spec.href,
               label: tLinks(spec.labelKey),
             }))}
@@ -314,15 +320,17 @@ export async function IndustryLandingPageContent({
         />
         {!isUmbrella ? (
           <SeoInternalLinksSection
-            title={tLinks("tradeLayerBrowseTitle")}
-            links={TRADE_LAYER_INTERNAL_LINKS.map((spec) => ({
+            title={tLinks(
+              priorityTradeLinks ? "tradeContextualTitle" : "tradeLayerBrowseTitle",
+            )}
+            links={(priorityTradeLinks ?? TRADE_LAYER_INTERNAL_LINKS).map((spec) => ({
               href: spec.href,
               label: tLinks(spec.labelKey),
             }))}
             compact
           />
         ) : null}
-        {!isUmbrella ? (
+        {!isUmbrella && !priorityTradeLinks ? (
           <IndustryServiceProsCompactSection
             title={t("servicePros.alsoBuiltForOther")}
             badges={serviceProBadgesExcludingCurrent}

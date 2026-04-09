@@ -51,7 +51,7 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
           headlineLine1: "Get More Google Reviews for Your Contracting Business",
           headlineLine2: "",
           subtitleLine1:
-            "Turn every completed job into a review opportunity with QR jobsite cards, automated follow-ups, and a review funnel designed for contractors.",
+            "Projects and punch lists move fast—capture reviews when the walkthrough wraps: QR jobsite cards, job-close triggers, and follow-ups built for crews that live on build sites.",
           subtitleLine2: "",
           ctaPrimary: "Start Getting More Reviews",
           ctaSecondary: "See How It Works",
@@ -70,7 +70,7 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
           headlineLine1: "Consigue más reseñas en Google para tu negocio de contratación",
           headlineLine2: "",
           subtitleLine1:
-            "Convierte cada trabajo completado en una oportunidad de reseña con tarjetas QR en obra, seguimientos automáticos y un embudo de reseñas pensado para contratistas.",
+            "Los proyectos y las listas de repaso van rápido: captura la reseña al cerrar la entrega con QR en obra, disparadores al cerrar trabajo y seguimientos para cuadrillas en obra.",
           subtitleLine2: "",
           ctaPrimary: "Empieza a conseguir más reseñas",
           ctaSecondary: "Ver cómo funciona",
@@ -119,13 +119,13 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
           title:
             "Home Service Review Software | Get More Google Reviews for Service Businesses",
           description:
-            "Generate more Google reviews after every service call with QR jobsite cards and automated review requests built for home service businesses.",
+            "Get more Google reviews after every completed visit: QR handoffs, timed emails, and reminders built for dispatch-heavy home service businesses—not enterprise reputation dashboards.",
         },
         hero: {
           headlineLine1: "Review Software Built for Home Service Businesses",
           headlineLine2: "",
           subtitleLine1:
-            "Turn every completed service call into a new Google review with QR cards, automated follow-ups, and a repeatable review rhythm built for service companies.",
+            "Route-based teams win on repeat visits—turn every closed ticket into a review ask while the technician is still trusted: QR cards in the driveway, automated follow-ups, and light reminders that respect busy schedules.",
           subtitleLine2: "",
           ctaPrimary: "Start Getting More Reviews",
           ctaSecondary: "See How It Works",
@@ -138,14 +138,14 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
           title:
             "Software de reseñas para servicios del hogar | Más reseñas en Google",
           description:
-            "Genera más reseñas en Google tras cada visita con tarjetas QR en obra y solicitudes automáticas pensadas para empresas de servicios del hogar.",
+            "Más reseñas en Google tras cada visita cerrada: QR, correos oportunos y recordatorios para negocios con despacho—no paneles enterprise de reputación.",
         },
         hero: {
           headlineLine1:
             "Software de reseñas pensado para empresas de servicios del hogar",
           headlineLine2: "",
           subtitleLine1:
-            "Convierte cada visita de servicio completada en una nueva reseña de Google con tarjetas QR, seguimientos automáticos y un ritmo repetible de reseñas pensado para empresas de servicios.",
+            "Equipos con rutas ganan con visitas repetidas: pide la reseña al cerrar el parte mientras el técnico aún genera confianza—QR en el acceso, seguimientos automáticos y recordatorios que respetan la agenda.",
           subtitleLine2: "",
           ctaPrimary: "Empieza a conseguir más reseñas",
           ctaSecondary: "Ver cómo funciona",
@@ -178,6 +178,34 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
         "Servicio de emergencia HVAC",
       ],
     },
+    copyOverrides: {
+      en: {
+        hero: {
+          headlineLine1: "Get More Google Reviews for Your HVAC Business",
+          headlineLine2: "",
+          subtitleLine1:
+            "Tune-ups and installs are trust moments—hand off a QR review card while the system is still running and let automation nudge customers who meant to review later.",
+          subtitleLine2: "",
+          ctaPrimary: "Start Getting More Reviews",
+          ctaSecondary: "See How It Works",
+          credibilityLine:
+            "Built for residential HVAC owners balancing peak season and warranty callbacks.",
+        },
+      },
+      es: {
+        hero: {
+          headlineLine1: "Más reseñas en Google para tu negocio HVAC",
+          headlineLine2: "",
+          subtitleLine1:
+            "Puestas en marcha y mantenimientos generan confianza: entrega la tarjeta QR con el equipo aún en marcha y automatiza el recordatorio para quien lo dejó para después.",
+          subtitleLine2: "",
+          ctaPrimary: "Empieza a conseguir más reseñas",
+          ctaSecondary: "Ver cómo funciona",
+          credibilityLine:
+            "Pensado para negocios HVAC residenciales con picos de temporada y garantías.",
+        },
+      },
+    },
   },
   "plumber-review-software": {
     slug: "plumber-review-software",
@@ -202,6 +230,34 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
         "Fontanería de urgencia",
       ],
     },
+    copyOverrides: {
+      en: {
+        hero: {
+          headlineLine1: "Get More Google Reviews for Your Plumbing Business",
+          headlineLine2: "",
+          subtitleLine1:
+            "Stops-leaks and new installs deserve proof the same day—QR handoffs before you coil the hose and timed emails that reference the actual visit.",
+          subtitleLine2: "",
+          ctaPrimary: "Start Getting More Reviews",
+          ctaSecondary: "See How It Works",
+          credibilityLine:
+            "Built for plumbers who juggle emergencies, remodels, and warranty callbacks.",
+        },
+      },
+      es: {
+        hero: {
+          headlineLine1: "Más reseñas en Google para tu negocio de fontanería",
+          headlineLine2: "",
+          subtitleLine1:
+            "Parar fugas e instalar equipos merece prueba el mismo día: QR antes de recoger y correos que citan la visita real.",
+          subtitleLine2: "",
+          ctaPrimary: "Empieza a conseguir más reseñas",
+          ctaSecondary: "Ver cómo funciona",
+          credibilityLine:
+            "Pensado para fontaneros con urgencias, reformas y garantías.",
+        },
+      },
+    },
   },
   "roofing-review-software": {
     slug: "roofing-review-software",
@@ -225,6 +281,34 @@ export const INDUSTRY_LANDING_REGISTRY: Record<string, IndustryLandingDefinition
         "Instalación de canalones",
         "Inspección de tejado",
       ],
+    },
+    copyOverrides: {
+      en: {
+        hero: {
+          headlineLine1: "Get More Google Reviews for Your Roofing Business",
+          headlineLine2: "",
+          subtitleLine1:
+            "Storm season and replacements move quickly—capture the review right after the ladder comes down with on-site QR and job-close sequences homeowners recognize.",
+          subtitleLine2: "",
+          ctaPrimary: "Start Getting More Reviews",
+          ctaSecondary: "See How It Works",
+          credibilityLine:
+            "Built for steep-slope crews, insurance-driven repairs, and final walkthroughs.",
+        },
+      },
+      es: {
+        hero: {
+          headlineLine1: "Más reseñas en Google para tu negocio de techado",
+          headlineLine2: "",
+          subtitleLine1:
+            "Tormentas y sustituciones van rápido: captura la reseña al bajar la escalera con QR en obra y secuencias al cierre que el propietario reconoce.",
+          subtitleLine2: "",
+          ctaPrimary: "Empieza a conseguir más reseñas",
+          ctaSecondary: "Ver cómo funciona",
+          credibilityLine:
+            "Pensado para cuadrillas de tejado, reparaciones con aseguradora y entregas finales.",
+        },
+      },
     },
   },
   "landscaping-review-software": {

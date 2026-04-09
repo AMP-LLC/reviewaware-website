@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 
 /**
  * Canonical site origin for metadata, sitemap, and absolute URLs.
- * Set `NEXT_PUBLIC_SITE_URL` in production (e.g. https://reviewaware.com).
+ * Set `NEXT_PUBLIC_SITE_URL` in production (e.g. https://www.reviewaware.com). See `.env.example`.
  */
 export function getSiteOrigin(): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim();

@@ -21,8 +21,26 @@
     "reviewGrowthKit": "Kit de crecimiento de reseñas",
     "reviewFunnel": "Embudo de reseñas",
     "umbrellaCoreProductTitle": "Categorías de producto",
+    "umbrellaExploreTitle": "Oficios destacados, productos y guías",
     "tradeLayerBrowseTitle": "Centros por industria y vista del producto",
-    "comparisonRelatedTitle": "Sigue explorando ReviewAware"
+    "tradeContextualTitle": "Oficios, productos y soluciones relacionados",
+    "comparisonRelatedTitle": "Sigue explorando ReviewAware",
+    "compareVsPodium": "ReviewAware vs Podium",
+    "compareVsNicejob": "ReviewAware vs NiceJob",
+    "compareVsBirdeye": "ReviewAware vs Birdeye",
+    "compareVsBroadly": "ReviewAware vs Broadly",
+    "tradeElectrical": "Software de reseñas para electricidad",
+    "tradeLandscaping": "Software de reseñas para paisajismo",
+    "tradeCleaning": "Software de reseñas para limpieza",
+    "tradeGarageDoor": "Software de reseñas para puertas de garaje",
+    "tradePestControl": "Software de reseñas para control de plagas",
+    "tradeTreeService": "Software de reseñas para servicio de árboles",
+    "tradePoolService": "Software de reseñas para piscinas",
+    "tradePressureWashing": "Software de reseñas para hidrolimpieza",
+    "tradeCarpetCleaning": "Software de reseñas para limpieza de alfombras",
+    "tradeWindowCleaning": "Software de reseñas para limpieza de cristales",
+    "tradePaintingContractor": "Software de reseñas para pintura",
+    "tradeGeneralContractor": "Software de reseñas para contratista general"
   },
   "productPages": {
     "reviewManagementSoftware": {
@@ -37,7 +55,7 @@
         "subtitleLine2": "",
         "ctaPrimary": "Prueba gratis 14 días",
         "ctaSecondary": "Ver cómo funciona",
-        "credibilityLine": "Diseñado para HVAC, fontanería, techado, limpieza y otros servicios de campo."
+        "credibilityLine": "Enfoque operativo: un programa de reseñas visible por cuadrilla y por trabajo—no una bandeja genérica de marketing."
       },
       "differentiator": {
         "title": "Qué significa gestionar reseñas cuando el trabajo es presencial",
@@ -103,7 +121,7 @@
       "hero": {
         "headlineLine1": "Software de reseñas de clientes",
         "headlineLine2": "para quienes terminan trabajos reales",
-        "subtitleLine1": "Encuentra al cliente donde acaba el trabajo: tarjeta QR, correo automático y un empujón amable si se olvidan.",
+        "subtitleLine1": "Adapta el destino de reseña a tu stack—siempre anclado al cierre: QR en la puerta, correo automático y recordatorios educados para quien aún no publicó.",
         "subtitleLine2": "",
         "ctaPrimary": "Prueba gratis 14 días",
         "ctaSecondary": "Ver cómo funciona",
@@ -214,7 +232,7 @@
         "subtitleLine2": "",
         "ctaPrimary": "Prueba gratis 14 días",
         "ctaSecondary": "Ver cómo funciona",
-        "credibilityLine": "Ideal para contratistas y servicios del hogar que compiten en búsqueda local."
+        "credibilityLine": "Enfoque en resultados: más reseñas publicadas en Google del trabajo que ya cerráis."
       },
       "differentiator": {
         "title": "Una guía simple que gana a pedir a ratos",
@@ -246,7 +264,7 @@
       "hero": {
         "headlineLine1": "Cómo conseguir más reseñas en Google",
         "headlineLine2": "sin sonar desesperado",
-        "subtitleLine1": "Hábitos fáciles para técnicos, entrega QR y automatización ligera para que clientes contentos terminen la reseña.",
+        "subtitleLine1": "Guía paso a paso: hábitos para técnicos, entrega QR y una sola capa de automatización educada para que la teoría se vuelva hábito.",
         "subtitleLine2": "",
         "ctaPrimary": "Prueba gratis 14 días",
         "ctaSecondary": "Ver cómo funciona",
@@ -426,11 +444,11 @@
       "hero": {
         "headlineLine1": "El kit de crecimiento de reseñas",
         "headlineLine2": "lleva QR al campo",
-        "subtitleLine1": "Activos imprimibles para pedir en persona mientras el software evita que se pierda nadie si no escanean.",
+        "subtitleLine1": "Tarjetas, señalización y QR para camión con enlaces rastreados—material físico más el mismo motor de seguimiento si el cliente no escanea al momento.",
         "subtitleLine2": "",
         "ctaPrimary": "Prueba gratis 14 días",
         "ctaSecondary": "Ver cómo funciona",
-        "credibilityLine": "La mitad física de un sistema digital de reseñas."
+        "credibilityLine": "Herramientas físicas + seguimiento digital: un solo camino hasta la reseña publicada."
       },
       "differentiator": {
         "title": "Por qué el kit importa junto al software",

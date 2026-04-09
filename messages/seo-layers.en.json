@@ -21,8 +21,26 @@
     "reviewGrowthKit": "Review Growth Kit",
     "reviewFunnel": "Review funnel",
     "umbrellaCoreProductTitle": "Core product categories",
+    "umbrellaExploreTitle": "Featured trades, products & playbooks",
     "tradeLayerBrowseTitle": "Industry hubs & product overview",
-    "comparisonRelatedTitle": "Keep exploring ReviewAware"
+    "tradeContextualTitle": "Related trades, products & solutions",
+    "comparisonRelatedTitle": "Keep exploring ReviewAware",
+    "compareVsPodium": "ReviewAware vs Podium",
+    "compareVsNicejob": "ReviewAware vs NiceJob",
+    "compareVsBirdeye": "ReviewAware vs Birdeye",
+    "compareVsBroadly": "ReviewAware vs Broadly",
+    "tradeElectrical": "Electrical review software",
+    "tradeLandscaping": "Landscaping review software",
+    "tradeCleaning": "Cleaning review software",
+    "tradeGarageDoor": "Garage door review software",
+    "tradePestControl": "Pest control review software",
+    "tradeTreeService": "Tree service review software",
+    "tradePoolService": "Pool service review software",
+    "tradePressureWashing": "Pressure washing review software",
+    "tradeCarpetCleaning": "Carpet cleaning review software",
+    "tradeWindowCleaning": "Window cleaning review software",
+    "tradePaintingContractor": "Painting contractor review software",
+    "tradeGeneralContractor": "General contractor review software"
   },
   "productPages": {
     "reviewManagementSoftware": {
@@ -37,7 +55,7 @@
         "subtitleLine2": "",
         "ctaPrimary": "Start Free 14-Day Trial",
         "ctaSecondary": "See How It Works",
-        "credibilityLine": "Designed for HVAC, plumbing, roofing, cleaning, and other field service companies."
+        "credibilityLine": "Operations-first: one review program owners can see per crew, per job—not a generic marketing inbox."
       },
       "differentiator": {
         "title": "What review management means when work happens in the field",
@@ -103,7 +121,7 @@
       "hero": {
         "headlineLine1": "Customer Review Software",
         "headlineLine2": "for Teams That Finish Real Jobs",
-        "subtitleLine1": "Meet customers where the work ends: hand off a QR review card, send the email automatically, and nudge politely if they forget.",
+        "subtitleLine1": "Optimize for any review destination your stack uses—still anchored to job completion: QR at the door, auto-email, and polite nudges so happy buyers actually publish.",
         "subtitleLine2": "",
         "ctaPrimary": "Start Free 14-Day Trial",
         "ctaSecondary": "See How It Works",
@@ -214,7 +232,7 @@
         "subtitleLine2": "",
         "ctaPrimary": "Start Free 14-Day Trial",
         "ctaSecondary": "See How It Works",
-        "credibilityLine": "Best for contractors and home service teams competing on local search."
+        "credibilityLine": "Outcome-focused: more published Google reviews from the work you already finish."
       },
       "differentiator": {
         "title": "A simple playbook that beats inconsistent asking",
@@ -246,7 +264,7 @@
       "hero": {
         "headlineLine1": "How to Get More Google Reviews",
         "headlineLine2": "Without Sounding Desperate",
-        "subtitleLine1": "Use technician-friendly habits, QR handoffs, and light automation so happy customers actually finish the review.",
+        "subtitleLine1": "Educational, step-by-step habits—QR handoffs, timing, and one polite automation layer so the guide turns into repeatable behavior.",
         "subtitleLine2": "",
         "ctaPrimary": "Start Free 14-Day Trial",
         "ctaSecondary": "See How It Works",
@@ -426,11 +444,11 @@
       "hero": {
         "headlineLine1": "The Review Growth Kit",
         "headlineLine2": "Puts QR Tools in the Field",
-        "subtitleLine1": "Print-ready QR assets help crews ask in person while software ensures nobody slips through if they skip the scan.",
+        "subtitleLine1": "Ship cards, yard signs, and truck-ready QR tied to tracked links—physical prompts plus the same follow-up engine if customers skip the scan.",
         "subtitleLine2": "",
         "ctaPrimary": "Start Free 14-Day Trial",
         "ctaSecondary": "See How It Works",
-        "credibilityLine": "Designed as the physical half of a digital review system."
+        "credibilityLine": "Physical tools + digital follow-up—one loop from driveway to published review."
       },
       "differentiator": {
         "title": "Why the kit matters alongside software",
