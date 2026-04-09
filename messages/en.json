@@ -484,7 +484,22 @@
       "tradePestControl": "Pest Control",
       "tradeTreeService": "Tree Service",
       "tradePoolService": "Pool Service",
-      "tradePressureWashing": "Pressure Washing"
+      "tradePressureWashing": "Pressure Washing",
+      "tradeGeneralContractor": "General Contractor",
+      "tradePaintingContractor": "Painting",
+      "tradeFlooringContractor": "Flooring",
+      "tradeFenceContractor": "Fence",
+      "tradeDeckBuilder": "Deck Building",
+      "tradeWindowCleaning": "Window Cleaning",
+      "tradeCarpetCleaning": "Carpet Cleaning",
+      "tradeRestoration": "Restoration",
+      "tradeApplianceRepair": "Appliance Repair",
+      "tradeChimneyService": "Chimney Service",
+      "tradeMasonryContractor": "Masonry",
+      "tradeConcreteContractor": "Concrete",
+      "tradeMovingCompany": "Moving",
+      "tradeInsulationContractor": "Insulation",
+      "tradeSolarInstaller": "Solar"
     },
     "seoEducation": {
       "title": "How {industry} Companies Get More Google Reviews",

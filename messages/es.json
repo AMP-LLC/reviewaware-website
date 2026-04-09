@@ -484,7 +484,22 @@
       "tradePestControl": "Control de plagas",
       "tradeTreeService": "Servicio de árboles",
       "tradePoolService": "Mantenimiento de piscinas",
-      "tradePressureWashing": "Hidrolimpieza"
+      "tradePressureWashing": "Hidrolimpieza",
+      "tradeGeneralContractor": "Contratista general",
+      "tradePaintingContractor": "Pintura",
+      "tradeFlooringContractor": "Suelos",
+      "tradeFenceContractor": "Vallas",
+      "tradeDeckBuilder": "Terrazas",
+      "tradeWindowCleaning": "Limpieza de cristales",
+      "tradeCarpetCleaning": "Alfombras",
+      "tradeRestoration": "Restauración",
+      "tradeApplianceRepair": "Electrodomésticos",
+      "tradeChimneyService": "Chimeneas",
+      "tradeMasonryContractor": "Mampostería",
+      "tradeConcreteContractor": "Hormigón",
+      "tradeMovingCompany": "Mudanzas",
+      "tradeInsulationContractor": "Aislamiento",
+      "tradeSolarInstaller": "Solar"
     },
     "seoEducation": {
       "title": "Cómo las empresas de {industry} consiguen más reseñas en Google",
