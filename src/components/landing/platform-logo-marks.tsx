@@ -121,7 +121,7 @@ function LogoRow({ ariaHidden = false }: { ariaHidden?: boolean }) {
         <SimpleIconMark
           path={siTrustpilot.path}
           title={siTrustpilot.title}
-          className="h-10 w-auto shrink-0 text-zinc-400 opacity-90 transition-opacity hover:opacity-100 md:h-12"
+          className="h-[100px] w-auto shrink-0 text-zinc-400 opacity-90 transition-opacity hover:opacity-100 md:h-[120px]"
         />
       </li>
       <li className="flex justify-center">
