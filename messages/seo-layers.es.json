@@ -566,6 +566,228 @@
         "sub": "Mira solicitudes por trabajo y QR en un flujo pensado para técnicos.",
         "supportingLine": "Compara en la práctica—no solo en papel."
       }
+    },
+    "reviewawareVsNicejob": {
+      "metadata": {
+        "title": "ReviewAware vs NiceJob — Tarjetas QR y captura en obra | ReviewAware",
+        "description": "Compara ReviewAware y NiceJob para contratistas y negocios de servicios que quieren tarjetas QR, material listo para imprimir y entregas que funcionen en obra real."
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs NiceJob",
+        "headlineLine2": "Tarjetas QR, impresión y mano a mano en obra",
+        "subtitleLine1": "Si tu equipo vive en camionetas y obras, la diferencia suele ser qué tan rápido puedes dejar una tarjeta QR física al cliente—no solo otro panel.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Pensado para cuadrillas que cierran trabajos en campo y necesitan captar reseñas donde ocurre el trabajo."
+      },
+      "whySwitch": {
+        "title": "Por qué algunos equipos miran más allá de NiceJob aquí",
+        "intro": "NiceJob agrupa reputación y marketing. Algunos contratistas prefieren un stack más estrecho: tarjetas QR imprimibles, activos listos para imprenta y un embudo que arranca al terminar el trabajo.",
+        "bullet1": "Necesitas material de reseñas listo para imprimir que los técnicos puedan dejar—sin rediseñarlo cada vez.",
+        "bullet2": "Tus mejores reseñas nacen en el garaje, el ático o el jardín—no en campañas que ignoran dónde terminó el servicio.",
+        "bullet3": "Quieres un flujo de reseñas enfocado en lugar de un conjunto amplio de marketing que quizá no uses."
+      },
+      "features": {
+        "sectionTitle": "Comparación de funciones",
+        "sectionSubtitle": "Centrada en QR, material imprimible y entregas en obra. Confirma planes actuales en cada web.",
+        "colFeature": "Capacidad",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "Los paquetes cambian. Usa esto como orientación, no como garantía contractual."
+      },
+      "rows": {
+        "qrReviewCardsPrint": {
+          "label": "Tarjetas QR de reseñas optimizadas para imprimir y entregar"
+        },
+        "printReadyReviewAssets": {
+          "label": "Activos listos para imprimir (tarjetas, hojas, dejar al cliente)"
+        },
+        "jobsiteHandoffCapture": {
+          "label": "Captura primero en obra (técnico → cliente al cierre)"
+        },
+        "contractorServiceWorkflow": {
+          "label": "Flujos alineados con patrones de contratistas y servicios del hogar"
+        },
+        "litePublicPricing": {
+          "label": "Plan Lite autoservicio con precio público"
+        },
+        "minimalToolchainReviews": {
+          "label": "Herramientas mínimas centradas en reseñas (vs. suite amplia de marketing)"
+        }
+      },
+      "pricingCompare": {
+        "title": "Precios (empresa pequeña típica)",
+        "subtitle": "Solo orientativo—verifica precios, pruebas y condiciones antes de contratar.",
+        "raPrice": "ReviewAware Lite desde 24,99 $/mes (opciones anuales disponibles)",
+        "raNote": "Orientado a propietarios y equipos pequeños que quieren QR y captura al cerrar trabajo sin pagar una suite de marketing completa.",
+        "cpPrice": "NiceJob: suele ser por niveles según funciones y escala",
+        "cpNote": "El precio suele reflejar reputación y marketing más allá de un kit solo QR o impresión.",
+        "footnote": "Los precios y paquetes cambian con frecuencia."
+      },
+      "bestFor": {
+        "title": "Para quién suele encajar mejor cada plataforma",
+        "raBullet1": "Contratistas y servicios de campo que quieren tarjetas QR físicas y material impreso ligado al trabajo cerrado",
+        "raBullet2": "Equipos que priorizan entregas en obra y automatización sencilla frente a un mapa de producto muy amplio",
+        "raBullet3": "Negocios que quieren un Lite con precio claro mientras demuestran volumen de reseñas desde el campo",
+        "cpBullet1": "Marcas de servicios del hogar que invierten en reputación más campañas con herramientas amplias",
+        "cpBullet2": "Talleres que ya usan el ecosistema NiceJob y quieren todo con un solo proveedor",
+        "cpBullet3": "Equipos cómodos alineando reseñas con un stack más grande de reputación y referidos"
+      },
+      "finalCta": {
+        "headline": "Lleva tarjetas QR de reseñas al próximo trabajo",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Mira cómo encajan activos listos para imprimir y entregas en obra con tu cuadrilla.",
+        "supportingLine": "Menos suite, más reseñas de cierres reales."
+      }
+    },
+    "reviewawareVsBirdeye": {
+      "metadata": {
+        "title": "ReviewAware vs Birdeye — Software de reseñas enfocado en servicios | ReviewAware",
+        "description": "ReviewAware es una alternativa más simple para negocios de servicios que quieren más reseñas en Google sin adoptar una plataforma enterprise de reputación y fichas."
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs Birdeye",
+        "headlineLine2": "Reseñas sin la huella enterprise",
+        "subtitleLine1": "Birdeye abarca fichas, mensajes, encuestas y más. ReviewAware se mantiene estrecho: ayudar a equipos de servicio a conseguir más reseñas con menos software que administrar.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Si tu objetivo son las reseñas—no todo un sistema de reputación—el alcance importa."
+      },
+      "whySwitch": {
+        "title": "Por qué algunos dan un paso atrás con suites completas",
+        "intro": "Las plataformas enterprise resuelven muchas cosas a la vez. Negocios de servicio más pequeños a veces pagan amplitud que no operativizan, mientras el flujo de reseñas sigue difuso.",
+        "bullet1": "No necesitas todos los módulos de fichas, encuestas y mensajería solo para crecer en Google tras las visitas.",
+        "bullet2": "Implementaciones y modelos por plaza pensados para franquicias pueden pesar si solo tienes unas pocas unidades.",
+        "bullet3": "Quieres que admins y técnicos aprendan un ritmo de reseñas—no un mapa entero de plataforma antes del primer envío."
+      },
+      "features": {
+        "sectionTitle": "Comparación de funciones",
+        "sectionSubtitle": "Dónde difiere una herramienta centrada en reseñas de una suite amplia. Valida siempre en cada web.",
+        "colFeature": "Capacidad",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "El catálogo de Birdeye es grande y cambia; esta tabla enfatiza solo la parte de generación de reseñas."
+      },
+      "rows": {
+        "reviewsFirstNotFullSuite": {
+          "label": "Pensado para generar reseñas vs. suite completa de reputación"
+        },
+        "selfServeSmallTeamStart": {
+          "label": "Inicio autoservicio rápido para equipos pequeños (poca barrera de ventas)"
+        },
+        "avoidsEnterpriseRollout": {
+          "label": "Despliegue ligero (no proyecto enterprise multimódulo)"
+        },
+        "fieldQrJobCloseTiming": {
+          "label": "QR en campo + timing al cerrar trabajo para solicitudes"
+        },
+        "googleGrowthWithoutExtras": {
+          "label": "Crecimiento en Google sin amarrar módulos ajenos"
+        },
+        "predictableStarterCost": {
+          "label": "Coste inicial predecible para flujos centrados en reseñas"
+        }
+      },
+      "pricingCompare": {
+        "title": "Precios (empresa pequeña típica)",
+        "subtitle": "Resumen orientativo—las suites enterprise y complementos varían mucho. Confirma presupuestos directamente.",
+        "raPrice": "ReviewAware Lite desde 24,99 $/mes (opciones anuales disponibles)",
+        "raNote": "Precios pensados para operadores pequeños que quieren automatización de reseñas sin financiar un despliegue completo.",
+        "cpPrice": "Birdeye: suele ser por presupuesto en programas grandes o multisede",
+        "cpNote": "La inversión suele reflejar fichas, mensajería, analítica y servicios gestionados—no solo solicitudes de reseña.",
+        "footnote": "Las propuestas del proveedor son la fuente de verdad para tu stack y presupuesto."
+      },
+      "bestFor": {
+        "title": "Para quién suele encajar mejor cada plataforma",
+        "raBullet1": "Negocios de servicio liderados por el propietario que quieren más reseñas, no otro centro de mando enterprise",
+        "raBullet2": "Equipos que prefieren un camino corto desde el alta hasta la primera solicitud automática",
+        "raBullet3": "Empresas que prefieren profundizar después que pagar por módulos que no usarán",
+        "cpBullet1": "Marcas multisede que estandarizan reputación, fichas y analítica de CX entre regiones",
+        "cpBullet2": "Empresas que necesitan integraciones amplias, gobernanza y servicios gestionados en un contrato",
+        "cpBullet3": "Organizaciones con presupuesto y personal para poseer una plataforma de reputación a largo plazo"
+      },
+      "finalCta": {
+        "headline": "Crece en reseñas con menos stack",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Mantén el flujo ajustado: disparadores, QR, correo y SMS centrados en trabajos cerrados.",
+        "supportingLine": "Demuestra impacto en reseñas antes de ampliar el alcance del software."
+      }
+    },
+    "reviewawareVsBroadly": {
+      "metadata": {
+        "title": "ReviewAware vs Broadly — Flujo de reseñas por trabajo para contratistas | ReviewAware",
+        "description": "Compara ReviewAware y Broadly para contratistas y servicios del hogar que necesitan un proceso repetible ligado a trabajos cerrados—no solo divulgación general."
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs Broadly",
+        "headlineLine2": "Reseñas ligadas a trabajos cerrados",
+        "subtitleLine1": "Broadly ayuda a pedir reseñas; ReviewAware enfatiza el momento en que el trabajo cierra—para que cada proyecto tenga un camino claro hacia una reseña en Google.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Cuando el parte de trabajo se cierra, el flujo de reseñas ya debería saber qué hacer."
+      },
+      "whySwitch": {
+        "title": "Por qué los contratistas quieren flujos ligados al trabajo",
+        "intro": "La divulgación general puede parecer aleatoria. Las cuadrillas que viven por órdenes de trabajo quieren automatización anclada al cierre, QR en la furgoneta y mensajes que mencionen el servicio real.",
+        "bullet1": "Tu CRM o flujo ya sabe cuándo terminó el trabajo—esa señal debería disparar la petición de reseña, no una lista manual aparte.",
+        "bullet2": "Los clientes recuerdan el último contacto del técnico; la solicitud debe llegar en esa ventana, no una semana después con un envío genérico.",
+        "bullet3": "Los playbooks repetibles ganan a campañas puntuales cuando haces decenas de trabajos por semana con varios técnicos."
+      },
+      "features": {
+        "sectionTitle": "Comparación de funciones",
+        "sectionSubtitle": "Énfasis en disparadores al cierre, flujos de contratistas y entregas en campo. Verifica con cada proveedor.",
+        "colFeature": "Capacidad",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "Los paquetes evolucionan; esto se centra en el encaje operativo para negocios por trabajos."
+      },
+      "rows": {
+        "jobCompletionWorkflow": {
+          "label": "Flujo de reseñas explícitamente ligado a trabajos cerrados"
+        },
+        "repeatableAfterJobClose": {
+          "label": "Playbook repetible tras cada cierre (no divulgación ad hoc)"
+        },
+        "qrTrucksAndJobsites": {
+          "label": "Activos QR para camiones, furgonetas y entrega en obra"
+        },
+        "contractorHomeServiceDepth": {
+          "label": "Profundidad para patrones de contratistas y servicios del hogar"
+        },
+        "automatedRequestChannels": {
+          "label": "Solicitudes automáticas por correo y SMS"
+        },
+        "transparentLiteEntry": {
+          "label": "Precio Lite de entrada transparente para equipos pequeños"
+        }
+      },
+      "pricingCompare": {
+        "title": "Precios (empresa pequeña típica)",
+        "subtitle": "Resumen para planificar—confirma precios y qué incluye cada plan.",
+        "raPrice": "ReviewAware Lite desde 24,99 $/mes (opciones anuales disponibles)",
+        "raNote": "Estructurado para contratistas y servicios del hogar que automatizan solicitudes por trabajo.",
+        "cpPrice": "Broadly: modelo por suscripción; el alcance varía según funciones y tamaño",
+        "cpNote": "Evalúa cómo el precio se mapea a automatización por trabajo frente a engagement más amplio.",
+        "footnote": "Siempre contrasta presupuestos con los módulos que realmente activarás."
+      },
+      "bestFor": {
+        "title": "Para quién suele encajar mejor cada plataforma",
+        "raBullet1": "Contratistas y servicios del hogar que piensan en partes de trabajo, cierres y rutas",
+        "raBullet2": "Equipos que quieren QR más mensajes en el momento del trabajo—no envíos de marketing desconectados",
+        "raBullet3": "Propietarios que necesitan que cada cuadrilla siga los mismos pasos de reseña tras el visto bueno",
+        "cpBullet1": "Negocios que priorizan un socio para generación general de reseñas y engagement con clientes",
+        "cpBullet2": "Equipos que valoran un ecosistema concreto de integraciones u onboarding que ofrece Broadly",
+        "cpBullet3": "Operadores que comparan varias herramientas donde la automatización por trabajo es solo un criterio"
+      },
+      "finalCta": {
+        "headline": "Ancla las reseñas a cada trabajo cerrado",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Conecta señales de cierre, QR y seguimientos para que ningún trabajo termine sin la petición.",
+        "supportingLine": "Haz del paso de la reseña la misma rutina que cerrar el remolque de herramientas."
+      }
     }
   },
   "industryLanding": {

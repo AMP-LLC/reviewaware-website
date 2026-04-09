@@ -1,5 +1,6 @@
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { CaptureReviewsAnywhereSection } from "@/components/landing/capture-reviews-anywhere-section";
@@ -16,10 +17,24 @@ import { ScreenshotsSection } from "@/components/landing/screenshots-section";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import { routing } from "@/i18n/routing";
+import { marketingMetadataAlternates } from "@/lib/site-url";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+  return {
+    title: t("title"),
+    description: t("description"),
+    openGraph: {
+      locale: locale === "es" ? "es" : "en_US",
+    },
+    ...marketingMetadataAlternates(locale, []),
+  };
+}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;

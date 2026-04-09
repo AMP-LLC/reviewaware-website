@@ -38,6 +38,48 @@ export const COMPARISON_PAGE_REGISTRY = {
       { rowId: "fastSetup", reviewAware: "yes", competitor: "partial" },
     ],
   },
+  "reviewaware-vs-nicejob": {
+    slug: "reviewaware-vs-nicejob",
+    competitorName: "NiceJob",
+    primaryKeyword: "ReviewAware vs NiceJob",
+    messageKey: "reviewawareVsNicejob",
+    featureRows: [
+      { rowId: "qrReviewCardsPrint", reviewAware: "yes", competitor: "partial" },
+      { rowId: "printReadyReviewAssets", reviewAware: "yes", competitor: "partial" },
+      { rowId: "jobsiteHandoffCapture", reviewAware: "yes", competitor: "partial" },
+      { rowId: "contractorServiceWorkflow", reviewAware: "yes", competitor: "yes" },
+      { rowId: "litePublicPricing", reviewAware: "yes", competitor: "partial" },
+      { rowId: "minimalToolchainReviews", reviewAware: "yes", competitor: "partial" },
+    ],
+  },
+  "reviewaware-vs-birdeye": {
+    slug: "reviewaware-vs-birdeye",
+    competitorName: "Birdeye",
+    primaryKeyword: "ReviewAware vs Birdeye",
+    messageKey: "reviewawareVsBirdeye",
+    featureRows: [
+      { rowId: "reviewsFirstNotFullSuite", reviewAware: "yes", competitor: "no" },
+      { rowId: "selfServeSmallTeamStart", reviewAware: "yes", competitor: "limited" },
+      { rowId: "avoidsEnterpriseRollout", reviewAware: "yes", competitor: "partial" },
+      { rowId: "fieldQrJobCloseTiming", reviewAware: "yes", competitor: "partial" },
+      { rowId: "googleGrowthWithoutExtras", reviewAware: "yes", competitor: "partial" },
+      { rowId: "predictableStarterCost", reviewAware: "yes", competitor: "partial" },
+    ],
+  },
+  "reviewaware-vs-broadly": {
+    slug: "reviewaware-vs-broadly",
+    competitorName: "Broadly",
+    primaryKeyword: "ReviewAware vs Broadly",
+    messageKey: "reviewawareVsBroadly",
+    featureRows: [
+      { rowId: "jobCompletionWorkflow", reviewAware: "yes", competitor: "partial" },
+      { rowId: "repeatableAfterJobClose", reviewAware: "yes", competitor: "partial" },
+      { rowId: "qrTrucksAndJobsites", reviewAware: "yes", competitor: "limited" },
+      { rowId: "contractorHomeServiceDepth", reviewAware: "yes", competitor: "partial" },
+      { rowId: "automatedRequestChannels", reviewAware: "yes", competitor: "yes" },
+      { rowId: "transparentLiteEntry", reviewAware: "yes", competitor: "partial" },
+    ],
+  },
 } as const satisfies Record<string, ComparisonPageDefinition>;
 
 export type ComparisonPageSlug = keyof typeof COMPARISON_PAGE_REGISTRY;

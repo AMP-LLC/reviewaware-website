@@ -40,10 +40,14 @@ Defined in `src/lib/seo-layers/link-presets.ts` and wired in page templates (no 
 | **Umbrella industry** | Trades via “Built for Service Professionals”; **plus** compact `UMBRELLA_CORE_PRODUCT_LINKS` → three core product URLs. |
 | **Trade** | `TRADE_LAYER_INTERNAL_LINKS`: both umbrellas + `google-review-software`; then compact sibling trades (unchanged). |
 | **Use-case** | `USE_CASE_RELATED_LINKS`: mix of product, umbrella, trade, and other use-cases (`getUseCasePagePath`). |
-| **Comparison** | `COMPARISON_PAGE_RELATED_LINKS`: product + umbrella + playbook use-case per comparison slug. |
+| **Comparison** | `COMPARISON_PAGE_RELATED_LINKS`: same Layer 1 trio on every vs page (`review-management-software`, `google-review-software`, `contractor-review-software`). |
 
-## Metadata
+## Metadata & discovery
 
+- **Canonical & hreflang:** `marketingMetadataAlternates()` in `src/lib/site-url.ts` (used from home, `[productSlug]`, compare, privacy, terms). Set **`NEXT_PUBLIC_SITE_URL`** in production so URLs are correct.
+- **`metadataBase`:** `[locale]/layout.tsx` uses `getSiteOrigin()`.
+- **Sitemap:** `src/app/sitemap.ts` lists home, every product/industry/use-case slug (both locales), every comparison slug, privacy, and terms.
+- **Robots:** `src/app/robots.ts` allows crawlers and points to `sitemap.xml`.
 - **Product & use-case:** `generateMetadata` sets `title`, `description`, and `keywords: [primaryKeyword]` from each **registry** entry (aligned with industry pages’ title/description pattern).
 - **Industry:** unchanged overrides + token interpolation.
 

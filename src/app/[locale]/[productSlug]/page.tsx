@@ -23,6 +23,7 @@ import {
   isUseCasePageSlug,
   USE_CASE_PAGE_SLUGS,
 } from "@/lib/use-case-pages/registry";
+import { marketingMetadataAlternates } from "@/lib/site-url";
 
 type Props = {
   params: Promise<{ locale: string; productSlug: string }>;
@@ -56,6 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t(`${k}.metadata.description`),
       keywords: [productDef.primaryKeyword],
       openGraph: { locale: locale === "es" ? "es" : "en_US" },
+      ...marketingMetadataAlternates(locale, [productSlug]),
     };
   }
 
@@ -68,6 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t(`${k}.metadata.description`),
       keywords: [useCaseDef.primaryKeyword],
       openGraph: { locale: locale === "es" ? "es" : "en_US" },
+      ...marketingMetadataAlternates(locale, [productSlug]),
     };
   }
 
@@ -82,6 +85,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: metaOverride?.title ?? t("metadata.title", v),
       description: metaOverride?.description ?? t("metadata.description", v),
       openGraph: { locale: locale === "es" ? "es" : "en_US" },
+      ...marketingMetadataAlternates(locale, [productSlug]),
     };
   }
 

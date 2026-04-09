@@ -35,7 +35,7 @@ export function assertUniqueMarketingSlugs(): void {
 
   if (overlaps.length > 0) {
     throw new Error(
-      `Marketing slug collision:\n${overlaps.map((line) => `  - ${line}`).join("\n")}`,
+      `Duplicate marketing slug detected.\n${overlaps.map((line) => `  - ${line}`).join("\n")}`,
     );
   }
 }

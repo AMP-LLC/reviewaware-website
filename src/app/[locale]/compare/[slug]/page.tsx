@@ -11,6 +11,7 @@ import {
   getComparisonPageDefinition,
   isComparisonPageSlug,
 } from "@/lib/comparison-pages/registry";
+import { marketingMetadataAlternates } from "@/lib/site-url";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -38,6 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t(`${k}.metadata.description`),
     keywords: [def.primaryKeyword],
     openGraph: { locale: locale === "es" ? "es" : "en_US" },
+    ...marketingMetadataAlternates(locale, ["compare", slug]),
   };
 }
 

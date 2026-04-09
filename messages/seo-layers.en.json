@@ -566,6 +566,228 @@
         "sub": "See job-based review requests and QR assets in a workflow built for technicians.",
         "supportingLine": "Compare in practice—not just on paper."
       }
+    },
+    "reviewawareVsNicejob": {
+      "metadata": {
+        "title": "ReviewAware vs NiceJob — QR Review Cards & Jobsite Capture | ReviewAware",
+        "description": "Compare ReviewAware and NiceJob for contractors and service businesses that want QR review cards, print-ready assets, and handoffs that work on real jobsites."
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs NiceJob",
+        "headlineLine2": "QR Cards, Print Assets & Jobsite Handoffs",
+        "subtitleLine1": "If your team lives on trucks and job sites, the difference often comes down to how fast you can put a physical QR card in a customer’s hand—not just another dashboard.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Built for crews that close jobs in the field and need review capture that travels with them."
+      },
+      "whySwitch": {
+        "title": "Why teams look past NiceJob for this use case",
+        "intro": "NiceJob packs reputation and marketing tools together. Some contractors want a narrower stack: printable QR review cards, jobsite-ready assets, and a funnel that starts the moment the job is done.",
+        "bullet1": "You need print-ready review materials technicians can leave behind—without designing everything from scratch each time.",
+        "bullet2": "Your best reviews come from the driveway, attic, or backyard—not from campaigns that ignore where the work actually finished.",
+        "bullet3": "You want a focused review workflow instead of bundling reviews with a wider marketing suite you may not use."
+      },
+      "features": {
+        "sectionTitle": "Feature comparison",
+        "sectionSubtitle": "Focused on QR, print assets, and jobsite handoffs for contractors and service businesses. Confirm current plans on each vendor’s site.",
+        "colFeature": "Capability",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "Packaging changes. Use this as a directional comparison, not a contract or feature guarantee."
+      },
+      "rows": {
+        "qrReviewCardsPrint": {
+          "label": "QR review cards optimized for print & handoff"
+        },
+        "printReadyReviewAssets": {
+          "label": "Print-ready review request assets (leave-behinds, cards, sheets)"
+        },
+        "jobsiteHandoffCapture": {
+          "label": "Jobsite-first capture (technician → customer at completion)"
+        },
+        "contractorServiceWorkflow": {
+          "label": "Workflows aligned with contractor & home service job patterns"
+        },
+        "litePublicPricing": {
+          "label": "Self-serve Lite plan with public pricing"
+        },
+        "minimalToolchainReviews": {
+          "label": "Minimal toolchain focused on getting reviews (vs. broad marketing hub)"
+        }
+      },
+      "pricingCompare": {
+        "title": "Pricing comparison (typical small business)",
+        "subtitle": "Illustrative only—verify live pricing, trials, and contract terms before you buy.",
+        "raPrice": "ReviewAware Lite from $24.99/mo (annual options available)",
+        "raNote": "Aimed at owner-operators and small teams that want QR and job-close review capture without paying for a full marketing suite.",
+        "cpPrice": "NiceJob: typically subscription tiers by features and scale",
+        "cpNote": "Pricing often reflects a broader reputation and marketing footprint beyond standalone QR or print-first review kits.",
+        "footnote": "Vendor pricing and packaging change frequently."
+      },
+      "bestFor": {
+        "title": "Who each platform is usually best for",
+        "raBullet1": "Contractors and field service owners who want physical QR cards and print assets tied to completed work",
+        "raBullet2": "Teams that prioritize jobsite handoffs and simple automation over a wide marketing product map",
+        "raBullet3": "Businesses that want transparent Lite pricing while they prove review volume from the field",
+        "cpBullet1": "Home service brands investing in a combined reviews-plus-marketing story with broader campaign tooling",
+        "cpBullet2": "Shops that already use NiceJob’s wider automation and want everything under one vendor umbrella",
+        "cpBullet3": "Teams comfortable aligning review strategy with a larger reputation and referral stack"
+      },
+      "finalCta": {
+        "headline": "Put QR Review Cards on Your Next Job",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "See how print-ready assets and jobsite handoffs fit your crew’s rhythm.",
+        "supportingLine": "Less suite sprawl—more reviews from real completions."
+      }
+    },
+    "reviewawareVsBirdeye": {
+      "metadata": {
+        "title": "ReviewAware vs Birdeye — Focused Review Software for Service Businesses | ReviewAware",
+        "description": "ReviewAware is a simpler alternative for service businesses that want more Google reviews without adopting a full enterprise reputation and listings platform."
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs Birdeye",
+        "headlineLine2": "Reviews Without the Enterprise Footprint",
+        "subtitleLine1": "Birdeye spans listings, messaging, surveys, and more. ReviewAware stays narrow: help service teams collect more reviews with less software to administer.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "When your goal is reviews—not an entire reputation operating system—scope matters."
+      },
+      "whySwitch": {
+        "title": "Why businesses step back from full-suite reputation tools",
+        "intro": "Enterprise platforms solve many problems at once. Smaller service businesses sometimes pay for breadth they never operationalize, while the review workflow stays fuzzy.",
+        "bullet1": "You do not need every listings, survey, and messaging module just to grow Google reviews after service calls.",
+        "bullet2": "Implementation and seat models built for franchises can feel heavy when you only run a handful of trucks.",
+        "bullet3": "You want admins and techs to learn one review rhythm—not an entire platform map before the first request goes out."
+      },
+      "features": {
+        "sectionTitle": "Feature comparison",
+        "sectionSubtitle": "Highlights where a review-first tool differs from a broad reputation suite. Always validate on each vendor’s current site.",
+        "colFeature": "Capability",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "Birdeye’s catalog is large and changes often; this table emphasizes the review-generation slice only."
+      },
+      "rows": {
+        "reviewsFirstNotFullSuite": {
+          "label": "Purpose-built for review generation vs. full reputation suite"
+        },
+        "selfServeSmallTeamStart": {
+          "label": "Fast self-serve start for small teams (minimal sales gate)"
+        },
+        "avoidsEnterpriseRollout": {
+          "label": "Lightweight rollout (not a multi-module enterprise project)"
+        },
+        "fieldQrJobCloseTiming": {
+          "label": "Field-friendly QR + job-close timing for requests"
+        },
+        "googleGrowthWithoutExtras": {
+          "label": "Google review growth without bundling unrelated modules"
+        },
+        "predictableStarterCost": {
+          "label": "Predictable starter cost for review-focused workflows"
+        }
+      },
+      "pricingCompare": {
+        "title": "Pricing comparison (typical small business)",
+        "subtitle": "Directional summary—enterprise suites and add-ons vary widely. Confirm quotes and list prices directly.",
+        "raPrice": "ReviewAware Lite from $24.99/mo (annual options available)",
+        "raNote": "Pricing targets small service operators who want review automation without financing a full platform rollout.",
+        "cpPrice": "Birdeye: commonly quote-based for larger or multi-location programs",
+        "cpNote": "Investment often reflects listings, messaging, analytics, and managed services—not review requests alone.",
+        "footnote": "Use vendor proposals as the source of truth for your stack and budget."
+      },
+      "bestFor": {
+        "title": "Who each platform is usually best for",
+        "raBullet1": "Owner-led service businesses that want more reviews, not another enterprise command center",
+        "raBullet2": "Teams that prefer a short path from signup to the first automated request",
+        "raBullet3": "Companies that would rather add depth later than pay upfront for unused modules",
+        "cpBullet1": "Multi-location brands standardizing reputation, listings, and CX analytics across regions",
+        "cpBullet2": "Enterprises that need broad integrations, governance, and managed services in one contract",
+        "cpBullet3": "Organizations with budget and staff to own a full reputation platform long term"
+      },
+      "finalCta": {
+        "headline": "Grow Reviews With a Smaller Stack",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Keep the workflow tight: triggers, QR, email, and SMS focused on completed work.",
+        "supportingLine": "Prove review lift before you scale software scope."
+      }
+    },
+    "reviewawareVsBroadly": {
+      "metadata": {
+        "title": "ReviewAware vs Broadly — Job-Based Review Workflow for Contractors | ReviewAware",
+        "description": "Compare ReviewAware and Broadly for contractors and home service teams that need a repeatable review process tied to completed jobs—not only general outreach."
+      },
+      "hero": {
+        "headlineLine1": "ReviewAware vs Broadly",
+        "headlineLine2": "Reviews Tied to Completed Jobs",
+        "subtitleLine1": "Broadly helps businesses ask for reviews; ReviewAware emphasizes the moment a job closes—so every finished project has a clear, repeatable path to a Google review.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "When the job ticket closes, the review workflow should already know what to do next."
+      },
+      "whySwitch": {
+        "title": "Why contractors want job-tied review workflows",
+        "intro": "General review outreach can feel random. Crews that live by work orders want automation anchored to job completion, QR on the truck, and messaging that references the actual service performed.",
+        "bullet1": "Your CRM or job flow already knows when work is done—that signal should drive the review ask, not a separate manual list.",
+        "bullet2": "Home service customers remember the technician’s last touch; your review request should land in that window, not a week later from a generic blast.",
+        "bullet3": "Repeatable playbooks beat one-off campaigns when you run dozens of jobs per week across multiple techs."
+      },
+      "features": {
+        "sectionTitle": "Feature comparison",
+        "sectionSubtitle": "Emphasis on job-completion triggers, contractor workflows, and field handoffs. Verify details with each provider.",
+        "colFeature": "Capability",
+        "colReviewAware": "ReviewAware",
+        "disclaimer": "Feature packaging evolves; this focuses on operational fit for job-based service businesses."
+      },
+      "rows": {
+        "jobCompletionWorkflow": {
+          "label": "Review workflow explicitly tied to completed jobs"
+        },
+        "repeatableAfterJobClose": {
+          "label": "Repeatable playbook after every job close (not ad-hoc outreach)"
+        },
+        "qrTrucksAndJobsites": {
+          "label": "QR assets for trucks, vans, and on-site handoffs"
+        },
+        "contractorHomeServiceDepth": {
+          "label": "Depth for contractor & home service job patterns"
+        },
+        "automatedRequestChannels": {
+          "label": "Automated email & SMS review requests"
+        },
+        "transparentLiteEntry": {
+          "label": "Transparent Lite entry pricing for small teams"
+        }
+      },
+      "pricingCompare": {
+        "title": "Pricing comparison (typical small business)",
+        "subtitle": "Summary for planning only—confirm live pricing and what’s included per plan.",
+        "raPrice": "ReviewAware Lite from $24.99/mo (annual options available)",
+        "raNote": "Structured for small contractor and home service operators automating review asks per job.",
+        "cpPrice": "Broadly: subscription model; scope varies by features and business size",
+        "cpNote": "Evaluate how pricing maps to job-based automation versus broader customer engagement features.",
+        "footnote": "Always reconcile quotes with the modules you will actually turn on."
+      },
+      "bestFor": {
+        "title": "Who each platform is usually best for",
+        "raBullet1": "Contractors and home service operators who think in work orders, completions, and truck rolls",
+        "raBullet2": "Teams that want QR plus messaging timed to the job—not detached marketing sends",
+        "raBullet3": "Owners who need every crew to follow the same review steps after sign-off",
+        "cpBullet1": "Businesses prioritizing a partner for generalized review generation and customer engagement",
+        "cpBullet2": "Teams that value a particular integration ecosystem or onboarding style Broadly provides",
+        "cpBullet3": "Operators comparing multiple reputation tools where job-level automation is one of several criteria"
+      },
+      "finalCta": {
+        "headline": "Anchor Reviews to Every Completed Job",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Connect completion signals, QR, and follow-ups so no finished job skips the ask.",
+        "supportingLine": "Make the review step as routine as locking the tool trailer."
+      }
     }
   },
   "industryLanding": {

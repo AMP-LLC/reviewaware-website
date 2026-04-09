@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import { routing } from "@/i18n/routing";
+import { marketingMetadataAlternates } from "@/lib/site-url";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -16,6 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
+    ...marketingMetadataAlternates(locale, ["privacy"]),
   };
 }
 

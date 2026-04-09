@@ -1,12 +1,13 @@
 import "../globals.css";
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { Geist } from "next/font/google";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
+import { getSiteOrigin } from "@/lib/site-url";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,15 +28,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata" });
-
+  await params;
   return {
-    title: t("title"),
-    description: t("description"),
-    openGraph: {
-      locale: locale === "es" ? "es" : "en_US",
-    },
+    metadataBase: new URL(getSiteOrigin()),
   };
 }
 

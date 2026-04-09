@@ -118,15 +118,23 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
   ],
 };
 
-/** Comparison pages (Layer 4) → core product + umbrella + playbook use-case. */
+/**
+ * Comparison pages (Layer 4) → core product + contractor umbrella (architecture standard).
+ * Same trio on every vs page so internal equity stays predictable as new comparisons ship.
+ */
+const COMPARISON_PAGE_STANDARD_RELATED: readonly InternalLinkSpec[] = [
+  { href: "/review-management-software", labelKey: "reviewManagementSoftwareShort" },
+  { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
+  { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
+] as const;
+
 export const COMPARISON_PAGE_RELATED_LINKS: Record<
   ComparisonPageSlug,
   readonly InternalLinkSpec[]
 > = {
-  "reviewaware-vs-podium": [
-    { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
-    { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
-    { href: getUseCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
-  ],
+  "reviewaware-vs-podium": COMPARISON_PAGE_STANDARD_RELATED,
+  "reviewaware-vs-nicejob": COMPARISON_PAGE_STANDARD_RELATED,
+  "reviewaware-vs-birdeye": COMPARISON_PAGE_STANDARD_RELATED,
+  "reviewaware-vs-broadly": COMPARISON_PAGE_STANDARD_RELATED,
 };
 
