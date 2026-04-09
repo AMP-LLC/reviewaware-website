@@ -5,11 +5,15 @@
  * Routes: /[locale]/[slug] (same segment as product + industry; slugs are disjoint)
  */
 
+export type UseCaseToolExperience = "linkGenerator" | "qrCode" | "reviewCards";
+
 export type UseCasePageSections = {
   /** Uses global `reviewCaptureDifferentiation` messages (same UI as homepage). */
   showCaptureReviewsAnywhere?: boolean;
   showPlatformLogos?: boolean;
   showHowItWorks?: boolean;
+  /** Lightweight interactive block rendered after the differentiator (default layout only). */
+  toolExperience?: UseCaseToolExperience;
 };
 
 export type UseCasePageLayout = "default" | "longFormGuide";
@@ -32,6 +36,39 @@ export const USE_CASE_PAGE_REGISTRY = {
       showCaptureReviewsAnywhere: true,
       showPlatformLogos: true,
       showHowItWorks: true,
+    },
+  },
+  "google-review-cards": {
+    slug: "google-review-cards",
+    primaryKeyword: "google review cards",
+    messageKey: "googleReviewCards",
+    sections: {
+      showCaptureReviewsAnywhere: true,
+      showPlatformLogos: true,
+      showHowItWorks: true,
+      toolExperience: "reviewCards",
+    },
+  },
+  "google-review-link-generator": {
+    slug: "google-review-link-generator",
+    primaryKeyword: "google review link generator",
+    messageKey: "googleReviewLinkGenerator",
+    sections: {
+      showCaptureReviewsAnywhere: true,
+      showPlatformLogos: true,
+      showHowItWorks: true,
+      toolExperience: "linkGenerator",
+    },
+  },
+  "google-review-qr-code": {
+    slug: "google-review-qr-code",
+    primaryKeyword: "google review qr code",
+    messageKey: "googleReviewQrCode",
+    sections: {
+      showCaptureReviewsAnywhere: true,
+      showPlatformLogos: true,
+      showHowItWorks: true,
+      toolExperience: "qrCode",
     },
   },
   "how-to-get-more-google-reviews": {

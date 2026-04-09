@@ -20,6 +20,9 @@
     "automatedReviewRequests": "Solicitudes de reseña automáticas",
     "reviewGrowthKit": "Kit de crecimiento de reseñas",
     "reviewFunnel": "Embudo de reseñas",
+    "googleReviewLinkGenerator": "Generador de enlace de reseña en Google",
+    "googleReviewQrCode": "Código QR para reseña en Google",
+    "googleReviewCards": "Tarjetas de reseña en Google",
     "umbrellaCoreProductTitle": "Categorías de producto",
     "umbrellaExploreTitle": "Oficios destacados, productos y guías",
     "tradeLayerBrowseTitle": "Centros por industria y vista del producto",
@@ -550,6 +553,155 @@
         "ctaSubInButton": "No se requiere tarjeta",
         "sub": "Mira planes anuales y valor del kit en precios.",
         "supportingLine": "Para dueños que quieren cuadrillas equipadas."
+      }
+    },
+    "googleReviewLinkGenerator": {
+      "metadata": {
+        "title": "Generador de enlace de reseña en Google (Place ID → URL) | ReviewAware",
+        "description": "Crea un enlace directo a la reseña en Google desde tu Place ID o pega una URL writereview. Combínalo con QR, SMS y peticiones al cerrar trabajo."
+      },
+      "hero": {
+        "headlineLine1": "Generador de enlace de reseña",
+        "headlineLine2": "para Google",
+        "subtitleLine1": "Convierte tu Place ID en un enlace de un toque para reseñar en Google—para que los técnicos lo envíen por SMS, correo o tarjeta sin que el cliente tenga que buscarte.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Ayuda gratuita en página: enlaces que la cuadrilla sí usa en campo."
+      },
+      "differentiator": {
+        "title": "Por qué un enlace directo vence a “búscanos en Google”",
+        "p1": "El cliente abandona si debe buscar la ficha adecuada—sol, LTE flojo, prisa.",
+        "p2": "La URL writereview quita ambigüedad: abre el formulario de reseña de tu perfil.",
+        "p3": "El mismo enlace sirve para SMS, correo, QR e impresión.",
+        "p4": "ReviewAware mantiene ese enlace ligado a trabajos y seguimientos para que pedir sea operación, no héroe del día."
+      },
+      "reviewPain": {
+        "title": "Enlaces rotos matan la respuesta en silencio",
+        "card1": "Place ID pegado con espacios o caracteres incorrectos",
+        "card2": "Enlaces a Maps que no llegan al formulario de reseña",
+        "card3": "Cada camión inventa su URL y no hay informe único",
+        "closing": "Estandariza un destino antes de escalar peticiones."
+      },
+      "finalCta": {
+        "headline": "Automatiza enlaces, tarjetas y seguimientos a la vez",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Conecta tu ficha una vez y envía peticiones programadas tras cada trabajo.",
+        "supportingLine": "Para dueños que quieren enlaces de Google en los que la cuadrilla confía."
+      },
+      "tool": {
+        "sectionTitle": "Genera tu enlace de reseña en Google",
+        "sectionIntro": "Pega tu Place ID de Google (suele empezar por ChIJ…) o una URL writereview completa. Normalizamos a un enlace https compartible.",
+        "placeLabel": "Place ID o URL de reseña",
+        "placePlaceholder": "ChIJ… o https://search.google.com/local/writereview?placeid=…",
+        "placeHelp": "Si pegas una URL que ya abre el formulario de reseña, la mantenemos. Si no, generamos el enlace writereview estándar.",
+        "buildButton": "Generar enlace",
+        "resultLabel": "Enlace para compartir",
+        "copyButton": "Copiar enlace",
+        "copiedHint": "Copiado",
+        "helpTitle": "Cómo encontrar tu Place ID",
+        "helpStep1": "Abre tu Perfil de empresa en Google Maps con la cuenta de propietario.",
+        "helpStep2": "En ajustes del perfil o en compartir de Maps localiza el Place ID (o copia un enlace de reseña que Google ofrezca).",
+        "helpStep3": "Pégalo aquí una vez y reutiliza el enlace en tarjetas, facturas y plantillas SMS."
+      }
+    },
+    "googleReviewQrCode": {
+      "metadata": {
+        "title": "Código QR para reseña en Google — codifica tu enlace | ReviewAware",
+        "description": "Previsualiza un QR para tu URL https de reseña en Google. Ideal para calcomanías, facturas y tarjetas antes de imprimir con diseños ReviewAware."
+      },
+      "hero": {
+        "headlineLine1": "Código QR para reseña",
+        "headlineLine2": "en Google (previsualización)",
+        "subtitleLine1": "Introduce una URL segura de reseña en Google y genera un QR escaneable en la entrada—luego operacionalízalo con impresos y seguimiento automático.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Para equipos que quieren ver el código antes de tirar—no un callejón sin salida de diseño."
+      },
+      "differentiator": {
+        "title": "El QR solo funciona si el destino es el correcto",
+        "p1": "Un QR a resultados de búsqueda en vez del formulario desperdicia escaneos.",
+        "p2": "Las cuadrillas necesitan contraste, tamaño y colocación fija: el software debe poseer la plantilla, no una captura.",
+        "p3": "Combina QR con correo programado cuando el cliente piensa escanear pero se distrae.",
+        "p4": "ReviewAware mide interacción para saber si el activo merece sitio en el camión."
+      },
+      "reviewPain": {
+        "title": "Carteles QR caseros fallan en obra",
+        "card1": "Bajo contraste y lectura mala al sol",
+        "card2": "URLs que cambian al fusionar fichas o marca",
+        "card3": "Sin métrica entre escaneos, envíos y reseñas publicadas",
+        "closing": "Trata el QR como equipo: enlace correcto, impresión legible, responsable claro."
+      },
+      "finalCta": {
+        "headline": "Lanza activos QR con seguimiento",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Genera maquetas impresas ligadas a enlaces rastreados y seguimiento.",
+        "supportingLine": "Encaja con el mismo destino de Google que usas en correo."
+      },
+      "tool": {
+        "sectionTitle": "Previsualiza un QR para tu URL de reseña",
+        "sectionIntro": "Pega un enlace https que abra el flujo de reseña en Google. Solo aceptamos hosts de Google de confianza para mantener la previsualización segura.",
+        "urlLabel": "URL de reseña (https)",
+        "urlPlaceholder": "https://search.google.com/local/writereview?placeid=…",
+        "invalidUrl": "Usa un enlace https en dominios de Google (p. ej. search.google.com, g.page o acortadores de Maps).",
+        "showQrButton": "Mostrar código QR",
+        "qrAlt": "Código QR que enlaza a tu URL de reseña en Google",
+        "apiNote": "La previsualización usa un codificador QR externo vía HTTPS. Para tirada final, prueba el escaneo en varios móviles y usa maquetas de marca de ReviewAware o tu diseñador.",
+        "openLink": "Abrir URL de reseña"
+      }
+    },
+    "googleReviewCards": {
+      "metadata": {
+        "title": "Tarjetas de reseña en Google — impresión, QR y entrega en campo | ReviewAware",
+        "description": "Lista para tarjetas centradas en Google: QR, enlace directo, marca y guion del técnico—más enlaces a kits de crecimiento y automatización para servicios."
+      },
+      "hero": {
+        "headlineLine1": "Tarjetas de reseña en Google",
+        "headlineLine2": "para entregar en mano",
+        "subtitleLine1": "Convierte una tarjeta de billetera en una petición profesional—QR + enlace directo a Google + el mismo momento que usa cada técnico en sitio.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Prueba gratis 14 días",
+        "ctaSecondary": "Ver cómo funciona",
+        "credibilityLine": "Impresión operativa: reposición, medición y ligada a trabajos cerrados."
+      },
+      "differentiator": {
+        "title": "Las tarjetas funcionan cuando inspiran confianza",
+        "p1": "El cliente debe reconocer tu marca y entender el QR en una línea.",
+        "p2": "Junta la tarjeta con la petición verbal al cerrar el trabajo—el papel solo no es sistema.",
+        "p3": "La reposición debe ser operativa para que los camiones no se queden “sin reseñas”.",
+        "p4": "El software une la tarjeta a enlaces rastreados y correos de seguimiento educados si no escanean al instante."
+      },
+      "reviewPain": {
+        "title": "Lo genérico pierde el momento",
+        "card1": "URLs largas que nadie teclea desde la guantera",
+        "card2": "URLs distintas por técnico",
+        "card3": "Sin seguimiento si el cliente guarda la tarjeta",
+        "closing": "Estandariza diseño, enlace y momento a la vez."
+      },
+      "finalCta": {
+        "headline": "Empaqueta tarjetas con seguimiento automático",
+        "cta": "Prueba gratis",
+        "ctaSubInButton": "No se requiere tarjeta",
+        "sub": "Junta entrega física con secuencias de correo ligadas al trabajo.",
+        "supportingLine": "Para dueños que quieren activos de campo que conviertan."
+      },
+      "tool": {
+        "sectionTitle": "Lista de preparación para tarjetas de reseña en Google",
+        "sectionIntro": "Marca cada punto antes de la próxima tirada—cada uno evita un fallo habitual en campo.",
+        "checklistTitle": "Antes de imprimir",
+        "item1": "Un único enlace canónico de reseña en Google (writereview o acortador validado) para todos los camiones.",
+        "item2": "QR probado a 45–60 cm al sol con un móvil medio—no solo bajo luz de oficina.",
+        "item3": "Logo, nombre y una línea: “Escanea para dejar una reseña en Google.”",
+        "item4": "Frase ensayada del técnico: pedir al cierre, ofrecer escaneo o texto de seguimiento.",
+        "item5": "Responsable de reposición (operaciones u oficina)—como señalética o tarjetas de visita.",
+        "specsTitle": "Consejos de maquetación que aguantan en camión",
+        "spec1": "Margen tranquilo alrededor del QR para que el móvil enfoque antes.",
+        "spec2": "Tamaño mínimo ~30 mm para el módulo QR en tarjetas de billetera.",
+        "spec3": "Papel mate reduce reflejos en entrada soleada.",
+        "spec4": "Guarda un PDF para adjuntar por correo si el cliente rechaza la tarjeta física."
       }
     },
     "reviewFunnel": {

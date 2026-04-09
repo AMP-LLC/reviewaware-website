@@ -20,6 +20,9 @@
     "automatedReviewRequests": "Automated review requests",
     "reviewGrowthKit": "Review Growth Kit",
     "reviewFunnel": "Review funnel",
+    "googleReviewLinkGenerator": "Google review link generator",
+    "googleReviewQrCode": "Google review QR code",
+    "googleReviewCards": "Google review cards",
     "umbrellaCoreProductTitle": "Core product categories",
     "umbrellaExploreTitle": "Featured trades, products & playbooks",
     "tradeLayerBrowseTitle": "Industry hubs & product overview",
@@ -550,6 +553,155 @@
         "ctaSubInButton": "No credit card required",
         "sub": "See annual plan details and kit value in pricing.",
         "supportingLine": "Built for owners who want crews equipped—not empty-handed."
+      }
+    },
+    "googleReviewLinkGenerator": {
+      "metadata": {
+        "title": "Google Review Link Generator (Place ID → Review URL) | ReviewAware",
+        "description": "Build a direct Google review link from your Place ID or paste a writereview URL. Pair it with QR cards, SMS, and job-close requests for field teams."
+      },
+      "hero": {
+        "headlineLine1": "Google Review Link Generator",
+        "headlineLine2": "For Service Businesses",
+        "subtitleLine1": "Turn your Place ID into a one-tap Google review URL—so technicians can text it, email it, or print it on cards without sending customers on a search scavenger hunt.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Free on-page helper: generate links your crews can actually use in the field."
+      },
+      "differentiator": {
+        "title": "Why a direct review link beats “find us on Google”",
+        "p1": "Customers abandon when they have to search for the right listing—especially in bright sun or on spotty LTE.",
+        "p2": "A writereview URL removes ambiguity: it lands on the review screen for your profile, not a random Maps result.",
+        "p3": "The same link can power SMS, email, QR, and print—one destination, many handoffs.",
+        "p4": "ReviewAware keeps that link tied to jobs and follow-ups so asking becomes operational, not heroic."
+      },
+      "reviewPain": {
+        "title": "Broken links quietly kill response rates",
+        "card1": "Place IDs get pasted with extra spaces or wrong characters",
+        "card2": "Teams share Maps links that stop short of the review form",
+        "card3": "Every truck invents its own URL and reporting falls apart",
+        "closing": "Standardize one review destination before you scale asking."
+      },
+      "finalCta": {
+        "headline": "Automate Links, Cards, and Follow-Ups Together",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Connect your listing once—then send timed requests after every job.",
+        "supportingLine": "Built for owners who want Google links that crews trust."
+      },
+      "tool": {
+        "sectionTitle": "Build your Google review link",
+        "sectionIntro": "Paste your Google Place ID (often starts with ChIJ…) or a full writereview / Maps review URL. We will normalize it into a shareable https link.",
+        "placeLabel": "Place ID or review URL",
+        "placePlaceholder": "ChIJ… or https://search.google.com/local/writereview?placeid=…",
+        "placeHelp": "If you paste a URL that already opens the review form, we will keep it as-is. Otherwise we build the standard writereview link.",
+        "buildButton": "Generate link",
+        "resultLabel": "Shareable review link",
+        "copyButton": "Copy link",
+        "copiedHint": "Copied",
+        "helpTitle": "How to find your Place ID",
+        "helpStep1": "Open your Business Profile in Google Maps while signed into the owner account.",
+        "helpStep2": "Use Business Profile settings or the Maps share panel to locate the Place ID (or copy a review link Google provides).",
+        "helpStep3": "Paste it here once, then reuse the generated link on cards, invoices, and SMS templates."
+      }
+    },
+    "googleReviewQrCode": {
+      "metadata": {
+        "title": "Google Review QR Code — Encode Your Review Link | ReviewAware",
+        "description": "Preview a QR code for your HTTPS Google review URL. Ideal for truck decals, invoices, and hand-to-hand cards before you print with ReviewAware layouts."
+      },
+      "hero": {
+        "headlineLine1": "Google Review QR Code",
+        "headlineLine2": "Preview Before You Print",
+        "subtitleLine1": "Drop in a secure Google review URL and generate a scannable QR customers can use on the driveway—then operationalize it with print assets and automated follow-up.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "For teams that want a quick visual check—not a design dead-end."
+      },
+      "differentiator": {
+        "title": "QR only works when the destination is right",
+        "p1": "A QR that points to search results instead of the review form wastes scans.",
+        "p2": "Field teams need contrast, size, and predictable placement—software should own the template, not a screenshot.",
+        "p3": "Pair QR with a timed email backup when people mean to scan but get distracted.",
+        "p4": "ReviewAware tracks engagement so you know whether the asset earns its truck space."
+      },
+      "reviewPain": {
+        "title": "DIY QR posters fail in the field",
+        "card1": "Low contrast codes that phones struggle to read outdoors",
+        "card2": "URLs that change when listings merge or rebrand",
+        "card3": "No measurement between scans, sends, and published reviews",
+        "closing": "Treat QR like equipment: correct link, legible print, accountable owners."
+      },
+      "finalCta": {
+        "headline": "Ship QR Review Assets With Tracking",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Generate print layouts tied to tracked links and follow-up.",
+        "supportingLine": "Pairs with the same Google destination you use in email."
+      },
+      "tool": {
+        "sectionTitle": "Preview a QR for your review URL",
+        "sectionIntro": "Paste an https link that opens your Google review flow. We only accept trusted Google-related hosts so the preview stays safe for your customers.",
+        "urlLabel": "Review URL (https)",
+        "urlPlaceholder": "https://search.google.com/local/writereview?placeid=…",
+        "invalidUrl": "Use an https link on Google domains (for example search.google.com, g.page, or Maps short links).",
+        "showQrButton": "Show QR code",
+        "qrAlt": "QR code linking to your Google review URL",
+        "apiNote": "Preview uses a third-party QR encoder over HTTPS. For production prints, verify the scan on multiple phones and use brand layouts from ReviewAware or your designer.",
+        "openLink": "Open review URL"
+      }
+    },
+    "googleReviewCards": {
+      "metadata": {
+        "title": "Google Review Cards — Print, QR, and Field Handoffs | ReviewAware",
+        "description": "Checklist for Google-focused review cards: QR, direct links, branding, and technician scripts—plus links to growth kits and automation for service businesses."
+      },
+      "hero": {
+        "headlineLine1": "Google Review Cards",
+        "headlineLine2": "Your Crew Can Hand Customers",
+        "subtitleLine1": "Turn a wallet-sized card into a professional review ask—QR + direct Google link + the same moment every technician uses on site.",
+        "subtitleLine2": "",
+        "ctaPrimary": "Start Free 14-Day Trial",
+        "ctaSecondary": "See How It Works",
+        "credibilityLine": "Operational print: replenishable, measurable, and tied to real completed jobs."
+      },
+      "differentiator": {
+        "title": "Cards work when they feel legitimate",
+        "p1": "Customers should recognize your brand and instantly understand what the QR does.",
+        "p2": "Pair the card with a verbal ask at job completion—paper alone is not a system.",
+        "p3": "Replenishment should live in operations so trucks never “run out of reviews.”",
+        "p4": "Software connects the card to tracked links and polite email follow-ups for people who do not scan immediately."
+      },
+      "reviewPain": {
+        "title": "Generic print misses the moment",
+        "card1": "Crammed URLs nobody types from a glove box",
+        "card2": "Different URLs per technician",
+        "card3": "No follow-up when customers tuck the card in a drawer",
+        "closing": "Standardize design, link, and timing together."
+      },
+      "finalCta": {
+        "headline": "Bundle Cards With Automated Follow-Up",
+        "cta": "Start Free Trial",
+        "ctaSubInButton": "No credit card required",
+        "sub": "Pair printed handoffs with job-timed email sequences.",
+        "supportingLine": "Built for owners who want field assets that convert."
+      },
+      "tool": {
+        "sectionTitle": "Google review card readiness checklist",
+        "sectionIntro": "Work through the list before your next print run—each item prevents a common field failure mode.",
+        "checklistTitle": "Before you print",
+        "item1": "Single canonical Google review URL (writereview or validated short link) shared by every truck.",
+        "item2": "QR tested from 18–24 inches on an average phone outdoors—not only under office lamps.",
+        "item3": "Logo, business name, and one line explaining “Scan to leave a Google review.”",
+        "item4": "Technician line practiced: ask at completion, offer scan or follow-up text.",
+        "item5": "Replenishment owner assigned (ops or office)—same as yard signs or business cards.",
+        "specsTitle": "Layout tips that survive trucks",
+        "spec1": "Quiet border around the QR so phones auto-focus faster.",
+        "spec2": "Minimum print size roughly 1.2 inches / 30 mm for the QR module on wallet cards.",
+        "spec3": "Matte stock reduces glare on sunny driveways.",
+        "spec4": "Keep a digital PDF version for email attachments when customers decline a physical card."
       }
     },
     "reviewFunnel": {

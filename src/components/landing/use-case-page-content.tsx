@@ -11,6 +11,7 @@ import { ReviewPainSection } from "@/components/landing/review-pain-section";
 import { SeoDifferentiatorSection } from "@/components/landing/seo-differentiator-section";
 import { SeoInternalLinksSection } from "@/components/landing/seo-internal-links-section";
 import { SiteHeader } from "@/components/landing/site-header";
+import { UseCaseToolExperience } from "@/components/landing/use-case-tool-experience";
 import { USE_CASE_RELATED_LINKS } from "@/lib/seo-layers/link-presets";
 import {
   getUseCasePageDefinition,
@@ -115,6 +116,9 @@ export async function UseCasePageContent({
           paragraphs={solutionParagraphs}
           sectionClassName={sectionY}
         />
+        {sections.toolExperience ? (
+          <UseCaseToolExperience messageKey={k} kind={sections.toolExperience} />
+        ) : null}
         {sections.showCaptureReviewsAnywhere !== false ? (
           <CaptureReviewsAnywhereSection />
         ) : null}

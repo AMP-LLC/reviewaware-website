@@ -12,6 +12,14 @@ export type InternalLinkSpec = {
   readonly labelKey: string;
 };
 
+/** Pillar + product URLs shared by Google-review tool pages. */
+const GOOGLE_REVIEW_TRAFFIC_CLUSTER: readonly InternalLinkSpec[] = [
+  { href: getUseCasePagePath("how-to-get-more-google-reviews"), labelKey: "howToGetMoreGoogleReviews" },
+  { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
+  { href: getUseCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
+  { href: getUseCasePagePath("review-growth-kit"), labelKey: "reviewGrowthKit" },
+] as const;
+
 /** Umbrella industry hub links (trade “up” navigation + shared building block). */
 export const UMBRELLA_INDUSTRY_LINK_SPECS: readonly InternalLinkSpec[] = [
   { href: "/contractor-review-software", labelKey: "contractorUmbrella" },
@@ -198,7 +206,10 @@ export const PRODUCT_PAGE_INTERNAL_LINKS: Record<
   ],
   "google-review-software": [
     ...UMBRELLA_INDUSTRY_LINK_SPECS,
-    { href: getUseCasePagePath("get-more-google-reviews"), labelKey: "getMoreGoogleReviews" },
+    { href: getUseCasePagePath("how-to-get-more-google-reviews"), labelKey: "howToGetMoreGoogleReviews" },
+    { href: getUseCasePagePath("google-review-link-generator"), labelKey: "googleReviewLinkGenerator" },
+    { href: getUseCasePagePath("google-review-qr-code"), labelKey: "googleReviewQrCode" },
+    { href: getUseCasePagePath("google-review-cards"), labelKey: "googleReviewCards" },
     { href: getUseCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
     { href: "/compare/reviewaware-vs-podium", labelKey: "compareVsPodium" },
   ],
@@ -240,6 +251,24 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
     { href: "/plumber-review-software", labelKey: "tradePlumbing" },
     { href: getUseCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
     { href: getUseCasePagePath("review-cards-for-business"), labelKey: "reviewCardsForBusiness" },
+    { href: getUseCasePagePath("google-review-link-generator"), labelKey: "googleReviewLinkGenerator" },
+    { href: getUseCasePagePath("google-review-qr-code"), labelKey: "googleReviewQrCode" },
+    { href: getUseCasePagePath("google-review-cards"), labelKey: "googleReviewCards" },
+  ],
+  "google-review-cards": [
+    ...GOOGLE_REVIEW_TRAFFIC_CLUSTER,
+    { href: getUseCasePagePath("google-review-link-generator"), labelKey: "googleReviewLinkGenerator" },
+    { href: getUseCasePagePath("google-review-qr-code"), labelKey: "googleReviewQrCode" },
+  ],
+  "google-review-link-generator": [
+    ...GOOGLE_REVIEW_TRAFFIC_CLUSTER,
+    { href: getUseCasePagePath("google-review-qr-code"), labelKey: "googleReviewQrCode" },
+    { href: getUseCasePagePath("google-review-cards"), labelKey: "googleReviewCards" },
+  ],
+  "google-review-qr-code": [
+    ...GOOGLE_REVIEW_TRAFFIC_CLUSTER,
+    { href: getUseCasePagePath("google-review-link-generator"), labelKey: "googleReviewLinkGenerator" },
+    { href: getUseCasePagePath("google-review-cards"), labelKey: "googleReviewCards" },
   ],
   "qr-code-review-system": [
     { href: "/google-review-software", labelKey: "googleReviewSoftwareShort" },
@@ -249,6 +278,8 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
     { href: "/hvac-review-software", labelKey: "tradeHvac" },
     { href: "/plumber-review-software", labelKey: "tradePlumbing" },
     { href: "/roofing-review-software", labelKey: "tradeRoofing" },
+    { href: getUseCasePagePath("google-review-qr-code"), labelKey: "googleReviewQrCode" },
+    { href: getUseCasePagePath("google-review-link-generator"), labelKey: "googleReviewLinkGenerator" },
   ],
   "review-cards-for-business": [
     { href: getUseCasePagePath("qr-code-review-system"), labelKey: "qrCodeReviewSystem" },
@@ -279,6 +310,8 @@ export const USE_CASE_RELATED_LINKS: Record<UseCasePageSlug, readonly InternalLi
     { href: "/home-service-review-software", labelKey: "homeServiceUmbrella" },
     { href: "/hvac-review-software", labelKey: "tradeHvac" },
     { href: "/roofing-review-software", labelKey: "tradeRoofing" },
+    { href: getUseCasePagePath("google-review-link-generator"), labelKey: "googleReviewLinkGenerator" },
+    { href: getUseCasePagePath("google-review-cards"), labelKey: "googleReviewCards" },
   ],
   "review-funnel": [
     { href: "/review-management-software", labelKey: "reviewManagementSoftwareShort" },
