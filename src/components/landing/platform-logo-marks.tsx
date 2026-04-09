@@ -153,12 +153,12 @@ export function PlatformLogoStrip() {
     <div className="flex flex-wrap items-center justify-center gap-10">
       <SimpleIconMark path={siGoogle.path} title={siGoogle.title} className={stripMarkClass} />
       <AngiWordmark className="h-8 w-[6.75rem] shrink-0 text-zinc-500 opacity-80 transition-opacity hover:opacity-100" />
+      <SimpleIconMark path={siTrustpilot.path} title={siTrustpilot.title} className={stripMarkClass} />
       <SimpleIconMark
-        path={siTrustpilot.path}
-        title={siTrustpilot.title}
+        path={siNextdoor.path}
+        title={siNextdoor.title}
         className="h-14 w-auto shrink-0 text-zinc-500 opacity-80 transition-opacity hover:opacity-100"
       />
-      <SimpleIconMark path={siNextdoor.path} title={siNextdoor.title} className={stripMarkClass} />
       <SimpleIconMark path={siYelp.path} title={siYelp.title} className={stripMarkClass} />
       <BbbMonogram className="h-8 w-[6.75rem] shrink-0 text-zinc-500 opacity-80 transition-opacity hover:opacity-100" />
       <SimpleIconMark path={siHomeadvisor.path} title={siHomeadvisor.title} className={stripMarkClass} />
