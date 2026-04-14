@@ -29,7 +29,12 @@
     "reassuranceChip3": "Setup in 5 Minutes",
     "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation",
     "subtitleLine1": "Capture reviews with QR jobsite cards and automated follow-ups after every job.",
-    "subtitleLine2": ""
+    "subtitleLine2": "",
+    "qrDemoBadge": "Live Demo • No Signup Required",
+    "qrDemoHeadline": "See how you get more 5-star reviews — in 10 seconds",
+    "qrDemoSubheadline": "Scan this with your phone and experience exactly what your customers see.",
+    "qrDemoHelper": "No signup required",
+    "qrDemoAlt": "Scan to open the live demo — same experience as your customers"
   },
   "industryStrip": {
     "eyebrow": "Industries",

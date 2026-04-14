@@ -29,7 +29,12 @@
     "reassuranceChip3": "Configuración en 5 minutos",
     "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online",
     "subtitleLine1": "Captura reseñas con tarjetas QR en obra y seguimientos automáticos después de cada trabajo.",
-    "subtitleLine2": ""
+    "subtitleLine2": "",
+    "qrDemoBadge": "Demo en vivo • Sin registro",
+    "qrDemoHeadline": "Mira cómo consigues más reseñas de 5 estrellas — en 10 segundos",
+    "qrDemoSubheadline": "Escanea con el móvil y vive exactamente lo que ven tus clientes.",
+    "qrDemoHelper": "No hace falta registrarse",
+    "qrDemoAlt": "Escanea para abrir la demo en vivo — la misma experiencia que tus clientes"
   },
   "industryStrip": {
     "eyebrow": "Sectores",

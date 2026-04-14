@@ -36,6 +36,9 @@ export async function HeroSection({
   const ctaDemo = copy?.ctaDemo ?? t("ctaDemo");
   const credibilityLine = copy?.credibilityLine;
 
+  const qrSrc =
+    `https://api.qrserver.com/v1/create-qr-code/?size=280x280&margin=2&data=${encodeURIComponent(demoHref)}`;
+
   return (
     <section className="relative overflow-hidden border-b border-zinc-200/60 bg-gradient-to-b from-white to-blue-50">
       <div
@@ -102,22 +105,41 @@ export async function HeroSection({
             ))}
           </div>
 
-          <div className="mx-auto mt-8 w-full max-w-sm">
-            <div className="rounded-xl border border-zinc-200/80 bg-white/90 p-4 shadow-sm shadow-zinc-900/10 backdrop-blur-sm">
-              <div className="flex items-center gap-3">
-                <div className="grid size-12 place-items-center rounded-lg bg-blue-50 ring-1 ring-blue-100">
-                  <div className="grid grid-cols-3 gap-0.5">
-                    {Array.from({ length: 9 }).map((_, i) => (
-                      <span key={i} className="size-1.5 rounded-[2px] bg-blue-600/85" />
-                    ))}
-                  </div>
-                </div>
-                <div className="flex-1 space-y-2 text-left">
-                  <div className="h-2.5 w-28 rounded bg-zinc-200" />
-                  <div className="h-2.5 w-20 rounded bg-zinc-200/80" />
-                </div>
-                <div className="h-7 w-20 rounded-md bg-blue-600/90 shadow-sm" />
+          <div
+            className="mx-auto mt-10 w-full max-w-lg md:mt-12"
+            aria-labelledby="hero-qr-demo-heading"
+          >
+            <div className="rounded-xl border border-zinc-200/80 bg-muted/40 p-6 text-center shadow-md shadow-zinc-900/5 ring-1 ring-zinc-200/40 sm:p-7">
+              <p className="inline-flex items-center justify-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-800 ring-1 ring-blue-200/70">
+                {t("qrDemoBadge")}
+              </p>
+              <h2
+                id="hero-qr-demo-heading"
+                className="mt-4 text-balance text-xl font-semibold leading-snug tracking-tight text-zinc-950 sm:text-2xl"
+              >
+                {t("qrDemoHeadline")}
+              </h2>
+              <p className="mx-auto mt-3 max-w-md text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base">
+                {t("qrDemoSubheadline")}
+              </p>
+              <div className="mt-6 flex justify-center">
+                <a
+                  href={demoHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element -- external QR API; not in next/image remotePatterns */}
+                  <img
+                    src={qrSrc}
+                    alt={t("qrDemoAlt")}
+                    width={280}
+                    height={280}
+                    className="h-[200px] w-[200px] max-w-[92vw] rounded-lg border border-zinc-200/90 bg-white object-contain shadow-sm sm:h-[220px] sm:w-[220px] md:h-[250px] md:w-[250px] lg:h-[260px] lg:w-[260px]"
+                  />
+                </a>
               </div>
+              <p className="mt-4 text-sm font-medium text-zinc-600">{t("qrDemoHelper")}</p>
             </div>
           </div>
         </div>
