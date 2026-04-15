@@ -183,7 +183,12 @@ export function PricingSectionClient({
                   size="lg"
                   className="h-12 w-full text-base font-semibold"
                 >
-                  <a href={trialHref}>{liteCtaLabel}</a>
+                  <a
+                    href={trialHref}
+                    className="inline-flex w-full items-center justify-center px-2 text-center leading-tight"
+                  >
+                    {liteCtaLabel}
+                  </a>
                 </Button>
                 <p className="text-center text-sm text-zinc-600">{liteTrustUnderCta}</p>
               </CardContent>
@@ -235,7 +240,12 @@ export function PricingSectionClient({
                 size="lg"
                 className="h-12 w-full text-base font-semibold text-white shadow-lg shadow-blue-600/25 hover:text-white"
               >
-                <a href={plusSignupHref}>{plusCtaLabel}</a>
+                <a
+                  href={plusSignupHref}
+                  className="inline-flex w-full items-center justify-center px-2 text-center leading-tight"
+                >
+                  {plusCtaLabel}
+                </a>
               </Button>
               <p className="text-center text-sm text-zinc-600">{plusTrustUnderCta}</p>
             </CardContent>

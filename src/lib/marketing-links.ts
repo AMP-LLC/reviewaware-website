@@ -8,6 +8,8 @@
  * Env overrides (optional):
  * - `NEXT_PUBLIC_LITE_TRIAL_URL` — English signup URL (must not be Spanish-only).
  * - `NEXT_PUBLIC_LITE_TRIAL_URL_ES` — Spanish signup URL (when marketing locale is `es`).
+ * - `NEXT_PUBLIC_PLUS_SIGNUP_URL` / `NEXT_PUBLIC_PLUS_SIGNUP_URL_ES` — optional Plus upgrade URLs.
+ *   When unset, Plus CTAs use the same resolved Lite signup URL with `plan=plus` appended (never the bare Lite path).
  */
 const DEFAULT_SIGNUP_EN = "https://app.reviewaware.com/signup";
 const DEFAULT_SIGNUP_ES = "https://app.reviewaware.com/signup?lang=es";
@@ -63,7 +65,17 @@ export function getLiteTrialHref(locale: string): string {
   return DEFAULT_SIGNUP_EN;
 }
 
-/** Plus signup CTA URL (preselects Plus plan in app signup flow). */
+function liteSignupWithPlusPlan(liteTrialHref: string, fallbackPlusUrl: string): string {
+  try {
+    const u = new URL(liteTrialHref);
+    u.searchParams.set("plan", "plus");
+    return u.href;
+  } catch {
+    return fallbackPlusUrl;
+  }
+}
+
+/** Plus signup CTA URL (preselects Plus plan in app signup flow). Never the bare Lite-only path. */
 export function getPlusSignupHref(locale: string): string {
   const isEs = locale === "es";
 
@@ -72,7 +84,7 @@ export function getPlusSignupHref(locale: string): string {
     if (configuredEs && configuredEs.trim().length > 0) {
       return configuredEs.trim();
     }
-    return DEFAULT_SIGNUP_PLUS_ES;
+    return liteSignupWithPlusPlan(getLiteTrialHref("es"), DEFAULT_SIGNUP_PLUS_ES);
   }
 
   const configured = process.env.NEXT_PUBLIC_PLUS_SIGNUP_URL?.trim();
@@ -83,5 +95,6 @@ export function getPlusSignupHref(locale: string): string {
       return configured;
     }
   }
-  return DEFAULT_SIGNUP_PLUS_EN;
+
+  return liteSignupWithPlusPlan(getLiteTrialHref(locale), DEFAULT_SIGNUP_PLUS_EN);
 }
