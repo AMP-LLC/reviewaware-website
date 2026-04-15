@@ -58,7 +58,8 @@ export async function PricingSection({
       plusValueLine={t("plusValueLine")}
       plusFeatures={plusFeatures}
       plusTrustUnderCta={t("plusTrustUnderCta")}
-      ctaLabel={t("ctaStartFreeTrial")}
+      liteCtaLabel={t("ctaStartFreeTrial")}
+      plusCtaLabel={t("ctaUpgradePlus")}
       liteAnnualLeadIn={liteAnnualLeadIn}
     />
   );

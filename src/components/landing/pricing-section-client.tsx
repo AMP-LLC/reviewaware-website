@@ -41,7 +41,8 @@ export type PricingSectionClientProps = {
   plusValueLine: string;
   plusFeatures: readonly string[];
   plusTrustUnderCta: string;
-  ctaLabel: string;
+  liteCtaLabel: string;
+  plusCtaLabel: string;
   liteAnnualLeadIn?: string;
   sectionClassName?: string;
 };
@@ -71,7 +72,8 @@ export function PricingSectionClient({
   plusValueLine,
   plusFeatures,
   plusTrustUnderCta,
-  ctaLabel,
+  liteCtaLabel,
+  plusCtaLabel,
   liteAnnualLeadIn,
   sectionClassName,
 }: PricingSectionClientProps) {
@@ -181,7 +183,7 @@ export function PricingSectionClient({
                   size="lg"
                   className="h-12 w-full text-base font-semibold"
                 >
-                  <a href={trialHref}>{ctaLabel}</a>
+                  <a href={trialHref}>{liteCtaLabel}</a>
                 </Button>
                 <p className="text-center text-sm text-zinc-600">{liteTrustUnderCta}</p>
               </CardContent>
@@ -233,7 +235,7 @@ export function PricingSectionClient({
                 size="lg"
                 className="h-12 w-full text-base font-semibold text-white shadow-lg shadow-blue-600/25 hover:text-white"
               >
-                <a href={plusSignupHref}>{ctaLabel}</a>
+                <a href={plusSignupHref}>{plusCtaLabel}</a>
               </Button>
               <p className="text-center text-sm text-zinc-600">{plusTrustUnderCta}</p>
             </CardContent>
