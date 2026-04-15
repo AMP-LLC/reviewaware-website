@@ -21,6 +21,7 @@ export type PricingSectionClientProps = {
   plusSignupHref: string;
   resultsLeadIn: string;
   title: string;
+  planComparisonLine: string;
   introLine1: string;
   introLine2: string;
   monthlyLabel: string;
@@ -34,11 +35,15 @@ export type PricingSectionClientProps = {
   litePositioningLine: string;
   liteF0: string;
   liteFeatures: readonly string[];
+  liteUpgradeHeading: string;
+  liteUpgradeBullets: readonly string[];
   liteTrustUnderCta: string;
   plusName: string;
   plusBadge: string;
   plusPositioningLine: string;
   plusValueLine: string;
+  plusPerfectHeading: string;
+  plusPerfectBullets: readonly string[];
   plusFeatures: readonly string[];
   plusTrustUnderCta: string;
   liteCtaLabel: string;
@@ -52,6 +57,7 @@ export function PricingSectionClient({
   plusSignupHref,
   resultsLeadIn,
   title,
+  planComparisonLine,
   introLine1,
   introLine2,
   monthlyLabel,
@@ -65,11 +71,15 @@ export function PricingSectionClient({
   litePositioningLine,
   liteF0,
   liteFeatures,
+  liteUpgradeHeading,
+  liteUpgradeBullets,
   liteTrustUnderCta,
   plusName,
   plusBadge,
   plusPositioningLine,
   plusValueLine,
+  plusPerfectHeading,
+  plusPerfectBullets,
   plusFeatures,
   plusTrustUnderCta,
   liteCtaLabel,
@@ -94,6 +104,9 @@ export function PricingSectionClient({
         <h2 className="text-center text-[1.875rem] font-semibold leading-tight tracking-tight text-zinc-950 sm:text-4xl lg:text-[2.625rem]">
           {title}
         </h2>
+        <p className="mx-auto mt-3 max-w-lg text-pretty text-center text-sm leading-snug text-muted-foreground">
+          {planComparisonLine}
+        </p>
         <p className="mx-auto mt-5 max-w-2xl text-center text-base font-medium leading-snug text-zinc-800 sm:text-lg">
           {introLine1}
         </p>
@@ -177,6 +190,20 @@ export function PricingSectionClient({
                   <p className="text-center text-sm leading-snug text-zinc-600">{liteAnnualLeadIn}</p>
                 ) : null}
 
+                <div className="space-y-1 text-sm text-muted-foreground">
+                  <p className="font-medium leading-snug">{liteUpgradeHeading}</p>
+                  <ul className="space-y-0.5">
+                    {liteUpgradeBullets.map((line, i) => (
+                      <li key={`lite-upgrade-${i}`} className="flex gap-2 leading-snug">
+                        <span className="shrink-0 select-none" aria-hidden>
+                          •
+                        </span>
+                        <span>{line}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
                 <Button
                   asChild
                   variant="secondary"
@@ -225,7 +252,20 @@ export function PricingSectionClient({
               </CardDescription>
               <p className="mt-4 text-sm font-medium leading-snug text-zinc-800">{plusValueLine}</p>
             </CardHeader>
-            <CardContent className="space-y-5 px-5 pb-7 pt-5 sm:space-y-6 sm:px-7">
+            <CardContent className="space-y-4 px-5 pb-7 pt-5 sm:space-y-5 sm:px-7">
+              <div className="space-y-1 text-sm text-muted-foreground">
+                <p className="font-medium leading-snug">{plusPerfectHeading}</p>
+                <ul className="space-y-0.5">
+                  {plusPerfectBullets.map((line, i) => (
+                    <li key={`plus-perfect-${i}`} className="flex gap-2 leading-snug">
+                      <span className="shrink-0 select-none" aria-hidden>
+                        •
+                      </span>
+                      <span>{line}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <ul className="space-y-2.5 text-sm leading-snug text-zinc-700">
                 {plusFeatures.map((line) => (
                   <li key={line} className="flex gap-2.5">

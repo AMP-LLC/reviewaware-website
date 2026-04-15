@@ -5,6 +5,8 @@ import { getLiteTrialHref, getPlusSignupHref } from "@/lib/marketing-links";
 import { PricingSectionClient } from "@/components/landing/pricing-section-client";
 
 const LITE_FEATURE_KEYS = ["liteFeature1", "liteFeature2", "liteFeature3"] as const;
+const LITE_UPGRADE_KEYS = ["liteUpgrade1", "liteUpgrade2", "liteUpgrade3"] as const;
+const PLUS_PERFECT_KEYS = ["plusPerfect1", "plusPerfect2", "plusPerfect3"] as const;
 const PLUS_FEATURE_KEYS = [
   "plusFeature1",
   "plusFeature2",
@@ -29,6 +31,8 @@ export async function PricingSection({
   const plusSignupHref = getPlusSignupHref(locale);
 
   const liteFeatures = LITE_FEATURE_KEYS.map((key) => t(key));
+  const liteUpgradeBullets = LITE_UPGRADE_KEYS.map((key) => t(key));
+  const plusPerfectBullets = PLUS_PERFECT_KEYS.map((key) => t(key));
   const plusFeatures = PLUS_FEATURE_KEYS.map((key) => t(key));
 
   return (
@@ -38,6 +42,7 @@ export async function PricingSection({
       plusSignupHref={plusSignupHref}
       resultsLeadIn={t("resultsLeadIn")}
       title={t("title")}
+      planComparisonLine={t("planComparisonLine")}
       introLine1={t("introLine1")}
       introLine2={t("introLine2")}
       monthlyLabel={t("monthly")}
@@ -51,11 +56,15 @@ export async function PricingSection({
       litePositioningLine={t("litePositioningLine")}
       liteF0={t("liteF0")}
       liteFeatures={liteFeatures}
+      liteUpgradeHeading={t("liteUpgradeHeading")}
+      liteUpgradeBullets={liteUpgradeBullets}
       liteTrustUnderCta={t("liteTrustUnderCta")}
       plusName={t("plusName")}
       plusBadge={t("plusBadge")}
       plusPositioningLine={t("plusPositioningLine")}
       plusValueLine={t("plusValueLine")}
+      plusPerfectHeading={t("plusPerfectHeading")}
+      plusPerfectBullets={plusPerfectBullets}
       plusFeatures={plusFeatures}
       plusTrustUnderCta={t("plusTrustUnderCta")}
       liteCtaLabel={t("ctaStartFreeTrial")}
