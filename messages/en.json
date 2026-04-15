@@ -19,16 +19,16 @@
     "signIn": "Sign In"
   },
   "hero": {
-    "headlineLine1": "Every Completed Job",
-    "headlineLine2": "Becomes a Review Opportunity",
-    "ctaPrimary": "Start Free 14-Day Trial",
+    "headlineLine1": "Get More Google Reviews After Every Completed Job",
+    "headlineLine2": "",
+    "ctaPrimary": "Start Free Trial",
     "ctaSecondary": "See How It Works",
     "ctaDemo": "Try Live Demo",
     "reassuranceChip1": "14-Day Free Trial",
     "reassuranceChip2": "No Credit Card Required",
     "reassuranceChip3": "Setup in 5 Minutes",
     "socialProofLine": "★★★★★ Trusted by service businesses growing their online reputation",
-    "subtitleLine1": "Capture reviews with QR jobsite cards and automated follow-ups after every job.",
+    "subtitleLine1": "Capture more reviews with QR jobsite cards, email follow-ups, and automated review requests after every completed job.",
     "subtitleLine2": "",
     "qrDemoBadge": "Live Demo • No Signup Required",
     "qrDemoHeadline": "See how you get more 5-star reviews — in 10 seconds",
@@ -128,15 +128,23 @@
     "step3": "Customer Clicks Review Link",
     "step4": "You Get More Reviews"
   },
+  "workflowFit": {
+    "title": "Works with how your business already runs",
+    "subtitle": "ReviewAware fits into the way service businesses already operate — after a job is completed, after an invoice is sent, or anywhere customers can scan a QR code.",
+    "bullet1": "After a job is marked complete",
+    "bullet2": "After an invoice is sent",
+    "bullet3": "Via QR on receipts, trucks, or job sites",
+    "bullet4": "With automatic follow-ups if customers do not respond"
+  },
   "howItWorks": {
-    "title": "How ReviewAware Turns Completed Jobs Into Reviews",
-    "subtitle": "Send review requests automatically after every completed job.",
-    "step1Title": "Complete the Job",
-    "step1Description": "Your technician finishes the service call or job.",
-    "step2Title": "Review Request Is Sent Automatically",
-    "step2Description": "ReviewAware sends the customer a review request via email or QR scan.",
-    "step3Title": "Customer Leaves a Review",
-    "step3Description": "Customers click the link and leave a review on Google."
+    "title": "From finished job to new review",
+    "subtitle": "One simple flow after every completed job.",
+    "step1Title": "Finish the Job",
+    "step1Description": "Your technician completes the work and marks the job done. ReviewAware schedules the review request automatically.",
+    "step2Title": "Send the Review Request",
+    "step2Description": "Customers get your request by email or QR handoff—right when motivation is highest.",
+    "step3Title": "Get the Review",
+    "step3Description": "They leave a review on Google; if they don’t right away, ReviewAware can follow up with reminders."
   },
   "whyReviewAware": {
     "title": "Why Service Businesses Use ReviewAware",
@@ -220,9 +228,11 @@
     "introLine2": "Choose the plan that fits your business now.",
     "mostPopular": "Most Popular",
     "liteName": "ReviewAware Lite",
+    "litePositioningLine": "Best for getting started",
     "liteBadge": "Starter",
     "liteValueLine": "Everything you need to start generating more Google reviews.",
     "plusName": "ReviewAware Plus",
+    "plusPositioningLine": "Best for growing businesses that want more reviews",
     "plusBadge": "Available Now",
     "perMonth": "/ month",
     "liteF0": "Send review requests for up to 500 completed jobs per month",
@@ -299,11 +309,11 @@
     "a5": "ReviewAware Plus is live with Email + SMS and supports review requests for every completed job."
   },
   "finalCta": {
-    "headline": "Start Getting More 5-Star Reviews — Automatically",
-    "cta": "Start Your Free 14-Day Trial",
+    "headline": "Start Getting More Google Reviews After Every Job",
+    "cta": "Start Free Trial",
     "ctaSubInButton": "No credit card required",
     "sub": "Setup takes less than 5 minutes.",
-    "supportingLine": "Join hundreds of service businesses growing their reputation with ReviewAware."
+    "supportingLine": "Cancel anytime. Join service businesses growing their reputation with ReviewAware."
   },
   "footer": {
     "privacy": "Privacy Policy",

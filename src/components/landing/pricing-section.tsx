@@ -81,6 +81,7 @@ export async function PricingSection({
                     {t("liteBadge")}
                   </span>
                 </div>
+                <p className="pt-1 text-sm font-medium text-zinc-700">{t("litePositioningLine")}</p>
                 <CardDescription className="pt-2 text-base text-zinc-600">
                   <span className="text-4xl font-semibold tracking-tight text-zinc-950">
                     $24.99
@@ -188,6 +189,7 @@ export async function PricingSection({
                   {t("plusBadge")}
                 </span>
               </div>
+              <p className="pt-1 text-sm font-medium text-zinc-800">{t("plusPositioningLine")}</p>
               <CardDescription className="text-base text-zinc-600">
                 <span className="text-4xl font-semibold tracking-tight text-zinc-900">
                   $49.99

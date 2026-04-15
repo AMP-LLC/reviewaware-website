@@ -19,16 +19,16 @@
     "signIn": "Iniciar sesión"
   },
   "hero": {
-    "headlineLine1": "Cada trabajo completado",
-    "headlineLine2": "se convierte en una oportunidad de reseña",
-    "ctaPrimary": "Iniciar prueba gratis de 14 días",
+    "headlineLine1": "Consigue más reseñas en Google después de cada trabajo completado",
+    "headlineLine2": "",
+    "ctaPrimary": "Empezar prueba gratis",
     "ctaSecondary": "Ver cómo funciona",
     "ctaDemo": "Probar demo en vivo",
     "reassuranceChip1": "Prueba gratis de 14 días",
     "reassuranceChip2": "Sin tarjeta de crédito",
     "reassuranceChip3": "Configuración en 5 minutos",
     "socialProofLine": "★★★★★ Empresas de servicios de confianza que hacen crecer su reputación online",
-    "subtitleLine1": "Captura reseñas con tarjetas QR en obra y seguimientos automáticos después de cada trabajo.",
+    "subtitleLine1": "Consigue más reseñas con tarjetas QR en obra, seguimientos por correo y solicitudes automáticas tras cada trabajo completado.",
     "subtitleLine2": "",
     "qrDemoBadge": "Demo en vivo • Sin registro",
     "qrDemoHeadline": "Mira cómo consigues más reseñas de 5 estrellas — en 10 segundos",
@@ -128,15 +128,23 @@
     "step3": "El cliente hace clic en el enlace de reseña",
     "step4": "Obtienes más reseñas"
   },
+  "workflowFit": {
+    "title": "Encaja en cómo ya trabaja tu negocio",
+    "subtitle": "ReviewAware encaja en el día a día de los negocios de servicios: tras cerrar un trabajo, enviar una factura o donde el cliente pueda escanear un QR.",
+    "bullet1": "Cuando el trabajo se marca como completado",
+    "bullet2": "Después de enviar la factura",
+    "bullet3": "Con QR en recibos, camiones u obra",
+    "bullet4": "Con seguimientos automáticos si el cliente no responde"
+  },
   "howItWorks": {
-    "title": "Cómo ReviewAware convierte trabajos completados en reseñas",
-    "subtitle": "Envía solicitudes de reseña automáticamente tras cada trabajo completado.",
-    "step1Title": "Completa el trabajo",
-    "step1Description": "Tu técnico termina la visita o el trabajo.",
-    "step2Title": "La solicitud de reseña se envía sola",
-    "step2Description": "ReviewAware envía al cliente una solicitud de reseña por correo o escaneo QR.",
-    "step3Title": "El cliente deja una reseña",
-    "step3Description": "El cliente hace clic en el enlace y deja una reseña en Google."
+    "title": "Del trabajo terminado a la nueva reseña",
+    "subtitle": "Un flujo sencillo tras cada trabajo completado.",
+    "step1Title": "Termina el trabajo",
+    "step1Description": "El técnico completa el servicio y marca el trabajo como hecho. ReviewAware programa la solicitud de reseña automáticamente.",
+    "step2Title": "Envía la solicitud de reseña",
+    "step2Description": "El cliente la recibe por correo o con la tarjeta QR, en el momento en que más motivación tiene.",
+    "step3Title": "Obtén la reseña",
+    "step3Description": "El cliente deja la reseña en Google; si no lo hace al momento, ReviewAware puede enviar recordatorios."
   },
   "whyReviewAware": {
     "title": "Por qué los negocios de servicios usan ReviewAware",
@@ -220,9 +228,11 @@
     "introLine2": "Elige el plan que encaje con tu negocio ahora.",
     "mostPopular": "Más popular",
     "liteName": "ReviewAware Lite",
+    "litePositioningLine": "Ideal para empezar",
     "liteBadge": "Starter",
     "liteValueLine": "Todo lo que necesitas para empezar a generar más reseñas en Google.",
     "plusName": "ReviewAware Plus",
+    "plusPositioningLine": "Ideal para negocios en crecimiento que quieren más reseñas",
     "plusBadge": "Disponible ahora",
     "perMonth": "/ mes",
     "liteF0": "Envía solicitudes de reseña para hasta 500 trabajos completados al mes",
@@ -299,11 +309,11 @@
     "a5": "ReviewAware Plus ya está disponible con Email + SMS y permite solicitar reseñas en cada trabajo completado."
   },
   "finalCta": {
-    "headline": "Empieza a conseguir más reseñas de 5 estrellas — automáticamente",
-    "cta": "Inicia tu prueba gratis de 14 días",
+    "headline": "Empieza a conseguir más reseñas en Google tras cada trabajo",
+    "cta": "Empezar prueba gratis",
     "ctaSubInButton": "No se requiere tarjeta de crédito",
     "sub": "La configuración toma menos de 5 minutos.",
-    "supportingLine": "Únete a cientos de empresas de servicios que hacen crecer su reputación con ReviewAware."
+    "supportingLine": "Cancela cuando quieras. Únete a empresas de servicios que hacen crecer su reputación con ReviewAware."
   },
   "footer": {
     "privacy": "Política de privacidad",

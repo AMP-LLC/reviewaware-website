@@ -8,11 +8,11 @@ import { FaqSection } from "@/components/landing/faq-section";
 import { FinalCtaSection } from "@/components/landing/final-cta-section";
 import { HeroSection } from "@/components/landing/hero-section";
 import { HowItWorksSection } from "@/components/landing/how-it-works-section";
+import { WorkflowFitSection } from "@/components/landing/workflow-fit-section";
 import { PlatformLogosSection } from "@/components/landing/platform-logos-section";
 import { PricingSection } from "@/components/landing/pricing-section";
 import { ReviewPainSection } from "@/components/landing/review-pain-section";
 import { ReviewResultsSection } from "@/components/landing/review-results-section";
-import { RealWorldWorkflowSection } from "@/components/landing/real-world-workflow-section";
 import { ScreenshotsSection } from "@/components/landing/screenshots-section";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
@@ -63,10 +63,10 @@ export default async function HomePage({ params }: Props) {
     <>
       <SiteHeader locale={locale} />
       <main>
-        <HeroSection locale={locale} />
+        <HeroSection locale={locale} ctaLayout="trialDemoPlusHowLink" />
+        <WorkflowFitSection />
         <HowItWorksSection />
         <ReviewPainSection copy={problemSectionCopy} />
-        <RealWorldWorkflowSection />
         <CaptureReviewsAnywhereSection />
         <PlatformLogosSection />
         <ScreenshotsSection locale={locale} />

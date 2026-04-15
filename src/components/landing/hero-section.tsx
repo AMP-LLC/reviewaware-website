@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { getLiteTrialHref, getLiveDemoHref } from "@/lib/marketing-links";
 
+export type HeroCtaLayout = "threeButtons" | "trialDemoPlusHowLink";
+
 export type HeroSectionCopy = {
   headlineLine1: string;
   headlineLine2: string;
@@ -19,9 +21,12 @@ export type HeroSectionCopy = {
 export async function HeroSection({
   locale,
   copy,
+  ctaLayout = "threeButtons",
 }: {
   locale: string;
   copy?: HeroSectionCopy;
+  /** Home page: trial + demo buttons, "See how it works" as text link. */
+  ctaLayout?: HeroCtaLayout;
 }) {
   const t = await getTranslations("hero");
   const trialHref = getLiteTrialHref(locale);
@@ -51,8 +56,8 @@ export async function HeroSection({
       />
       <div className="mx-auto max-w-6xl px-6 py-32">
         <div className="relative mx-auto max-w-4xl text-center">
-          <h1 className="mt-6 text-balance text-4xl font-semibold leading-[1.15] tracking-tight text-zinc-950 md:text-5xl md:leading-[1.1]">
-            <span className="block">{headlineLine1}</span>
+          <h1 className="mx-auto mt-6 max-w-[min(100%,40rem)] text-balance text-4xl font-semibold leading-[1.2] tracking-tight text-zinc-950 sm:max-w-[min(100%,44rem)] md:text-5xl md:leading-[1.15]">
+            <span className={headlineLine2 ? "block" : "inline"}>{headlineLine1}</span>
             {headlineLine2 ? (
               <span className="mt-1 block sm:mt-1.5">{headlineLine2}</span>
             ) : null}
@@ -61,33 +66,65 @@ export async function HeroSection({
             <span className="block">{subtitleLine1}</span>
             {subtitleLine2 ? <span className="block">{subtitleLine2}</span> : null}
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
-            <Button
-              asChild
-              size="lg"
-              className="h-12 w-full min-w-[220px] px-8 text-base shadow-lg shadow-blue-600/25 transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-600/30 sm:w-auto"
-            >
-              <a href={trialHref}>{ctaPrimary}</a>
-            </Button>
-            <Button
-              asChild
-              variant="secondary"
-              size="lg"
-              className="h-12 w-full min-w-[200px] border border-zinc-300 bg-white/90 px-8 sm:w-auto"
-            >
-              <a href="#how-it-works">{ctaSecondary}</a>
-            </Button>
-            <Button
-              asChild
-              variant="secondary"
-              size="lg"
-              className="h-12 w-full min-w-[200px] border border-blue-200 bg-white px-8 text-base font-semibold text-blue-700 shadow-sm hover:border-blue-300 hover:bg-blue-50/80 sm:w-auto"
-            >
-              <a href={demoHref} target="_blank" rel="noopener noreferrer">
-                {ctaDemo}
-              </a>
-            </Button>
-          </div>
+          {ctaLayout === "trialDemoPlusHowLink" ? (
+            <div className="mx-auto mt-8 flex w-full max-w-xl flex-col items-center sm:max-w-2xl">
+              <div className="flex w-full flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
+                <Button
+                  asChild
+                  size="lg"
+                  className="h-12 w-full min-w-[220px] px-8 text-base shadow-lg shadow-blue-600/25 transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-600/30 sm:w-auto"
+                >
+                  <a href={trialHref}>{ctaPrimary}</a>
+                </Button>
+                <Button
+                  asChild
+                  variant="secondary"
+                  size="lg"
+                  className="h-12 w-full min-w-[200px] border border-blue-200 bg-white px-8 text-base font-semibold text-blue-700 shadow-sm hover:border-blue-300 hover:bg-blue-50/80 sm:w-auto"
+                >
+                  <a href={demoHref} target="_blank" rel="noopener noreferrer">
+                    {ctaDemo}
+                  </a>
+                </Button>
+              </div>
+              <p className="mt-2 text-center">
+                <a
+                  href="#how-it-works"
+                  className="inline-block text-sm font-medium text-zinc-500 underline decoration-zinc-300 underline-offset-4 transition-colors hover:text-zinc-700 hover:decoration-zinc-400"
+                >
+                  {ctaSecondary}
+                </a>
+              </p>
+            </div>
+          ) : (
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+              <Button
+                asChild
+                size="lg"
+                className="h-12 w-full min-w-[220px] px-8 text-base shadow-lg shadow-blue-600/25 transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-600/30 sm:w-auto"
+              >
+                <a href={trialHref}>{ctaPrimary}</a>
+              </Button>
+              <Button
+                asChild
+                variant="secondary"
+                size="lg"
+                className="h-12 w-full min-w-[200px] border border-zinc-300 bg-white/90 px-8 sm:w-auto"
+              >
+                <a href="#how-it-works">{ctaSecondary}</a>
+              </Button>
+              <Button
+                asChild
+                variant="secondary"
+                size="lg"
+                className="h-12 w-full min-w-[200px] border border-blue-200 bg-white px-8 text-base font-semibold text-blue-700 shadow-sm hover:border-blue-300 hover:bg-blue-50/80 sm:w-auto"
+              >
+                <a href={demoHref} target="_blank" rel="noopener noreferrer">
+                  {ctaDemo}
+                </a>
+              </Button>
+            </div>
+          )}
           <p className="mt-4 text-center text-sm text-muted-foreground">{t("socialProofLine")}</p>
           {credibilityLine ? (
             <p className="mx-auto mt-5 max-w-xl text-pretty text-sm font-medium leading-relaxed text-zinc-600 sm:text-base">
@@ -110,7 +147,7 @@ export async function HeroSection({
             aria-labelledby="hero-qr-demo-heading"
           >
             <div className="rounded-xl border border-zinc-200/80 bg-muted/40 p-6 text-center shadow-md shadow-zinc-900/5 ring-1 ring-zinc-200/40 sm:p-7">
-              <p className="inline-flex items-center justify-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-800 ring-1 ring-blue-200/70">
+              <p className="inline-flex items-center justify-center rounded-full bg-blue-50 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-blue-900 ring-2 ring-blue-200/90">
                 {t("qrDemoBadge")}
               </p>
               <h2
@@ -139,7 +176,7 @@ export async function HeroSection({
                   />
                 </a>
               </div>
-              <p className="mt-4 text-sm font-medium text-zinc-600">{t("qrDemoHelper")}</p>
+              <p className="mt-4 text-sm font-semibold text-blue-900">{t("qrDemoHelper")}</p>
             </div>
           </div>
         </div>
